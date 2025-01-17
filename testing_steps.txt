@@ -1,0 +1,7 @@
+Verify that the structure matches the expected wireframe architecture.
+Check the README file at /Users/jbear/dev/base_project/nexxus_seed/README.md for project description.
+Run `pip install -r requirements.txt` to install dependencies.
+Validate the backend API using Flask/FastAPI (or the included Dockerfile).
+Check /Users/jbear/dev/base_project/nexxus_seed/tests/test_example.py for sample test cases.
+Run the application locally and test data ingestion and knowledge graph creation.
+Examine log files for errors and app activity.

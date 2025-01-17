@@ -1,0 +1,93 @@
+add @esbuild/win32-x64 0.24.2
+add @esbuild/win32-ia32 0.24.2
+add @esbuild/win32-arm64 0.24.2
+add @esbuild/sunos-x64 0.24.2
+add @esbuild/openbsd-x64 0.24.2
+add @esbuild/openbsd-arm64 0.24.2
+add @esbuild/netbsd-x64 0.24.2
+add @esbuild/netbsd-arm64 0.24.2
+add @esbuild/linux-x64 0.24.2
+add @esbuild/linux-s390x 0.24.2
+add @esbuild/linux-riscv64 0.24.2
+add @esbuild/linux-ppc64 0.24.2
+add @esbuild/linux-mips64el 0.24.2
+add @esbuild/linux-loong64 0.24.2
+add @esbuild/linux-ia32 0.24.2
+add @esbuild/linux-arm64 0.24.2
+add @esbuild/linux-arm 0.24.2
+add @esbuild/freebsd-x64 0.24.2
+add @esbuild/freebsd-arm64 0.24.2
+add @esbuild/darwin-x64 0.24.2
+add @esbuild/android-x64 0.24.2
+add @esbuild/android-arm64 0.24.2
+add @esbuild/android-arm 0.24.2
+add @esbuild/aix-ppc64 0.24.2
+
+added 24 packages, and audited 1647 packages in 3s
+
+289 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+bl  <=1.2.2
+Severity: moderate
+Memory Exposure in bl - https://github.com/advisories/GHSA-wrw9-m778-g6mc
+Remote Memory Exposure in bl - https://github.com/advisories/GHSA-pp7h-53gx-mx7r
+No fix available
+node_modules/bl
+  levelup  0.9.0 - 1.3.9
+  Depends on vulnerable versions of bl
+  Depends on vulnerable versions of semver
+  node_modules/levelup
+    browserify-fs  *
+    Depends on vulnerable versions of levelup
+    node_modules/browserify-fs
+
+nth-check  <2.0.1
+Severity: high
+Inefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+fix available via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+node_modules/svgo/node_modules/nth-check
+  css-select  <=3.1.0
+  Depends on vulnerable versions of nth-check
+  node_modules/svgo/node_modules/css-select
+    svgo  1.0.0 - 1.3.2
+    Depends on vulnerable versions of css-select
+    node_modules/svgo
+      @svgr/plugin-svgo  <=5.5.0
+      Depends on vulnerable versions of svgo
+      node_modules/@svgr/plugin-svgo
+        @svgr/webpack  4.0.0 - 5.5.0
+        Depends on vulnerable versions of @svgr/plugin-svgo
+        node_modules/@svgr/webpack
+          react-scripts  >=2.1.4
+          Depends on vulnerable versions of @svgr/webpack
+          Depends on vulnerable versions of resolve-url-loader
+          node_modules/react-scripts
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix --force`
+Will install react-scripts@3.0.1, which is a breaking change
+node_modules/resolve-url-loader/node_modules/postcss
+  resolve-url-loader  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/resolve-url-loader
+
+semver  <=5.7.1
+Severity: high
+Regular Expression Denial of Service in semver - https://github.com/advisories/GHSA-x6fg-f45m-jf5q
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+No fix available
+node_modules/levelup/node_modules/semver
+
+12 vulnerabilities (3 moderate, 9 high)
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.

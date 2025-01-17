@@ -1,0 +1,24 @@
+{
+  "created": [],
+  "skipped": [
+    "/Users/jbear/dev/base_project/nexxus_seed/src/core",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/scripts",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/configs",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/data/raw",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/data/processed",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/data/downloaded",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/data/user_uploaded",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/notebooks",
+    "/Users/jbear/dev/base_project/nexxus_seed/src/utils",
+    "/Users/jbear/dev/base_project/nexxus_seed/tests/test_example.py",
+    "/Users/jbear/dev/base_project/nexxus_seed/docs/README.md",
+    "/Users/jbear/dev/base_project/nexxus_seed/logs/app.log",
+    "/Users/jbear/dev/base_project/nexxus_seed/logs/errors.log",
+    "/Users/jbear/dev/base_project/nexxus_seed/./requirements.txt",
+    "/Users/jbear/dev/base_project/nexxus_seed/./package.json",
+    "/Users/jbear/dev/base_project/nexxus_seed/./Dockerfile",
+    "/Users/jbear/dev/base_project/nexxus_seed/./.env.example",
+    "/Users/jbear/dev/base_project/nexxus_seed/./README.md"
+  ],
+  "errors": []
+}

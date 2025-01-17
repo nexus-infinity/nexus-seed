@@ -1,0 +1,29 @@
+graph TD
+    User[User Interface]
+    API[API Layer]
+    Auth[Authentication #38; Authorization]
+    DataIngestion[Data Ingestion Module]
+    DataProcessing[Data Processing #38; Enrichment]
+    KnowledgeGraph[Knowledge Graph]
+    SearchEngine[Search Engine]
+    Analytics[Analytics Engine]
+    Storage[Data Storage]
+    ExternalServices[External Services Integration]
+    
+    User -->|Interacts with| API
+    API -->|Authenticates| Auth
+    API -->|Requests data| DataIngestion
+    API -->|Queries| SearchEngine
+    API -->|Requests insights| Analytics
+    
+    DataIngestion -->|Ingests data| DataProcessing
+    DataProcessing -->|Enriches| KnowledgeGraph
+    DataProcessing -->|Stores processed data| Storage
+    
+    KnowledgeGraph -->|Provides context| SearchEngine
+    KnowledgeGraph -->|Provides relationships| Analytics
+    
+    SearchEngine -->|Retrieves data| Storage
+    Analytics -->|Analyzes data| Storage
+    
+    ExternalServices -->|Provides external data| DataIngestion

@@ -1,0 +1,6095 @@
+.
+├── dist
+├── docs
+│   ├── CHANGELOG.md
+│   ├── CONTRIBUTING.md
+│   ├── History.md
+│   ├── LICENSE.md
+│   ├── README.md
+│   ├── SECURITY.md
+│   ├── TEMPLATE.md
+│   ├── TROUBLESHOOTING.md
+│   ├── ban-types.md
+│   ├── block-spacing.md
+│   ├── brace-style.md
+│   ├── camelcase.md
+│   ├── comma-dangle.md
+│   ├── comma-spacing.md
+│   ├── func-call-spacing.md
+│   ├── indent.md
+│   ├── key-spacing.md
+│   ├── keyword-spacing.md
+│   ├── lines-around-comment.md
+│   ├── lines-between-class-members.md
+│   ├── member-delimiter-style.md
+│   ├── no-extra-parens.md
+│   ├── no-extra-semi.md
+│   ├── object-curly-spacing.md
+│   ├── padding-line-between-statements.md
+│   ├── quotes.md
+│   ├── semi.md
+│   ├── space-before-blocks.md
+│   ├── space-before-function-paren.md
+│   ├── space-infix-ops.md
+│   └── type-annotation-spacing.md
+├── node_modules
+│   ├── @ampproject
+│   │   └── remapping
+│   │       └── dist
+│   ├── @babel
+│   │   ├── code-frame
+│   │   ├── compat-data
+│   │   ├── core
+│   │   │   ├── lib
+│   │   │   ├── node_modules
+│   │   │   └── src
+│   │   ├── generator
+│   │   │   └── lib
+│   │   ├── helper-compilation-targets
+│   │   │   └── node_modules
+│   │   ├── helper-module-imports
+│   │   ├── helper-module-transforms
+│   │   ├── helper-plugin-utils
+│   │   ├── helper-string-parser
+│   │   ├── helper-validator-identifier
+│   │   ├── helper-validator-option
+│   │   ├── helpers
+│   │   │   └── lib
+│   │   ├── parser
+│   │   ├── plugin-syntax-async-generators
+│   │   ├── plugin-syntax-bigint
+│   │   ├── plugin-syntax-class-properties
+│   │   ├── plugin-syntax-class-static-block
+│   │   ├── plugin-syntax-import-attributes
+│   │   ├── plugin-syntax-import-meta
+│   │   ├── plugin-syntax-json-strings
+│   │   ├── plugin-syntax-jsx
+│   │   ├── plugin-syntax-logical-assignment-operators
+│   │   ├── plugin-syntax-nullish-coalescing-operator
+│   │   ├── plugin-syntax-numeric-separator
+│   │   ├── plugin-syntax-object-rest-spread
+│   │   ├── plugin-syntax-optional-catch-binding
+│   │   ├── plugin-syntax-optional-chaining
+│   │   ├── plugin-syntax-private-property-in-object
+│   │   ├── plugin-syntax-top-level-await
+│   │   ├── plugin-syntax-typescript
+│   │   ├── plugin-transform-react-jsx-self
+│   │   ├── plugin-transform-react-jsx-source
+│   │   ├── template
+│   │   ├── traverse
+│   │   │   └── lib
+│   │   └── types
+│   │       └── lib
+│   ├── @bcoe
+│   │   └── v8-coverage
+│   │       ├── dist
+│   │       └── src
+│   ├── @esbuild
+│   │   └── darwin-arm64
+│   │       └── bin
+│   ├── @eslint
+│   │   ├── config-array
+│   │   │   ├── dist
+│   │   │   └── node_modules
+│   │   ├── core
+│   │   │   └── dist
+│   │   ├── eslintrc
+│   │   │   ├── lib
+│   │   │   └── node_modules
+│   │   ├── js
+│   │   │   └── src
+│   │   ├── object-schema
+│   │   │   └── dist
+│   │   └── plugin-kit
+│   │       └── dist
+│   ├── @eslint-community
+│   ├── @humanfs
+│   │   ├── core
+│   │   └── node
+│   │       └── node_modules
+│   ├── @humanwhocodes
+│   │   ├── module-importer
+│   │   └── retry
+│   ├── @isaacs
+│   │   └── cliui
+│   │       └── build
+│   ├── @istanbuljs
+│   │   └── load-nyc-config
+│   │       └── node_modules
+│   ├── @jest
+│   │   ├── console
+│   │   ├── core
+│   │   │   ├── build
+│   │   │   └── node_modules
+│   │   ├── environment
+│   │   ├── expect
+│   │   ├── expect-utils
+│   │   ├── fake-timers
+│   │   ├── globals
+│   │   ├── reporters
+│   │   │   └── node_modules
+│   │   ├── schemas
+│   │   ├── source-map
+│   │   ├── test-result
+│   │   ├── test-sequencer
+│   │   ├── transform
+│   │   └── types
+│   ├── @jridgewell
+│   │   ├── gen-mapping
+│   │   │   └── dist
+│   │   ├── resolve-uri
+│   │   │   └── dist
+│   │   ├── set-array
+│   │   │   └── dist
+│   │   ├── sourcemap-codec
+│   │   │   └── dist
+│   │   └── trace-mapping
+│   │       └── dist
+│   ├── @nodelib
+│   │   ├── fs.scandir
+│   │   │   └── out
+│   │   ├── fs.stat
+│   │   │   └── out
+│   │   └── fs.walk
+│   │       └── out
+│   ├── @rollup
+│   ├── @sinclair
+│   │   └── typebox
+│   ├── @sinonjs
+│   │   ├── commons
+│   │   │   ├── lib
+│   │   │   └── types
+│   │   └── fake-timers
+│   ├── @storybook
+│   │   ├── core
+│   │   │   ├── assets
+│   │   │   └── dist
+│   │   └── csf
+│   │       └── node_modules
+│   ├── @types
+│   │   └── node
+│   ├── @typescript-eslint
+│   │   ├── eslint-plugin
+│   │   │   ├── dist
+│   │   │   └── docs
+│   │   ├── parser
+│   │   ├── scope-manager
+│   │   │   └── dist
+│   │   ├── type-utils
+│   │   │   └── dist
+│   │   ├── types
+│   │   │   └── dist
+│   │   ├── typescript-estree
+│   │   │   └── dist
+│   │   ├── utils
+│   │   │   └── dist
+│   │   └── visitor-keys
+│   │       └── node_modules
+│   ├── @vitejs
+│   │   └── plugin-react
+│   ├── acorn
+│   ├── ajv
+│   │   └── lib
+│   ├── argparse
+│   ├── ast-types
+│   │   └── lib
+│   │       └── def
+│   ├── async
+│   ├── available-typed-arrays
+│   ├── babel-jest
+│   ├── babel-plugin-istanbul
+│   │   └── node_modules
+│   │       ├── istanbul-lib-instrument
+│   │       └── semver
+│   ├── babel-plugin-jest-hoist
+│   ├── babel-preset-current-node-syntax
+│   ├── balanced-match
+│   ├── better-opn
+│   ├── brace-expansion
+│   ├── braces
+│   ├── browser-assert
+│   ├── bs-logger
+│   │   └── dist
+│   ├── call-bind
+│   ├── call-bind-apply-helpers
+│   ├── call-bound
+│   ├── caniuse-lite
+│   │   ├── data
+│   │   └── dist
+│   ├── chalk
+│   ├── cjs-module-lexer
+│   ├── cliui
+│   │   ├── build
+│   │   └── node_modules
+│   │       └── emoji-regex
+│   ├── concat-map
+│   ├── create-jest
+│   ├── cross-spawn
+│   │   └── lib
+│   ├── debug
+│   ├── dedent
+│   ├── deep-is
+│   ├── deepmerge
+│   ├── define-data-property
+│   ├── diff-sequences
+│   ├── dunder-proto
+│   ├── ejs
+│   ├── emoji-regex
+│   ├── es-define-property
+│   ├── es-errors
+│   ├── es-object-atoms
+│   ├── esbuild
+│   ├── esbuild-register
+│   ├── escalade
+│   ├── eslint
+│   │   ├── lib
+│   │   │   ├── cli-engine
+│   │   │   ├── languages
+│   │   │   ├── linter
+│   │   │   ├── rules
+│   │   │   └── types
+│   │   └── node_modules
+│   │       └── eslint-visitor-keys
+│   ├── eslint-scope
+│   ├── eslint-visitor-keys
+│   ├── espree
+│   │   └── node_modules
+│   │       └── eslint-visitor-keys
+│   ├── esprima
+│   ├── esquery
+│   ├── esutils
+│   ├── execa
+│   │   └── node_modules
+│   ├── exit
+│   │   └── test
+│   ├── expect
+│   ├── fast-deep-equal
+│   ├── fast-glob
+│   │   ├── node_modules
+│   │   └── out
+│   │       └── providers
+│   ├── fast-json-stable-stringify
+│   ├── fastq
+│   ├── filelist
+│   │   └── node_modules
+│   │       └── minimatch
+│   ├── flat-cache
+│   ├── flatted
+│   ├── for-each
+│   ├── foreground-child
+│   │   └── dist
+│   ├── function-bind
+│   ├── gensync
+│   ├── get-intrinsic
+│   ├── get-proto
+│   ├── glob
+│   │   ├── dist
+│   │   └── node_modules
+│   │       └── minimatch
+│   ├── gopd
+│   ├── graphemer
+│   ├── has-property-descriptors
+│   ├── has-symbols
+│   │   └── test
+│   ├── has-tostringtag
+│   │   └── test
+│   ├── hasown
+│   ├── html-escaper
+│   ├── human-signals
+│   │   └── build
+│   ├── import-local
+│   ├── is-arguments
+│   ├── is-callable
+│   ├── is-core-module
+│   ├── is-generator-function
+│   ├── is-regex
+│   ├── is-typed-array
+│   ├── isexe
+│   ├── istanbul-lib-coverage
+│   ├── istanbul-lib-instrument
+│   ├── istanbul-lib-report
+│   ├── istanbul-lib-source-maps
+│   ├── istanbul-reports
+│   │   └── lib
+│   │       ├── html
+│   │       └── html-spa
+│   ├── jackspeak
+│   │   └── dist
+│   ├── jake
+│   │   ├── lib
+│   │   ├── node_modules
+│   │   └── test
+│   │       └── integration
+│   ├── jest
+│   ├── jest-changed-files
+│   ├── jest-circus
+│   │   └── build
+│   ├── jest-cli
+│   ├── jest-config
+│   │   └── node_modules
+│   ├── jest-diff
+│   ├── jest-docblock
+│   ├── jest-each
+│   │   └── build
+│   ├── jest-environment-node
+│   ├── jest-get-type
+│   ├── jest-haste-map
+│   │   └── build
+│   ├── jest-leak-detector
+│   ├── jest-matcher-utils
+│   ├── jest-message-util
+│   ├── jest-mock
+│   ├── jest-regex-util
+│   ├── jest-resolve
+│   ├── jest-resolve-dependencies
+│   ├── jest-runner
+│   ├── jest-runtime
+│   │   └── node_modules
+│   ├── jest-snapshot
+│   ├── jest-util
+│   ├── jest-validate
+│   │   └── node_modules
+│   ├── jest-watcher
+│   │   └── build
+│   ├── jest-worker
+│   │   ├── build
+│   │   └── node_modules
+│   ├── js-yaml
+│   │   └── lib
+│   ├── jsdoc-type-pratt-parser
+│   │   ├── dist
+│   │   │   ├── src
+│   │   │   └── test
+│   │   └── src
+│   ├── jsesc
+│   ├── json-buffer
+│   ├── json-schema-traverse
+│   │   └── spec
+│   ├── json-stable-stringify-without-jsonify
+│   ├── json5
+│   ├── keyv
+│   ├── levn
+│   ├── lines-and-columns
+│   ├── make-error
+│   ├── makeerror
+│   ├── math-intrinsics
+│   ├── minimatch
+│   │   └── dist
+│   ├── minipass
+│   │   └── dist
+│   ├── nanoid
+│   ├── node-releases
+│   │   └── data
+│   ├── optionator
+│   ├── package-json-from-dist
+│   │   └── dist
+│   ├── path-browserify
+│   ├── path-scurry
+│   │   ├── dist
+│   │   └── node_modules
+│   │       └── lru-cache
+│   ├── picomatch
+│   ├── pirates
+│   ├── pkg-dir
+│   │   └── node_modules
+│   ├── possible-typed-array-names
+│   ├── postcss
+│   ├── prelude-ls
+│   ├── pretty-format
+│   │   ├── build
+│   │   │   └── plugins
+│   │   └── node_modules
+│   ├── prompts
+│   │   ├── dist
+│   │   └── lib
+│   ├── pure-rand
+│   │   └── lib
+│   │       ├── distribution
+│   │       ├── esm
+│   │       └── types
+│   ├── react
+│   ├── react-dom
+│   ├── react-is
+│   ├── react-refresh
+│   ├── recast
+│   ├── resolve
+│   │   └── test
+│   │       ├── dotdot
+│   │       ├── module_dir
+│   │       ├── node_path
+│   │       ├── pathfilter
+│   │       ├── precedence
+│   │       ├── resolver
+│   │       └── shadowed_core
+│   ├── resolve-cwd
+│   │   └── node_modules
+│   ├── resolve.exports
+│   ├── reusify
+│   ├── rollup
+│   │   └── dist
+│   │       └── es
+│   ├── safe-regex-test
+│   ├── scheduler
+│   ├── semver
+│   ├── set-function-length
+│   ├── signal-exit
+│   │   └── dist
+│   ├── sisteransi
+│   ├── source-map
+│   ├── source-map-js
+│   ├── sprintf-js
+│   ├── stack-utils
+│   │   └── node_modules
+│   ├── storybook
+│   │   ├── __mocks__
+│   │   └── core
+│   │       ├── cli
+│   │       └── core-server
+│   ├── string-length
+│   │   └── node_modules
+│   ├── string-width-cjs
+│   │   └── node_modules
+│   │       └── emoji-regex
+│   ├── strip-ansi-cjs
+│   │   └── node_modules
+│   ├── supports-preserve-symlinks-flag
+│   ├── test-exclude
+│   │   └── node_modules
+│   ├── tiny-invariant
+│   │   └── dist
+│   ├── tmpl
+│   ├── ts-api-utils
+│   ├── ts-jest
+│   │   ├── dist
+│   │   │   ├── cli
+│   │   │   └── legacy
+│   │   └── presets
+│   ├── tslib
+│   ├── type-check
+│   ├── type-fest
+│   ├── typescript
+│   │   └── lib
+│   ├── uri-js
+│   │   └── dist
+│   │       └── esnext
+│   ├── util
+│   ├── v8-to-istanbul
+│   ├── vite
+│   │   ├── dist
+│   │   │   └── node
+│   │   └── types
+│   ├── walker
+│   ├── which
+│   ├── which-typed-array
+│   ├── wrap-ansi
+│   │   └── node_modules
+│   ├── wrap-ansi-cjs
+│   │   └── node_modules
+│   │       └── emoji-regex
+│   ├── write-file-atomic
+│   │   └── node_modules
+│   ├── ws
+│   ├── y18n
+│   │   └── build
+│   │       └── lib
+│   ├── yargs
+│   │   ├── build
+│   │   │   └── lib
+│   │   ├── lib
+│   │   └── node_modules
+│   │       └── emoji-regex
+│   └── yargs-parser
+│       └── build
+├── project_analysis_refinement_report.txt
+├── src
+│   ├── components
+│   ├── data
+│   │   └── processed
+│   │       ├── 4tree.txt
+│   │       ├── AD.js
+│   │       ├── AE.js
+│   │       ├── AF.js
+│   │       ├── AG.js
+│   │       ├── AI.js
+│   │       ├── AL.js
+│   │       ├── AM.js
+│   │       ├── AO.js
+│   │       ├── AR.js
+│   │       ├── AS.js
+│   │       ├── AT.js
+│   │       ├── AU.js
+│   │       ├── AW.js
+│   │       ├── AX.js
+│   │       ├── AZ.js
+│   │       ├── BA.js
+│   │       ├── BB.js
+│   │       ├── BD.js
+│   │       ├── BE.js
+│   │       ├── BF.js
+│   │       ├── BG.js
+│   │       ├── BH.js
+│   │       ├── BI.js
+│   │       ├── BJ.js
+│   │       ├── BM.js
+│   │       ├── BN.js
+│   │       ├── BO.js
+│   │       ├── BR.js
+│   │       ├── BS.js
+│   │       ├── BT.js
+│   │       ├── BW.js
+│   │       ├── BY.js
+│   │       ├── BZ.js
+│   │       ├── CA.js
+│   │       ├── CD.js
+│   │       ├── CF.js
+│   │       ├── CG.js
+│   │       ├── CH.js
+│   │       ├── CI.js
+│   │       ├── CK.js
+│   │       ├── CL.js
+│   │       ├── CM.js
+│   │       ├── CN.js
+│   │       ├── CO.js
+│   │       ├── CR.js
+│   │       ├── CU.js
+│   │       ├── CV.js
+│   │       ├── CX.js
+│   │       ├── CY.js
+│   │       ├── CZ.js
+│   │       ├── CopyrightNotice.txt
+│   │       ├── DE.js
+│   │       ├── DJ.js
+│   │       ├── DK.js
+│   │       ├── DM.js
+│   │       ├── DO.js
+│   │       ├── DZ.js
+│   │       ├── EC.js
+│   │       ├── EE.js
+│   │       ├── EG.js
+│   │       ├── ER.js
+│   │       ├── ES.js
+│   │       ├── ET.js
+│   │       ├── FI.js
+│   │       ├── FJ.js
+│   │       ├── FK.js
+│   │       ├── FM.js
+│   │       ├── FO.js
+│   │       ├── FR.js
+│   │       ├── FUNDING.yml
+│   │       ├── GA.js
+│   │       ├── GB.js
+│   │       ├── GD.js
+│   │       ├── GE.js
+│   │       ├── GF.js
+│   │       ├── GG.js
+│   │       ├── GH.js
+│   │       ├── GI.js
+│   │       ├── GL.js
+│   │       ├── GM.js
+│   │       ├── GN.js
+│   │       ├── GP.js
+│   │       ├── GQ.js
+│   │       ├── GR.js
+│   │       ├── GT.js
+│   │       ├── GU.js
+│   │       ├── GW.js
+│   │       ├── GY.js
+│   │       ├── HK.js
+│   │       ├── HN.js
+│   │       ├── HR.js
+│   │       ├── HT.js
+│   │       ├── HU.js
+│   │       ├── ID.js
+│   │       ├── IE.js
+│   │       ├── IL.js
+│   │       ├── IM.js
+│   │       ├── IN.js
+│   │       ├── IQ.js
+│   │       ├── IR.js
+│   │       ├── IS.js
+│   │       ├── IT.js
+│   │       ├── JE.js
+│   │       ├── JM.js
+│   │       ├── JO.js
+│   │       ├── JP.js
+│   │       ├── KE.js
+│   │       ├── KG.js
+│   │       ├── KH.js
+│   │       ├── KI.js
+│   │       ├── KM.js
+│   │       ├── KN.js
+│   │       ├── KP.js
+│   │       ├── KR.js
+│   │       ├── KW.js
+│   │       ├── KY.js
+│   │       ├── KZ.js
+│   │       ├── LA.js
+│   │       ├── LB.js
+│   │       ├── LC.js
+│   │       ├── LI.js
+│   │       ├── LICENSE
+│   │       ├── LICENSE-MIT.txt
+│   │       ├── LICENSE.txt
+│   │       ├── LK.js
+│   │       ├── LR.js
+│   │       ├── LS.js
+│   │       ├── LT.js
+│   │       ├── LU.js
+│   │       ├── LV.js
+│   │       ├── LY.js
+│   │       ├── MA.js
+│   │       ├── MC.js
+│   │       ├── MD.js
+│   │       ├── ME.js
+│   │       ├── MG.js
+│   │       ├── MH.js
+│   │       ├── MK.js
+│   │       ├── ML.js
+│   │       ├── MM.js
+│   │       ├── MN.js
+│   │       ├── MO.js
+│   │       ├── MP.js
+│   │       ├── MQ.js
+│   │       ├── MR.js
+│   │       ├── MS.js
+│   │       ├── MT.js
+│   │       ├── MU.js
+│   │       ├── MV.js
+│   │       ├── MW.js
+│   │       ├── MX.js
+│   │       ├── MY.js
+│   │       ├── MZ.js
+│   │       ├── NA.js
+│   │       ├── NC.js
+│   │       ├── NE.js
+│   │       ├── NF.js
+│   │       ├── NG.js
+│   │       ├── NI.js
+│   │       ├── NL.js
+│   │       ├── NO.js
+│   │       ├── NP.js
+│   │       ├── NR.js
+│   │       ├── NU.js
+│   │       ├── NZ.js
+│   │       ├── OM.js
+│   │       ├── PA.js
+│   │       ├── PE.js
+│   │       ├── PF.js
+│   │       ├── PG.js
+│   │       ├── PH.js
+│   │       ├── PK.js
+│   │       ├── PL.js
+│   │       ├── PM.js
+│   │       ├── PN.js
+│   │       ├── PR.js
+│   │       ├── PS.js
+│   │       ├── PT.js
+│   │       ├── PW.js
+│   │       ├── PY.js
+│   │       ├── QA.js
+│   │       ├── RE.js
+│   │       ├── RO.js
+│   │       ├── RS.js
+│   │       ├── RU.js
+│   │       ├── RW.js
+│   │       ├── SA.js
+│   │       ├── SB.js
+│   │       ├── SC.js
+│   │       ├── SD.js
+│   │       ├── SE.js
+│   │       ├── SG.js
+│   │       ├── SH.js
+│   │       ├── SI.js
+│   │       ├── SK.js
+│   │       ├── SL.js
+│   │       ├── SM.js
+│   │       ├── SN.js
+│   │       ├── SO.js
+│   │       ├── SR.js
+│   │       ├── ST.js
+│   │       ├── SV.js
+│   │       ├── SY.js
+│   │       ├── SZ.js
+│   │       ├── TC.js
+│   │       ├── TD.js
+│   │       ├── TG.js
+│   │       ├── TH.js
+│   │       ├── TJ.js
+│   │       ├── TL.js
+│   │       ├── TM.js
+│   │       ├── TN.js
+│   │       ├── TO.js
+│   │       ├── TR.js
+│   │       ├── TT.js
+│   │       ├── TV.js
+│   │       ├── TW.js
+│   │       ├── TZ.js
+│   │       ├── ThirdPartyNoticeText.txt
+│   │       ├── UA.js
+│   │       ├── UG.js
+│   │       ├── US.js
+│   │       ├── UY.js
+│   │       ├── UZ.js
+│   │       ├── VA.js
+│   │       ├── VC.js
+│   │       ├── VE.js
+│   │       ├── VG.js
+│   │       ├── VI.js
+│   │       ├── VN.js
+│   │       ├── VU.js
+│   │       ├── WF.js
+│   │       ├── WS.js
+│   │       ├── YE.js
+│   │       ├── YT.js
+│   │       ├── ZA.js
+│   │       ├── ZM.js
+│   │       ├── ZW.js
+│   │       ├── _metadata.json
+│   │       ├── aac.js
+│   │       ├── abortcontroller.js
+│   │       ├── ac3-ec3.js
+│   │       ├── accelerometer.js
+│   │       ├── addeventlistener.js
+│   │       ├── addon.tsconfig.json
+│   │       ├── agents.js
+│   │       ├── alt-af.js
+│   │       ├── alt-an.js
+│   │       ├── alt-as.js
+│   │       ├── alt-eu.js
+│   │       ├── alt-na.js
+│   │       ├── alt-oc.js
+│   │       ├── alt-sa.js
+│   │       ├── alt-ww.js
+│   │       ├── alternate-stylesheet.js
+│   │       ├── ambient-light.js
+│   │       ├── apng.js
+│   │       ├── array-find-index.js
+│   │       ├── array-find.js
+│   │       ├── array-flat.js
+│   │       ├── array-includes.js
+│   │       ├── arrow-functions.js
+│   │       ├── asmjs.js
+│   │       ├── async-clipboard.js
+│   │       ├── async-functions.js
+│   │       ├── atob-btoa.js
+│   │       ├── audio-api.js
+│   │       ├── audio.js
+│   │       ├── audiotracks.js
+│   │       ├── audit-report.json
+│   │       ├── audit-result.txt
+│   │       ├── autofocus.js
+│   │       ├── auxclick.js
+│   │       ├── av1.js
+│   │       ├── avif.js
+│   │       ├── background-attachment.js
+│   │       ├── background-clip-text.js
+│   │       ├── background-img-opts.js
+│   │       ├── background-position-x-y.js
+│   │       ├── background-repeat-round-space.js
+│   │       ├── background-sync.js
+│   │       ├── battery-status.js
+│   │       ├── be.json
+│   │       ├── beacon.js
+│   │       ├── beforeafterprint.js
+│   │       ├── bigint.js
+│   │       ├── blobbuilder.js
+│   │       ├── bloburls.js
+│   │       ├── border-image.js
+│   │       ├── border-radius.js
+│   │       ├── bower.json
+│   │       ├── broadcastchannel.js
+│   │       ├── brotli.js
+│   │       ├── browserVersions.js
+│   │       ├── browsers.js
+│   │       ├── calc.js
+│   │       ├── canvas-blending.js
+│   │       ├── canvas-text.js
+│   │       ├── canvas.js
+│   │       ├── ch-unit.js
+│   │       ├── chacha20-poly1305.js
+│   │       ├── channel-messaging.js
+│   │       ├── childnode-remove.js
+│   │       ├── chromium-versions.json
+│   │       ├── classlist.js
+│   │       ├── client-hints-dpr-width-viewport.js
+│   │       ├── clipboard.js
+│   │       ├── colr-v1.js
+│   │       ├── colr.js
+│   │       ├── comparedocumentposition.js
+│   │       ├── console-basic.js
+│   │       ├── console-time.js
+│   │       ├── const.js
+│   │       ├── constraint-validation.js
+│   │       ├── contenteditable.js
+│   │       ├── contentsecuritypolicy.js
+│   │       ├── contentsecuritypolicy2.js
+│   │       ├── cookie-store-api.js
+│   │       ├── core.json
+│   │       ├── corejs2-built-ins.js
+│   │       ├── corejs2-built-ins.json
+│   │       ├── corejs3-shipped-proposals.js
+│   │       ├── corejs3-shipped-proposals.json
+│   │       ├── cors.js
+│   │       ├── createimagebitmap.js
+│   │       ├── credential-management.js
+│   │       ├── cryptography.js
+│   │       ├── cs.json
+│   │       ├── css-all.js
+│   │       ├── css-anchor-positioning.js
+│   │       ├── css-animation.js
+│   │       ├── css-any-link.js
+│   │       ├── css-appearance.js
+│   │       ├── css-at-counter-style.js
+│   │       ├── css-autofill.js
+│   │       ├── css-backdrop-filter.js
+│   │       ├── css-background-offsets.js
+│   │       ├── css-backgroundblendmode.js
+│   │       ├── css-boxdecorationbreak.js
+│   │       ├── css-boxshadow.js
+│   │       ├── css-canvas.js
+│   │       ├── css-caret-color.js
+│   │       ├── css-cascade-layers.js
+│   │       ├── css-cascade-scope.js
+│   │       ├── css-case-insensitive.js
+│   │       ├── css-clip-path.js
+│   │       ├── css-color-adjust.js
+│   │       ├── css-color-function.js
+│   │       ├── css-conic-gradients.js
+│   │       ├── css-container-queries-style.js
+│   │       ├── css-container-queries.js
+│   │       ├── css-container-query-units.js
+│   │       ├── css-containment.js
+│   │       ├── css-content-visibility.js
+│   │       ├── css-counters.js
+│   │       ├── css-crisp-edges.js
+│   │       ├── css-cross-fade.js
+│   │       ├── css-default-pseudo.js
+│   │       ├── css-descendant-gtgt.js
+│   │       ├── css-deviceadaptation.js
+│   │       ├── css-dir-pseudo.js
+│   │       ├── css-display-contents.js
+│   │       ├── css-element-function.js
+│   │       ├── css-env-function.js
+│   │       ├── css-exclusions.js
+│   │       ├── css-featurequeries.js
+│   │       ├── css-file-selector-button.js
+│   │       ├── css-filter-function.js
+│   │       ├── css-filters.js
+│   │       ├── css-first-letter.js
+│   │       ├── css-first-line.js
+│   │       ├── css-fixed.js
+│   │       ├── css-focus-visible.js
+│   │       ├── css-focus-within.js
+│   │       ├── css-font-palette.js
+│   │       ├── css-font-rendering-controls.js
+│   │       ├── css-font-stretch.js
+│   │       ├── css-gencontent.js
+│   │       ├── css-gradients.js
+│   │       ├── css-grid-animation.js
+│   │       ├── css-grid.js
+│   │       ├── css-hanging-punctuation.js
+│   │       ├── css-has.js
+│   │       ├── css-hyphens.js
+│   │       ├── css-image-orientation.js
+│   │       ├── css-image-set.js
+│   │       ├── css-in-out-of-range.js
+│   │       ├── css-indeterminate-pseudo.js
+│   │       ├── css-initial-letter.js
+│   │       ├── css-initial-value.js
+│   │       ├── css-lch-lab.js
+│   │       ├── css-letter-spacing.js
+│   │       ├── css-line-clamp.js
+│   │       ├── css-logical-props.js
+│   │       ├── css-marker-pseudo.js
+│   │       ├── css-masks.js
+│   │       ├── css-matches-pseudo.js
+│   │       ├── css-math-functions.js
+│   │       ├── css-media-interaction.js
+│   │       ├── css-media-range-syntax.js
+│   │       ├── css-media-resolution.js
+│   │       ├── css-media-scripting.js
+│   │       ├── css-mediaqueries.js
+│   │       ├── css-mixblendmode.js
+│   │       ├── css-module-scripts.js
+│   │       ├── css-motion-paths.js
+│   │       ├── css-namespaces.js
+│   │       ├── css-nesting.js
+│   │       ├── css-not-sel-list.js
+│   │       ├── css-nth-child-of.js
+│   │       ├── css-opacity.js
+│   │       ├── css-optional-pseudo.js
+│   │       ├── css-overflow-anchor.js
+│   │       ├── css-overflow-overlay.js
+│   │       ├── css-overflow.js
+│   │       ├── css-overscroll-behavior.js
+│   │       ├── css-page-break.js
+│   │       ├── css-paged-media.js
+│   │       ├── css-paint-api.js
+│   │       ├── css-placeholder-shown.js
+│   │       ├── css-placeholder.js
+│   │       ├── css-print-color-adjust.js
+│   │       ├── css-read-only-write.js
+│   │       ├── css-rebeccapurple.js
+│   │       ├── css-reflections.js
+│   │       ├── css-regions.js
+│   │       ├── css-relative-colors.js
+│   │       ├── css-repeating-gradients.js
+│   │       ├── css-resize.js
+│   │       ├── css-revert-value.js
+│   │       ├── css-rrggbbaa.js
+│   │       ├── css-scroll-behavior.js
+│   │       ├── css-scrollbar.js
+│   │       ├── css-sel2.js
+│   │       ├── css-sel3.js
+│   │       ├── css-selection.js
+│   │       ├── css-shapes.js
+│   │       ├── css-snappoints.js
+│   │       ├── css-sticky.js
+│   │       ├── css-subgrid.js
+│   │       ├── css-supports-api.js
+│   │       ├── css-table.js
+│   │       ├── css-text-align-last.js
+│   │       ├── css-text-box-trim.js
+│   │       ├── css-text-indent.js
+│   │       ├── css-text-justify.js
+│   │       ├── css-text-orientation.js
+│   │       ├── css-text-spacing.js
+│   │       ├── css-text-wrap-balance.js
+│   │       ├── css-textshadow.js
+│   │       ├── css-touch-action.js
+│   │       ├── css-transitions.js
+│   │       ├── css-unicode-bidi.js
+│   │       ├── css-unset-value.js
+│   │       ├── css-variables.js
+│   │       ├── css-when-else.js
+│   │       ├── css-widows-orphans.js
+│   │       ├── css-width-stretch.js
+│   │       ├── css-writing-mode.js
+│   │       ├── css-zoom.js
+│   │       ├── css3-attr.js
+│   │       ├── css3-boxsizing.js
+│   │       ├── css3-colors.js
+│   │       ├── css3-cursors-grab.js
+│   │       ├── css3-cursors-newer.js
+│   │       ├── css3-cursors.js
+│   │       ├── css3-tabsize.js
+│   │       ├── currentcolor.js
+│   │       ├── custom-elements.js
+│   │       ├── custom-elementsv1.js
+│   │       ├── customevent.js
+│   │       ├── data.json
+│   │       ├── datalist.js
+│   │       ├── dataset.js
+│   │       ├── datauri.js
+│   │       ├── date-tolocaledatestring.js
+│   │       ├── de.json
+│   │       ├── declarative-shadow-dom.js
+│   │       ├── decorators.js
+│   │       ├── details.js
+│   │       ├── deviceorientation.js
+│   │       ├── devicepixelratio.js
+│   │       ├── diagnosticMessages.generated.json
+│   │       ├── dialog.js
+│   │       ├── dispatchevent.js
+│   │       ├── dnssec.js
+│   │       ├── do-not-track.js
+│   │       ├── document-currentscript.js
+│   │       ├── document-evaluate-xpath.js
+│   │       ├── document-execcommand.js
+│   │       ├── document-policy.js
+│   │       ├── document-scrollingelement.js
+│   │       ├── documenthead.js
+│   │       ├── dom-manip-convenience.js
+│   │       ├── dom-range.js
+│   │       ├── domcontentloaded.js
+│   │       ├── dommatrix.js
+│   │       ├── download.js
+│   │       ├── dragndrop.js
+│   │       ├── element-closest.js
+│   │       ├── element-from-point.js
+│   │       ├── element-scroll-methods.js
+│   │       ├── eme.js
+│   │       ├── en.json
+│   │       ├── envs.json
+│   │       ├── eot.js
+│   │       ├── es.json
+│   │       ├── es5.js
+│   │       ├── es6-class.js
+│   │       ├── es6-generators.js
+│   │       ├── es6-module-dynamic-import.js
+│   │       ├── es6-module.js
+│   │       ├── es6-number.js
+│   │       ├── es6-string-includes.js
+│   │       ├── es6.js
+│   │       ├── eventsource.js
+│   │       ├── extended-system-fonts.js
+│   │       ├── feature-policy.js
+│   │       ├── features.js
+│   │       ├── fetch.js
+│   │       ├── fi.json
+│   │       ├── fieldset-disabled.js
+│   │       ├── fileapi.js
+│   │       ├── filereader.js
+│   │       ├── filereadersync.js
+│   │       ├── filesystem.js
+│   │       ├── flac.js
+│   │       ├── flexbox-gap.js
+│   │       ├── flexbox.js
+│   │       ├── flow-root.js
+│   │       ├── focusin-focusout-events.js
+│   │       ├── font-family-system-ui.js
+│   │       ├── font-feature.js
+│   │       ├── font-kerning.js
+│   │       ├── font-loading.js
+│   │       ├── font-size-adjust.js
+│   │       ├── font-smooth.js
+│   │       ├── font-unicode-range.js
+│   │       ├── font-variant-alternates.js
+│   │       ├── font-variant-numeric.js
+│   │       ├── fontface.js
+│   │       ├── form-attribute.js
+│   │       ├── form-submit-attributes.js
+│   │       ├── form-validation.js
+│   │       ├── formatters-meta.json
+│   │       ├── forms.js
+│   │       ├── fr.json
+│   │       ├── full-chromium-versions.json
+│   │       ├── full-versions.json
+│   │       ├── fullscreen.js
+│   │       ├── gamepad.js
+│   │       ├── geolocation.js
+│   │       ├── getboundingclientrect.js
+│   │       ├── getcomputedstyle.js
+│   │       ├── getelementsbyclassname.js
+│   │       ├── getrandomvalues.js
+│   │       ├── globals.json
+│   │       ├── gyroscope.js
+│   │       ├── hardwareconcurrency.js
+│   │       ├── hashchange.js
+│   │       ├── heif.js
+│   │       ├── hevc.js
+│   │       ├── hi.json
+│   │       ├── hidden.js
+│   │       ├── high-resolution-time.js
+│   │       ├── history.js
+│   │       ├── html-media-capture.js
+│   │       ├── html5semantic.js
+│   │       ├── http-live-streaming.js
+│   │       ├── http2.js
+│   │       ├── http3.js
+│   │       ├── hu.json
+│   │       ├── id.json
+│   │       ├── iframe-sandbox.js
+│   │       ├── iframe-seamless.js
+│   │       ├── iframe-srcdoc.js
+│   │       ├── imagecapture.js
+│   │       ├── ime.js
+│   │       ├── img-naturalwidth-naturalheight.js
+│   │       ├── import-maps.js
+│   │       ├── imports.js
+│   │       ├── indeterminate-checkbox.js
+│   │       ├── index.d.ts
+│   │       ├── index.js
+│   │       ├── indexeddb.js
+│   │       ├── indexeddb2.js
+│   │       ├── inline-block.js
+│   │       ├── innertext.js
+│   │       ├── input-autocomplete-onoff.js
+│   │       ├── input-color.js
+│   │       ├── input-datetime.js
+│   │       ├── input-email-tel-url.js
+│   │       ├── input-event.js
+│   │       ├── input-file-accept.js
+│   │       ├── input-file-directory.js
+│   │       ├── input-file-multiple.js
+│   │       ├── input-inputmode.js
+│   │       ├── input-minlength.js
+│   │       ├── input-number.js
+│   │       ├── input-pattern.js
+│   │       ├── input-placeholder.js
+│   │       ├── input-range.js
+│   │       ├── input-search.js
+│   │       ├── input-selection.js
+│   │       ├── insert-adjacent.js
+│   │       ├── insertadjacenthtml.js
+│   │       ├── internationalization.js
+│   │       ├── intersectionobserver-v2.js
+│   │       ├── intersectionobserver.js
+│   │       ├── intl-pluralrules.js
+│   │       ├── intrinsic-width.js
+│   │       ├── it.json
+│   │       ├── ja.json
+│   │       ├── jpeg2000.js
+│   │       ├── jpegxl.js
+│   │       ├── jpegxr.js
+│   │       ├── js-regexp-lookbehind.js
+│   │       ├── json-schema-draft-04.json
+│   │       ├── json-schema-draft-06.json
+│   │       ├── json-schema-draft-07.json
+│   │       ├── json-schema-secure.json
+│   │       ├── json.js
+│   │       ├── justify-content-space-evenly.js
+│   │       ├── kerning-pairs-ligatures.js
+│   │       ├── keyboardevent-charcode.js
+│   │       ├── keyboardevent-code.js
+│   │       ├── keyboardevent-getmodifierstate.js
+│   │       ├── keyboardevent-key.js
+│   │       ├── keyboardevent-location.js
+│   │       ├── keyboardevent-which.js
+│   │       ├── ko.json
+│   │       ├── lazyload.js
+│   │       ├── let.js
+│   │       ├── link-icon-png.js
+│   │       ├── link-icon-svg.js
+│   │       ├── link-rel-dns-prefetch.js
+│   │       ├── link-rel-modulepreload.js
+│   │       ├── link-rel-preconnect.js
+│   │       ├── link-rel-prefetch.js
+│   │       ├── link-rel-preload.js
+│   │       ├── link-rel-prerender.js
+│   │       ├── loading-lazy-attr.js
+│   │       ├── localecompare.js
+│   │       ├── magnetometer.js
+│   │       ├── matchesselector.js
+│   │       ├── matchmedia.js
+│   │       ├── mathml.js
+│   │       ├── maxlength.js
+│   │       ├── mdn-css-backdrop-pseudo-element.js
+│   │       ├── mdn-css-unicode-bidi-isolate-override.js
+│   │       ├── mdn-css-unicode-bidi-isolate.js
+│   │       ├── mdn-css-unicode-bidi-plaintext.js
+│   │       ├── mdn-text-decoration-color.js
+│   │       ├── mdn-text-decoration-line.js
+│   │       ├── mdn-text-decoration-shorthand.js
+│   │       ├── mdn-text-decoration-style.js
+│   │       ├── media-fragments.js
+│   │       ├── mediacapture-fromelement.js
+│   │       ├── mediarecorder.js
+│   │       ├── mediasource.js
+│   │       ├── menu.js
+│   │       ├── meta-theme-color.js
+│   │       ├── meter.js
+│   │       ├── midi.js
+│   │       ├── minmaxwh.js
+│   │       ├── mp3.js
+│   │       ├── mpeg-dash.js
+│   │       ├── mpeg4.js
+│   │       ├── multibackgrounds.js
+│   │       ├── multicolumn.js
+│   │       ├── mutation-events.js
+│   │       ├── mutationobserver.js
+│   │       ├── namevalue-storage.js
+│   │       ├── native-filesystem-api.js
+│   │       ├── native-modules.js
+│   │       ├── native-modules.json
+│   │       ├── nav-timing.js
+│   │       ├── nb.json
+│   │       ├── netinfo.js
+│   │       ├── nl.json
+│   │       ├── nn.json
+│   │       ├── notifications.js
+│   │       ├── object-entries.js
+│   │       ├── object-fit.js
+│   │       ├── object-observe.js
+│   │       ├── object-values.js
+│   │       ├── objectrtc.js
+│   │       ├── offline-apps.js
+│   │       ├── offscreencanvas.js
+│   │       ├── ogg-vorbis.js
+│   │       ├── ogv.js
+│   │       ├── ol-reversed.js
+│   │       ├── once-event-listener.js
+│   │       ├── online-status.js
+│   │       ├── opus.js
+│   │       ├── orientation-sensor.js
+│   │       ├── outline.js
+│   │       ├── overlapping-plugins.js
+│   │       ├── overlapping-plugins.json
+│   │       ├── package-lock.json
+│   │       ├── package.json
+│   │       ├── pad-start-end.js
+│   │       ├── page-transition-events.js
+│   │       ├── pagevisibility.js
+│   │       ├── passive-event-listener.js
+│   │       ├── passkeys.js
+│   │       ├── passwordrules.js
+│   │       ├── path2d.js
+│   │       ├── payment-request.js
+│   │       ├── pdf-viewer.js
+│   │       ├── permissions-api.js
+│   │       ├── permissions-policy.js
+│   │       ├── picture-in-picture.js
+│   │       ├── picture.js
+│   │       ├── ping.js
+│   │       ├── pirate.json
+│   │       ├── pl.json
+│   │       ├── plugin-bugfixes.js
+│   │       ├── plugin-bugfixes.json
+│   │       ├── plugins.js
+│   │       ├── plugins.json
+│   │       ├── png-alpha.js
+│   │       ├── pointer-events.js
+│   │       ├── pointer.js
+│   │       ├── pointerlock.js
+│   │       ├── portals.js
+│   │       ├── prefers-color-scheme.js
+│   │       ├── prefers-reduced-motion.js
+│   │       ├── progress.js
+│   │       ├── project_analysis_refinement_report.txt
+│   │       ├── promise-finally.js
+│   │       ├── promises.js
+│   │       ├── proximity.js
+│   │       ├── proxy.js
+│   │       ├── pt.json
+│   │       ├── pt_BR.json
+│   │       ├── publickeypinning.js
+│   │       ├── push-api.js
+│   │       ├── queryselector.js
+│   │       ├── readonly-attr.js
+│   │       ├── referrer-policy.js
+│   │       ├── refinement_report.txt
+│   │       ├── registerprotocolhandler.js
+│   │       ├── rel-noopener.js
+│   │       ├── rel-noreferrer.js
+│   │       ├── release-schedule.json
+│   │       ├── rellist.js
+│   │       ├── rem.js
+│   │       ├── renovate.json
+│   │       ├── replacements.json
+│   │       ├── requestanimationframe.js
+│   │       ├── requestidlecallback.js
+│   │       ├── resizeobserver.js
+│   │       ├── resource-timing.js
+│   │       ├── rest-parameters.js
+│   │       ├── rtcpeerconnection.js
+│   │       ├── ru.json
+│   │       ├── ruby.js
+│   │       ├── rule-type-list.json
+│   │       ├── run-in.js
+│   │       ├── same-site-cookie-attribute.js
+│   │       ├── screen-orientation.js
+│   │       ├── script-async.js
+│   │       ├── script-defer.js
+│   │       ├── scrollintoview.js
+│   │       ├── scrollintoviewifneeded.js
+│   │       ├── sdch.js
+│   │       ├── selection-api.js
+│   │       ├── selectlist.js
+│   │       ├── server-timing.js
+│   │       ├── serviceworkers.js
+│   │       ├── setimmediate.js
+│   │       ├── settings.json
+│   │       ├── shadowdom.js
+│   │       ├── shadowdomv1.js
+│   │       ├── sharedarraybuffer.js
+│   │       ├── sharedworkers.js
+│   │       ├── sni.js
+│   │       ├── spdy.js
+│   │       ├── speech-recognition.js
+│   │       ├── speech-synthesis.js
+│   │       ├── spellcheck-attribute.js
+│   │       ├── sql-storage.js
+│   │       ├── srcset.js
+│   │       ├── stream.js
+│   │       ├── streams.js
+│   │       ├── stricttransportsecurity.js
+│   │       ├── style-scoped.js
+│   │       ├── subresource-bundling.js
+│   │       ├── subresource-integrity.js
+│   │       ├── svg-css.js
+│   │       ├── svg-filters.js
+│   │       ├── svg-fonts.js
+│   │       ├── svg-fragment.js
+│   │       ├── svg-html.js
+│   │       ├── svg-html5.js
+│   │       ├── svg-img.js
+│   │       ├── svg-smil.js
+│   │       ├── svg.js
+│   │       ├── sxg.js
+│   │       ├── tabindex-attr.js
+│   │       ├── template-literals.js
+│   │       ├── template.js
+│   │       ├── temporal.js
+│   │       ├── text-decoration.js
+│   │       ├── text-emphasis.js
+│   │       ├── text-overflow.js
+│   │       ├── text-size-adjust.js
+│   │       ├── text-stroke.js
+│   │       ├── textcontent.js
+│   │       ├── textencoder.js
+│   │       ├── th.json
+│   │       ├── tls1-1.js
+│   │       ├── tls1-2.js
+│   │       ├── tls1-3.js
+│   │       ├── touch.js
+│   │       ├── tr.json
+│   │       ├── transforms2d.js
+│   │       ├── transforms3d.js
+│   │       ├── tree3.txt
+│   │       ├── trusted-types.js
+│   │       ├── tsconfig.json
+│   │       ├── tsconfig.node.json
+│   │       ├── ttf.js
+│   │       ├── typedarrays.js
+│   │       ├── typesMap.json
+│   │       ├── u2f.js
+│   │       ├── uk_UA.json
+│   │       ├── unhandledrejection.js
+│   │       ├── upgradeinsecurerequests.js
+│   │       ├── url-scroll-to-text-fragment.js
+│   │       ├── url.js
+│   │       ├── urlsearchparams.js
+│   │       ├── usage.txt
+│   │       ├── use-strict.js
+│   │       ├── user-select-none.js
+│   │       ├── user-timing.js
+│   │       ├── uz.json
+│   │       ├── variable-fonts.js
+│   │       ├── vector-effect.js
+│   │       ├── vendors.json
+│   │       ├── versions.json
+│   │       ├── vibration.js
+│   │       ├── video.js
+│   │       ├── videotracks.js
+│   │       ├── view-transitions.js
+│   │       ├── viewport-unit-variants.js
+│   │       ├── viewport-units.js
+│   │       ├── wai-aria.js
+│   │       ├── wake-lock.js
+│   │       ├── wasm-bigint.js
+│   │       ├── wasm-bulk-memory.js
+│   │       ├── wasm-extended-const.js
+│   │       ├── wasm-gc.js
+│   │       ├── wasm-multi-memory.js
+│   │       ├── wasm-multi-value.js
+│   │       ├── wasm-mutable-globals.js
+│   │       ├── wasm-nontrapping-fptoint.js
+│   │       ├── wasm-reference-types.js
+│   │       ├── wasm-relaxed-simd.js
+│   │       ├── wasm-signext.js
+│   │       ├── wasm-simd.js
+│   │       ├── wasm-tail-calls.js
+│   │       ├── wasm-threads.js
+│   │       ├── wasm.js
+│   │       ├── wav.js
+│   │       ├── wbr-element.js
+│   │       ├── web-animation.js
+│   │       ├── web-app-manifest.js
+│   │       ├── web-bluetooth.js
+│   │       ├── web-serial.js
+│   │       ├── web-share.js
+│   │       ├── webauthn.js
+│   │       ├── webcodecs.js
+│   │       ├── webgl.js
+│   │       ├── webgl2.js
+│   │       ├── webgpu.js
+│   │       ├── webhid.js
+│   │       ├── webkit-user-drag.js
+│   │       ├── webm.js
+│   │       ├── webnfc.js
+│   │       ├── webp.js
+│   │       ├── websockets.js
+│   │       ├── webtransport.js
+│   │       ├── webusb.js
+│   │       ├── webvr.js
+│   │       ├── webvtt.js
+│   │       ├── webworkers.js
+│   │       ├── webxr.js
+│   │       ├── will-change.js
+│   │       ├── woff.js
+│   │       ├── woff2.js
+│   │       ├── word-break.js
+│   │       ├── wordwrap.js
+│   │       ├── x-doc-messaging.js
+│   │       ├── x-frame-options.js
+│   │       ├── xhr2.js
+│   │       ├── xhtml.js
+│   │       ├── xhtmlsmil.js
+│   │       ├── xml-serializer.js
+│   │       ├── zh_CN.json
+│   │       ├── zh_TW.json
+│   │       └── zstd.js
+│   └── scripts
+│       ├── 08ddfcf53c02e82d7eee2e57c38e5672ef89f6
+│       ├── 0b7eb81e25e2eb75c9c7890239cbd78a409d38
+│       ├── 0f5c7b29f1ad14351f2682220c219c03718d26
+│       ├── 113c9b7234304df1f5950deeaf6adc4108ef17
+│       ├── 142db4dd5653cb27fee8f19f97fd31d4bfd440
+│       ├── 1ad63da579c512ed1b82f898a8bbbf5ec5f92a
+│       ├── 1f097d5a87e51946469e6440c654b01787bbfc
+│       ├── 22b078e3d3cdfdcebcc90839fba018f978d3a8
+│       ├── 248e0f63a141d14fb661cb22f331ddbfeabb1f
+│       ├── 289c4fa00c4ea469644810a489638f4f47134e
+│       ├── 2a5bef1b46ff243afd5fa7b16f04d09e788348
+│       ├── 2bd783064cc3d76a6e1f30bda696778ed1178b
+│       ├── 3289b17590865b49c7cd0b9eb6c871a886e7df
+│       ├── 33ed9ddfc2ddde802f40a410b242db1982eddc
+│       ├── 3629e647f5ddf82548912e337bea9826b434af
+│       ├── 3990abdd41cdee046b541158f637af9a53050a
+│       ├── 3aa44a33aaba5c30d00b733fd2c032e893af74
+│       ├── 3fd990ed7ae64a3c5bd5b4130e52bb034713d4
+│       ├── 4251f1b97015afda2c28612ea4c9997335187b
+│       ├── 4327ee5dbff5225d0ac877d4a08cb804222279
+│       ├── 440fe8e67a7ac245d77e7afbfbe78c8d237795
+│       ├── 4d303c0691fc7c16e7ed255f38208a70568c39
+│       ├── 53325b9c24d8adbc0ab165b6fd1c718ec58766
+│       ├── 55f09d1db8a15e05e85849947629a1492c59e9
+│       ├── 574db4a28987b8a0a1634f747359f00dff634c
+│       ├── 580d0e30addd0076a7ceb7d1ade610664dee44
+│       ├── 5b4c04da797ab6bdce40ca8fef526153a65e98
+│       ├── 5c440186095da2f66c8532ad6422d718639b3e
+│       ├── 5d751d1b8395baecd46ecee8f6903ac616a943
+│       ├── 660d74f4c91b976728bbbda3ff7fed4277e18f
+│       ├── 670cc491727eef1cbd6c1bcdd2eea9c4ccc5c9
+│       ├── 6eaf79fb2ee047faf6246051498ef2a1f8aaf9
+│       ├── 6ec924400271c9a3bb3cf4ac1eb05e1c2919ea
+│       ├── 7768fb6089097fa9ccf2e89cc0ce70ff29f2cd
+│       ├── 789820e89a63c362c003fbdd187853e3a56f0c
+│       ├── 78f5bedfabaf46c24d49814f7952a652ebb440
+│       ├── 7a3e9e5dae3c714d668780b077c90a65264b57
+│       ├── 7a85423e6129266dc883f5980550259bc1baa6
+│       ├── 7d3922a89bde53f06aabf77840c39c0a5d8c6c
+│       ├── 7f930702e3c94b81450317c4f165c2eff71f5a
+│       ├── 8297e4e84d45a40608fea7617d7bef82e5bf06
+│       ├── 840138aed144da80ed8485d08d7db829687efa
+│       ├── 87495215f65be2dd3964b07d9c79c8ecccbbc8
+│       ├── 935635b8eda2b71931c7c8bada7085455ae666
+│       ├── 94c7f1ac9b47fef8459dc07fe02fd6fc5360b5
+│       ├── 9825ed155df846ac316b76e833ce4bda9647a1
+│       ├── 9dba642d506576d0b9200b665de3b5cdb92ab8
+│       ├── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│       ├── AST.d.ts
+│       ├── AST.d.ts.map
+│       ├── AST.js
+│       ├── AST.js.map
+│       ├── App.tsx
+│       ├── ArrayBracketsParslet.d.ts
+│       ├── ArrayBracketsParslet.ts
+│       ├── ArrayInt.d.ts
+│       ├── ArrayInt.js
+│       ├── ArrowFunctionParslet.d.ts
+│       ├── ArrowFunctionParslet.ts
+│       ├── AsymmetricMatcher.js
+│       ├── AwaitValue.js
+│       ├── AwaitValue.js.map
+│       ├── BaseReporter.js
+│       ├── BaseWatchPlugin.js
+│       ├── BaseWorkerPool.js
+│       ├── BlockScope.d.ts
+│       ├── BlockScope.d.ts.map
+│       ├── BlockScope.js
+│       ├── BlockScope.js.map
+│       ├── BufferedConsole.js
+│       ├── COMMIT_EDITMSG
+│       ├── CatchClauseDefinition.d.ts
+│       ├── CatchClauseDefinition.d.ts.map
+│       ├── CatchClauseDefinition.js
+│       ├── CatchClauseDefinition.js.map
+│       ├── CatchScope.d.ts
+│       ├── CatchScope.d.ts.map
+│       ├── CatchScope.js
+│       ├── CatchScope.js.map
+│       ├── ChangeLog
+│       ├── ChildProcessWorker.js
+│       ├── Circus.js
+│       ├── ClassFieldInitializerScope.d.ts
+│       ├── ClassFieldInitializerScope.d.ts.map
+│       ├── ClassFieldInitializerScope.js
+│       ├── ClassFieldInitializerScope.js.map
+│       ├── ClassNameDefinition.d.ts
+│       ├── ClassNameDefinition.d.ts.map
+│       ├── ClassNameDefinition.js
+│       ├── ClassNameDefinition.js.map
+│       ├── ClassScope.d.ts
+│       ├── ClassScope.d.ts.map
+│       ├── ClassScope.js
+│       ├── ClassScope.js.map
+│       ├── ClassStaticBlockScope.d.ts
+│       ├── ClassStaticBlockScope.d.ts.map
+│       ├── ClassStaticBlockScope.js
+│       ├── ClassStaticBlockScope.js.map
+│       ├── ClassVisitor.d.ts
+│       ├── ClassVisitor.d.ts.map
+│       ├── ClassVisitor.js
+│       ├── ClassVisitor.js.map
+│       ├── ConditionalTypeScope.d.ts
+│       ├── ConditionalTypeScope.d.ts.map
+│       ├── ConditionalTypeScope.js
+│       ├── ConditionalTypeScope.js.map
+│       ├── Config.d.ts
+│       ├── Config.d.ts.map
+│       ├── Config.js
+│       ├── Config.js.map
+│       ├── CoverageReporter.js
+│       ├── CoverageWorker.js
+│       ├── CustomConsole.js
+│       ├── DOMCollection.js
+│       ├── DOMElement.js
+│       ├── DefaultReporter.js
+│       ├── Definition.d.ts
+│       ├── Definition.d.ts.map
+│       ├── Definition.js.map
+│       ├── DefinitionBase.d.ts
+│       ├── DefinitionBase.d.ts.map
+│       ├── DefinitionBase.js
+│       ├── DefinitionBase.js.map
+│       ├── DefinitionType.d.ts
+│       ├── DefinitionType.d.ts.map
+│       ├── DefinitionType.js
+│       ├── DefinitionType.js.map
+│       ├── Descriptions.js
+│       ├── Distribution.d.ts
+│       ├── Distribution.js
+│       ├── DoublyLinkedList.js
+│       ├── ESLint.d.ts
+│       ├── ESLint.d.ts.map
+│       ├── ESLint.js
+│       ├── ESLint.js.map
+│       ├── ESLintScopeVariable.d.ts
+│       ├── ESLintScopeVariable.d.ts.map
+│       ├── ESLintScopeVariable.js
+│       ├── ESLintScopeVariable.js.map
+│       ├── ESLintShared.d.ts
+│       ├── ESLintShared.d.ts.map
+│       ├── ESLintShared.js
+│       ├── ESLintShared.js.map
+│       ├── ErrorWithStack.js
+│       ├── ExpiringCache.d.ts
+│       ├── ExpiringCache.d.ts.map
+│       ├── ExpiringCache.js
+│       ├── ExpiringCache.js.map
+│       ├── ExportVisitor.d.ts
+│       ├── ExportVisitor.d.ts.map
+│       ├── ExportVisitor.js
+│       ├── ExportVisitor.js.map
+│       ├── FETCH_HEAD
+│       ├── FSEventsWatcher.js
+│       ├── FUNDING.yml
+│       ├── FailedTestsCache.js
+│       ├── FailedTestsInteractive.js
+│       ├── FailedTestsInteractiveMode.js
+│       ├── Farm.js
+│       ├── FifoQueue.js
+│       ├── FileScanner.tsx
+│       ├── FlatESLint.d.ts
+│       ├── FlatESLint.d.ts.map
+│       ├── FlatESLint.js
+│       ├── FlatESLint.js.map
+│       ├── ForScope.d.ts
+│       ├── ForScope.d.ts.map
+│       ├── ForScope.js
+│       ├── ForScope.js.map
+│       ├── Func.js
+│       ├── FunctionExpressionNameScope.d.ts
+│       ├── FunctionExpressionNameScope.d.ts.map
+│       ├── FunctionExpressionNameScope.js
+│       ├── FunctionExpressionNameScope.js.map
+│       ├── FunctionNameDefinition.d.ts
+│       ├── FunctionNameDefinition.d.ts.map
+│       ├── FunctionNameDefinition.js
+│       ├── FunctionNameDefinition.js.map
+│       ├── FunctionParslet.d.ts
+│       ├── FunctionParslet.ts
+│       ├── FunctionScope.d.ts
+│       ├── FunctionScope.d.ts.map
+│       ├── FunctionScope.js
+│       ├── FunctionScope.js.map
+│       ├── FunctionTypeScope.d.ts
+│       ├── FunctionTypeScope.d.ts.map
+│       ├── FunctionTypeScope.js
+│       ├── FunctionTypeScope.js.map
+│       ├── GenericParslet.d.ts
+│       ├── GenericParslet.ts
+│       ├── GitHubActionsReporter.js
+│       ├── Global.js
+│       ├── GlobalScope.d.ts
+│       ├── GlobalScope.d.ts.map
+│       ├── GlobalScope.js
+│       ├── GlobalScope.js.map
+│       ├── Grammar.d.ts
+│       ├── Grammar.ts
+│       ├── Graphemer.d.ts
+│       ├── Graphemer.d.ts.map
+│       ├── Graphemer.js
+│       ├── GraphemerHelper.d.ts
+│       ├── GraphemerHelper.d.ts.map
+│       ├── GraphemerHelper.js
+│       ├── GraphemerIterator.d.ts
+│       ├── GraphemerIterator.d.ts.map
+│       ├── GraphemerIterator.js
+│       ├── HEAD
+│       ├── HasteFS.js
+│       ├── Header.tsx
+│       ├── Heap.js
+│       ├── ID.d.ts
+│       ├── ID.d.ts.map
+│       ├── ID.js
+│       ├── ID.js.map
+│       ├── Immutable.js
+│       ├── ImplicitGlobalVariableDefinition.d.ts
+│       ├── ImplicitGlobalVariableDefinition.d.ts.map
+│       ├── ImplicitGlobalVariableDefinition.js
+│       ├── ImplicitGlobalVariableDefinition.js.map
+│       ├── ImplicitLibVariable.d.ts
+│       ├── ImplicitLibVariable.d.ts.map
+│       ├── ImplicitLibVariable.js
+│       ├── ImplicitLibVariable.js.map
+│       ├── ImportBindingDefinition.d.ts
+│       ├── ImportBindingDefinition.d.ts.map
+│       ├── ImportBindingDefinition.js
+│       ├── ImportBindingDefinition.js.map
+│       ├── ImportParslet.d.ts
+│       ├── ImportParslet.ts
+│       ├── ImportVisitor.d.ts
+│       ├── ImportVisitor.d.ts.map
+│       ├── ImportVisitor.js
+│       ├── ImportVisitor.js.map
+│       ├── InferTypesFromRule.d.ts
+│       ├── InferTypesFromRule.d.ts.map
+│       ├── InferTypesFromRule.js
+│       ├── InferTypesFromRule.js.map
+│       ├── InlineSnapshots.js
+│       ├── Int64.js
+│       ├── IntermediateResult.d.ts
+│       ├── IntermediateResult.ts
+│       ├── IntersectionParslet.d.ts
+│       ├── IntersectionParslet.ts
+│       ├── JestHooks.js
+│       ├── KeyOfParslet.d.ts
+│       ├── KeyOfParslet.ts
+│       ├── KeyValueParslet.d.ts
+│       ├── KeyValueParslet.ts
+│       ├── LICENSE
+│       ├── LICENSE-MIT
+│       ├── LICENSE.BSD
+│       ├── LegacyESLint.d.ts
+│       ├── LegacyESLint.d.ts.map
+│       ├── LegacyESLint.js
+│       ├── LegacyESLint.js.map
+│       ├── Lexer.ts
+│       ├── LinearCongruential.d.ts
+│       ├── LinearCongruential.js
+│       ├── Linter.d.ts
+│       ├── Linter.d.ts.map
+│       ├── Linter.js
+│       ├── Linter.js.map
+│       ├── List.js
+│       ├── Makefile
+│       ├── MappedTypeScope.d.ts
+│       ├── MappedTypeScope.d.ts.map
+│       ├── MappedTypeScope.js
+│       ├── MappedTypeScope.js.map
+│       ├── MersenneTwister.d.ts
+│       ├── MersenneTwister.js
+│       ├── ModuleMap.js
+│       ├── ModuleNotFoundError.js
+│       ├── ModuleScope.d.ts
+│       ├── ModuleScope.d.ts.map
+│       ├── ModuleScope.js
+│       ├── ModuleScope.js.map
+│       ├── NameParslet.d.ts
+│       ├── NameParslet.ts
+│       ├── NamePathParslet.d.ts
+│       ├── NamePathParslet.ts
+│       ├── NoInfer.d.ts
+│       ├── NoInfer.d.ts.map
+│       ├── NoInfer.js
+│       ├── NoInfer.js.map
+│       ├── NodeThreadsWorker.js
+│       ├── NodeWatcher.js
+│       ├── NonRootResult.d.ts
+│       ├── NonRootResult.ts
+│       ├── NotNullableParslet.d.ts
+│       ├── NotNullableParslet.ts
+│       ├── NotifyReporter.js
+│       ├── NullConsole.js
+│       ├── NullableParslets.d.ts
+│       ├── NullableParslets.ts
+│       ├── Num.js
+│       ├── NumberParslet.d.ts
+│       ├── NumberParslet.ts
+│       ├── Obj.js
+│       ├── Object.getPrototypeOf.d.ts
+│       ├── Object.getPrototypeOf.js
+│       ├── ObjectFieldParslet.d.ts
+│       ├── ObjectFieldParslet.ts
+│       ├── ObjectParslet.d.ts
+│       ├── ObjectParslet.ts
+│       ├── ObjectSquaredPropertyParslet.d.ts
+│       ├── ObjectSquaredPropertyParslet.ts
+│       ├── OptionalParslet.d.ts
+│       ├── OptionalParslet.ts
+│       ├── OverloadYield.js
+│       ├── OverloadYield.js.map
+│       ├── ParameterDefinition.d.ts
+│       ├── ParameterDefinition.d.ts.map
+│       ├── ParameterDefinition.js
+│       ├── ParameterDefinition.js.map
+│       ├── ParameterListParslet.d.ts
+│       ├── ParameterListParslet.ts
+│       ├── ParenthesisParslet.d.ts
+│       ├── ParenthesisParslet.ts
+│       ├── Parser.ts
+│       ├── ParserOptions.d.ts
+│       ├── ParserOptions.d.ts.map
+│       ├── ParserOptions.js
+│       ├── ParserOptions.js.map
+│       ├── Parslet.d.ts
+│       ├── Parslet.ts
+│       ├── PatternMatcher.d.ts
+│       ├── PatternMatcher.d.ts.map
+│       ├── PatternMatcher.js
+│       ├── PatternMatcher.js.map
+│       ├── PatternPrompt.js
+│       ├── PatternVisitor.d.ts
+│       ├── PatternVisitor.d.ts.map
+│       ├── PatternVisitor.js
+│       ├── PatternVisitor.js.map
+│       ├── Precedence.d.ts
+│       ├── Precedence.ts
+│       ├── PreferOptionalChainOptions.js
+│       ├── PreferOptionalChainOptions.js.map
+│       ├── PriorityQueue.js
+│       ├── Processor.d.ts.map
+│       ├── Processor.js.map
+│       ├── Prompt.js
+│       ├── Quit.js
+│       ├── README.markdown
+│       ├── RGI_Emoji.d.ts
+│       ├── RGI_Emoji.js
+│       ├── RandomGenerator.d.ts
+│       ├── RandomGenerator.js
+│       ├── ReactElement.js
+│       ├── ReactTestComponent.js
+│       ├── ReadonlyPropertyParslet.d.ts
+│       ├── ReadonlyPropertyParslet.ts
+│       ├── RecrawlWarning.js
+│       ├── Reference.d.ts
+│       ├── Reference.d.ts.map
+│       ├── Reference.js.map
+│       ├── ReferenceTracker.d.ts
+│       ├── ReferenceTracker.d.ts.map
+│       ├── ReferenceTracker.js
+│       ├── ReferenceTracker.js.map
+│       ├── Referencer.d.ts
+│       ├── Referencer.d.ts.map
+│       ├── Referencer.js.map
+│       ├── Reflect.getPrototypeOf.d.ts
+│       ├── Reflect.getPrototypeOf.js
+│       ├── Replaceable.js
+│       ├── ReporterDispatcher.js
+│       ├── ReporterValidationErrors.js
+│       ├── RequireObjectCoercible.d.ts
+│       ├── RequireObjectCoercible.js
+│       ├── RootResult.d.ts
+│       ├── RootResult.ts
+│       ├── Rule.d.ts.map
+│       ├── Rule.js.map
+│       ├── RuleCreator.d.ts
+│       ├── RuleCreator.d.ts.map
+│       ├── RuleCreator.js
+│       ├── RuleCreator.js.map
+│       ├── RuleTester.d.ts
+│       ├── RuleTester.d.ts.map
+│       ├── RuleTester.js
+│       ├── RuleTester.js.map
+│       ├── Scope.d.ts.map
+│       ├── ScopeBase.d.ts
+│       ├── ScopeBase.d.ts.map
+│       ├── ScopeBase.js
+│       ├── ScopeBase.js.map
+│       ├── ScopeManager.d.ts
+│       ├── ScopeManager.d.ts.map
+│       ├── ScopeManager.js
+│       ├── ScopeManager.js.map
+│       ├── ScopeType.d.ts
+│       ├── ScopeType.d.ts.map
+│       ├── ScopeType.js
+│       ├── ScopeType.js.map
+│       ├── ScriptTransformer.js
+│       ├── SearchSource.js
+│       ├── SnapshotInteractiveMode.js
+│       ├── SnapshotResolver.js
+│       ├── SourceCode.d.ts
+│       ├── SourceCode.d.ts.map
+│       ├── SourceCode.js
+│       ├── SourceCode.js.map
+│       ├── SpecialNamePathParslet.d.ts
+│       ├── SpecialNamePathParslet.ts
+│       ├── SpecialTypesParslet.d.ts
+│       ├── SpecialTypesParslet.ts
+│       ├── Status.js
+│       ├── Str.js
+│       ├── StringValueParslet.d.ts
+│       ├── StringValueParslet.ts
+│       ├── SummaryReporter.js
+│       ├── SwitchScope.d.ts
+│       ├── SwitchScope.d.ts.map
+│       ├── SwitchScope.js
+│       ├── SwitchScope.js.map
+│       ├── SymbolParslet.d.ts
+│       ├── SymbolParslet.ts
+│       ├── TSEnumMemberDefinition.d.ts
+│       ├── TSEnumMemberDefinition.d.ts.map
+│       ├── TSEnumMemberDefinition.js
+│       ├── TSEnumMemberDefinition.js.map
+│       ├── TSEnumNameDefinition.d.ts
+│       ├── TSEnumNameDefinition.d.ts.map
+│       ├── TSEnumNameDefinition.js
+│       ├── TSEnumNameDefinition.js.map
+│       ├── TSEnumScope.d.ts
+│       ├── TSEnumScope.d.ts.map
+│       ├── TSEnumScope.js
+│       ├── TSEnumScope.js.map
+│       ├── TSModuleNameDefinition.d.ts
+│       ├── TSModuleNameDefinition.d.ts.map
+│       ├── TSModuleNameDefinition.js
+│       ├── TSModuleNameDefinition.js.map
+│       ├── TSModuleScope.d.ts
+│       ├── TSModuleScope.d.ts.map
+│       ├── TSModuleScope.js
+│       ├── TSModuleScope.js.map
+│       ├── ToObject.d.ts
+│       ├── ToObject.js
+│       ├── Token.d.ts
+│       ├── Token.ts
+│       ├── Transform.js
+│       ├── TupleParslet.d.ts
+│       ├── TupleParslet.ts
+│       ├── TypeDefinition.d.ts
+│       ├── TypeDefinition.d.ts.map
+│       ├── TypeDefinition.js
+│       ├── TypeDefinition.js.map
+│       ├── TypeOfParslet.d.ts
+│       ├── TypeOfParslet.ts
+│       ├── TypeOrValueSpecifier.d.ts
+│       ├── TypeOrValueSpecifier.d.ts.map
+│       ├── TypeOrValueSpecifier.js
+│       ├── TypeOrValueSpecifier.js.map
+│       ├── TypeScope.d.ts
+│       ├── TypeScope.d.ts.map
+│       ├── TypeScope.js
+│       ├── TypeScope.js.map
+│       ├── TypeVisitor.d.ts
+│       ├── TypeVisitor.d.ts.map
+│       ├── TypeVisitor.js
+│       ├── TypeVisitor.js.map
+│       ├── UniformArrayIntDistribution.d.ts
+│       ├── UniformArrayIntDistribution.js
+│       ├── UniformBigIntDistribution.d.ts
+│       ├── UniformBigIntDistribution.js
+│       ├── UniformIntDistribution.d.ts
+│       ├── UniformIntDistribution.js
+│       ├── UnionParslets.d.ts
+│       ├── UnionParslets.ts
+│       ├── UnsafeUniformArrayIntDistribution.d.ts
+│       ├── UnsafeUniformArrayIntDistribution.js
+│       ├── UnsafeUniformArrayIntDistributionInternal.d.ts
+│       ├── UnsafeUniformArrayIntDistributionInternal.js
+│       ├── UnsafeUniformBigIntDistribution.d.ts
+│       ├── UnsafeUniformBigIntDistribution.js
+│       ├── UnsafeUniformIntDistribution.d.ts
+│       ├── UnsafeUniformIntDistribution.js
+│       ├── UnsafeUniformIntDistributionInternal.d.ts
+│       ├── UnsafeUniformIntDistributionInternal.js
+│       ├── UpdateSnapshots.js
+│       ├── UpdateSnapshotsInteractive.js
+│       ├── ValidConfig.js
+│       ├── Variable.d.ts
+│       ├── Variable.d.ts.map
+│       ├── Variable.js.map
+│       ├── VariableBase.d.ts
+│       ├── VariableBase.d.ts.map
+│       ├── VariableBase.js
+│       ├── VariableBase.js.map
+│       ├── VariableDefinition.d.ts
+│       ├── VariableDefinition.d.ts.map
+│       ├── VariableDefinition.js
+│       ├── VariableDefinition.js.map
+│       ├── VariadicParslet.d.ts
+│       ├── VariadicParslet.ts
+│       ├── VerboseReporter.js
+│       ├── Visitor.d.ts.map
+│       ├── VisitorBase.d.ts
+│       ├── VisitorBase.d.ts.map
+│       ├── VisitorBase.js
+│       ├── VisitorBase.js.map
+│       ├── WatchCompilerHostOfConfigFile.d.ts
+│       ├── WatchCompilerHostOfConfigFile.d.ts.map
+│       ├── WatchCompilerHostOfConfigFile.js
+│       ├── WatchCompilerHostOfConfigFile.js.map
+│       ├── WatchmanWatcher.js
+│       ├── WithScope.d.ts
+│       ├── WithScope.d.ts.map
+│       ├── WithScope.js
+│       ├── WithScope.js.map
+│       ├── WorkerAbstract.js
+│       ├── WorkerPool.js
+│       ├── XorShift.d.ts
+│       ├── XorShift.js
+│       ├── XoroShiro.d.ts
+│       ├── XoroShiro.js
+│       ├── _babel_options.d.ts
+│       ├── _babel_options.js
+│       ├── _limit.js
+│       ├── _limit.jst
+│       ├── _limitItems.js
+│       ├── _limitItems.jst
+│       ├── _limitLength.js
+│       ├── _limitLength.jst
+│       ├── _limitProperties.js
+│       ├── _limitProperties.jst
+│       ├── _tsc.js
+│       ├── _tsserver.js
+│       ├── _typingsInstaller.js
+│       ├── a2955546dc9f2875bd49e7b5fb05c52db3d5c9
+│       ├── a33592d9d9630a64bccd6aa069072828dd77b0
+│       ├── a8649bbac58a1c8a8ed8261201d58fbfdfc058
+│       ├── abs.d.ts
+│       ├── abs.js
+│       ├── ac2509a6947385a4b59a8afb622bdea9a6d990
+│       ├── accessor-pairs.js
+│       ├── acorn
+│       ├── acorn.d.mts
+│       ├── acorn.d.ts
+│       ├── acorn.js
+│       ├── acorn.mjs
+│       ├── action.js
+│       ├── action_container.js
+│       ├── activeFiltersMessage.js
+│       ├── actualApply.d.ts
+│       ├── actualApply.js
+│       ├── add-braces
+│       ├── addComment.js
+│       ├── addComment.js.map
+│       ├── addComments.js
+│       ├── addComments.js.map
+│       ├── added_formatters.js
+│       ├── adjacent-overload-signatures.js
+│       ├── adjacent-overload-signatures.js.map
+│       ├── adjacent-overload-signatures.mdx
+│       ├── agent.d.ts
+│       ├── agents.js
+│       ├── ajv.bundle.js
+│       ├── ajv.d.ts
+│       ├── ajv.js
+│       ├── ajv.min.js
+│       ├── ajv.min.js.map
+│       ├── all-files-ignored.js
+│       ├── all-matched-files-ignored.js
+│       ├── all-presets.d.ts
+│       ├── all-presets.js
+│       ├── all-signals.d.ts
+│       ├── all-signals.d.ts.map
+│       ├── all-signals.js
+│       ├── all-signals.js.map
+│       ├── all.js
+│       ├── all.js.map
+│       ├── allLimit.js
+│       ├── allOf.js
+│       ├── allOf.jst
+│       ├── allSeries.js
+│       ├── analyze.d.ts
+│       ├── analyze.d.ts.map
+│       ├── analyze.js
+│       ├── analyze.js.map
+│       ├── analyzeChain.js
+│       ├── analyzeChain.js.map
+│       ├── ancestry.js
+│       ├── ancestry.js.map
+│       ├── angular-sprintf.js
+│       ├── angular-sprintf.min.js
+│       ├── angular-sprintf.min.js.map
+│       ├── angular-sprintf.min.map
+│       ├── angular.html
+│       ├── annotator.js
+│       ├── any-map.d.ts
+│       ├── any.js
+│       ├── anyLimit.js
+│       ├── anyOf.js
+│       ├── anyOf.jst
+│       ├── anySeries.js
+│       ├── api.d.ts
+│       ├── api.js
+│       ├── append.js
+│       ├── appendToMemberExpression.js
+│       ├── appendToMemberExpression.js.map
+│       ├── apply-disable-directives.js
+│       ├── apply-extends.js
+│       ├── apply.js
+│       ├── applyBind.d.ts
+│       ├── applyBind.js
+│       ├── applyDecoratedDescriptor.js
+│       ├── applyDecoratedDescriptor.js.map
+│       ├── applyDecs.js
+│       ├── applyDecs.js.map
+│       ├── applyDecs2203.js
+│       ├── applyDecs2203.js.map
+│       ├── applyDecs2203R.js
+│       ├── applyDecs2203R.js.map
+│       ├── applyDecs2301.js
+│       ├── applyDecs2301.js.map
+│       ├── applyDecs2305.js
+│       ├── applyDecs2305.js.map
+│       ├── applyDecs2311.js
+│       ├── applyDecs2311.js.map
+│       ├── applyDefault.d.ts
+│       ├── applyDefault.d.ts.map
+│       ├── applyDefault.js
+│       ├── applyDefault.js.map
+│       ├── applyEach.js
+│       ├── applyEachSeries.js
+│       ├── applypatch-msg.sample
+│       ├── argparse.js
+│       ├── args.js
+│       ├── argsert.js
+│       ├── argument_parser.js
+│       ├── array-bracket-newline.js
+│       ├── array-bracket-spacing.js
+│       ├── array-callback-return.js
+│       ├── array-element-newline.js
+│       ├── array-set.js
+│       ├── array-type.js
+│       ├── array-type.js.map
+│       ├── array-type.mdx
+│       ├── array.d.ts
+│       ├── array.js
+│       ├── arrayLikeToArray.js
+│       ├── arrayLikeToArray.js.map
+│       ├── arrayWithHoles.js
+│       ├── arrayWithHoles.js.map
+│       ├── arrayWithoutHoles.js
+│       ├── arrayWithoutHoles.js.map
+│       ├── arrow-body-style.js
+│       ├── arrow-parens.js
+│       ├── arrow-spacing.js
+│       ├── ascii.d.ts
+│       ├── ascii.js
+│       ├── ascii.mjs
+│       ├── ascii.ts
+│       ├── assert-valid-pattern.d.ts
+│       ├── assert-valid-pattern.d.ts.map
+│       ├── assert-valid-pattern.js
+│       ├── assert-valid-pattern.js.map
+│       ├── assert.d.ts
+│       ├── assert.d.ts.map
+│       ├── assert.js
+│       ├── assert.js.map
+│       ├── assertClassBrand.js
+│       ├── assertClassBrand.js.map
+│       ├── assertNode.js
+│       ├── assertNode.js.map
+│       ├── assertThisInitialized.js
+│       ├── assertThisInitialized.js.map
+│       ├── assertTypes.d.ts
+│       ├── assertTypes.ts
+│       ├── assertionFunctionUtils.js
+│       ├── assertionFunctionUtils.js.map
+│       ├── assertsParslet.d.ts
+│       ├── assertsParslet.ts
+│       ├── ast-converter.d.ts
+│       ├── ast-converter.d.ts.map
+│       ├── ast-converter.js
+│       ├── ast-converter.js.map
+│       ├── ast-spec.d.ts
+│       ├── ast-spec.d.ts.map
+│       ├── ast-spec.js
+│       ├── ast-spec.js.map
+│       ├── ast-utils.js
+│       ├── astUtilities.d.ts
+│       ├── astUtilities.d.ts.map
+│       ├── astUtilities.js
+│       ├── astUtilities.js.map
+│       ├── astUtils.js
+│       ├── astUtils.js.map
+│       ├── asymmetricMatchers.js
+│       ├── async-return-type.d.ts
+│       ├── async.cjs
+│       ├── async.d.ts
+│       ├── async.js
+│       ├── async.js.map
+│       ├── async.min.js
+│       ├── async.mjs
+│       ├── asyncEachOfLimit.js
+│       ├── asyncGeneratorDelegate.js
+│       ├── asyncGeneratorDelegate.js.map
+│       ├── asyncIterator.js
+│       ├── asyncIterator.js.map
+│       ├── asyncToGenerator.js
+│       ├── asyncToGenerator.js.map
+│       ├── async_hooks.d.ts
+│       ├── asyncify.d.ts
+│       ├── asyncify.js
+│       ├── at-rule.d.ts
+│       ├── at-rule.js
+│       ├── authAPI.ts
+│       ├── auto.js
+│       ├── autoInject.js
+│       ├── autocomplete.js
+│       ├── autocompleteMultiselect.js
+│       ├── await-thenable.js
+│       ├── await-thenable.js.map
+│       ├── await-thenable.mdx
+│       ├── awaitAsyncGenerator.js
+│       ├── awaitAsyncGenerator.js.map
+│       ├── awaitify.js
+│       ├── b1331920da307839cb73ca97a7f9d761bf5edb
+│       ├── b3d2cf4018282ba07e6abec2eb0de70bc91a99
+│       ├── b669a60fea01f2f377eb9655895808a4f7d0f6
+│       ├── babel-7-helpers.cjs
+│       ├── babel-7-helpers.cjs.map
+│       ├── babel-core.d.ts
+│       ├── babel-core.js
+│       ├── babel-core.js.map
+│       ├── babel-parser.d.ts
+│       ├── babel-parser.js
+│       ├── babel-ts.d.ts
+│       ├── babel-ts.js
+│       ├── babel.d.ts
+│       ├── babel.js
+│       ├── babel.js.map
+│       ├── babylon.d.ts
+│       ├── babylon.js
+│       ├── backports.d.ts
+│       ├── backports.js
+│       ├── backward-token-comment-cursor.js
+│       ├── backward-token-cursor.js
+│       ├── balanced-pool.d.ts
+│       ├── ban-ts-comment.js
+│       ├── ban-ts-comment.js.map
+│       ├── ban-ts-comment.mdx
+│       ├── ban-tslint-comment.js
+│       ├── ban-tslint-comment.js.map
+│       ├── ban-tslint-comment.mdx
+│       ├── base-config.d.ts
+│       ├── base-config.d.ts.map
+│       ├── base-config.js
+│       ├── base-config.js.map
+│       ├── base-preview-body.html
+│       ├── base-preview-head.html
+│       ├── base.css
+│       ├── base.d.ts
+│       ├── base.js
+│       ├── base.js.map
+│       ├── base64-vlq.js
+│       ├── base64.js
+│       ├── baseGrammar.d.ts
+│       ├── baseGrammar.ts
+│       ├── bash_completion.sh
+│       ├── basic.d.ts
+│       ├── bench.js
+│       ├── best-practices.d.ts
+│       ├── bin.d.mts
+│       ├── bin.d.mts.map
+│       ├── bin.js
+│       ├── bin.mjs
+│       ├── bin.mjs.map
+│       ├── binary-search.d.ts
+│       ├── binary-search.js
+│       ├── binary.js
+│       ├── bind.js
+│       ├── binding.js
+│       ├── binding.js.map
+│       ├── blacklist.js
+│       ├── block-hoist-plugin.js
+│       ├── block-hoist-plugin.js.map
+│       ├── block-navigation.js
+│       ├── block-scoped-var.js
+│       ├── block-spacing.js
+│       ├── bool.js
+│       ├── boundaries.d.ts
+│       ├── boundaries.d.ts.map
+│       ├── boundaries.js
+│       ├── brace-expressions.d.ts
+│       ├── brace-expressions.d.ts.map
+│       ├── brace-expressions.js
+│       ├── brace-expressions.js.map
+│       ├── brace-style.js
+│       ├── branch.js
+│       ├── breakLoop.js
+│       ├── browser-source-map-support.js
+│       ├── browser.d.ts
+│       ├── browser.d.ts.map
+│       ├── browser.js
+│       ├── browser.js.map
+│       ├── browser.mjs
+│       ├── browserVersions.js
+│       ├── browsers.js
+│       ├── browserslist -> ../browserslist/cli.js
+│       ├── buffer-stream.js
+│       ├── buffer-util.js
+│       ├── buffer.buffer.d.ts
+│       ├── buffer.d.ts
+│       ├── buffer.js
+│       ├── buffer.js.map
+│       ├── build-external-helpers.js
+│       ├── build-external-helpers.js.map
+│       ├── build-source-map-tree.d.ts
+│       ├── buildChildren.js
+│       ├── buildChildren.js.map
+│       ├── buildMatchMemberExpression.js
+│       ├── buildMatchMemberExpression.js.map
+│       ├── builder.js
+│       ├── builder.js.map
+│       ├── builders.d.ts
+│       ├── builders.js
+│       ├── builders.js.map
+│       ├── builtinSymbolLikes.d.ts
+│       ├── builtinSymbolLikes.d.ts.map
+│       ├── builtinSymbolLikes.js
+│       ├── builtinSymbolLikes.js.map
+│       ├── bundle.js
+│       ├── by-source.d.ts
+│       ├── c1f5f0d423859ed1a947ce2b4b02351fbcabfb
+│       ├── c212b880cc06f3357ee8760f8f3a08fd15a71d
+│       ├── c59723a51288be079a0cff2db3057272c7234e
+│       ├── cache-contexts.js
+│       ├── cache-contexts.js.map
+│       ├── cache-getters.d.ts
+│       ├── cache-getters.js
+│       ├── cache.cjs
+│       ├── cache.d.ts
+│       ├── cache.js
+│       ├── cache.js.map
+│       ├── caching.js
+│       ├── caching.js.map
+│       ├── callBound.js
+│       ├── callSuper.js
+│       ├── callSuper.js.map
+│       ├── callback-return.js
+│       ├── called-in-order.d.ts
+│       ├── called-in-order.js
+│       ├── called-in-order.test.js
+│       ├── caller.js
+│       ├── camel-case.d.ts
+│       ├── camel-cased-properties-deep.d.ts
+│       ├── camel-cased-properties.d.ts
+│       ├── camelcase.js
+│       ├── cancellationToken.js
+│       ├── capitalized-comments.js
+│       ├── cargo.js
+│       ├── cargoQueue.js
+│       ├── cascading-config-array-factory.js
+│       ├── cast.d.ts
+│       ├── cast.js
+│       ├── catharsisTransform.d.ts
+│       ├── catharsisTransform.ts
+│       ├── cf84bd99608dc6c9cfe5bf747e4488b2529d5c
+│       ├── char-source.js
+│       ├── check-npm-version.js
+│       ├── check.d.ts
+│       ├── check.js
+│       ├── checkInRHS.js
+│       ├── checkInRHS.js.map
+│       ├── checkNullishAndReport.js
+│       ├── checkNullishAndReport.js.map
+│       ├── checkPrivateRedeclaration.js
+│       ├── checkPrivateRedeclaration.js.map
+│       ├── check_and_fix.js
+│       ├── child_process.d.ts
+│       ├── chromium-versions.js
+│       ├── chunk-CQ7KV35C.js
+│       ├── chunk-HCIN4FJ4.js
+│       ├── chunk-HCIN4FJ4.js.map
+│       ├── chunk-REFQX4J5.js
+│       ├── chunk-REFQX4J5.js.map
+│       ├── ci-cd-pipeline.yaml
+│       ├── ci.yml
+│       ├── cjs-proxy.cjs
+│       ├── cjs.js
+│       ├── class-literal-property-style.js
+│       ├── class-literal-property-style.js.map
+│       ├── class-literal-property-style.mdx
+│       ├── class-methods-use-this.js
+│       ├── class-methods-use-this.js.map
+│       ├── class-methods-use-this.mdx
+│       ├── class-name.d.ts
+│       ├── class-name.js
+│       ├── class-name.test.js
+│       ├── classApplyDescriptorDestructureSet.js
+│       ├── classApplyDescriptorDestructureSet.js.map
+│       ├── classApplyDescriptorGet.js
+│       ├── classApplyDescriptorGet.js.map
+│       ├── classApplyDescriptorSet.js
+│       ├── classApplyDescriptorSet.js.map
+│       ├── classCallCheck.js
+│       ├── classCallCheck.js.map
+│       ├── classCheckPrivateStaticAccess.js
+│       ├── classCheckPrivateStaticAccess.js.map
+│       ├── classCheckPrivateStaticFieldDescriptor.js
+│       ├── classCheckPrivateStaticFieldDescriptor.js.map
+│       ├── classExtractFieldDescriptor.js
+│       ├── classExtractFieldDescriptor.js.map
+│       ├── classNameTDZError.js
+│       ├── classNameTDZError.js.map
+│       ├── classPrivateFieldDestructureSet.js
+│       ├── classPrivateFieldDestructureSet.js.map
+│       ├── classPrivateFieldGet.js
+│       ├── classPrivateFieldGet.js.map
+│       ├── classPrivateFieldGet2.js
+│       ├── classPrivateFieldGet2.js.map
+│       ├── classPrivateFieldInitSpec.js
+│       ├── classPrivateFieldInitSpec.js.map
+│       ├── classPrivateFieldLooseBase.js
+│       ├── classPrivateFieldLooseBase.js.map
+│       ├── classPrivateFieldLooseKey.js
+│       ├── classPrivateFieldLooseKey.js.map
+│       ├── classPrivateFieldSet.js
+│       ├── classPrivateFieldSet.js.map
+│       ├── classPrivateFieldSet2.js
+│       ├── classPrivateFieldSet2.js.map
+│       ├── classPrivateGetter.js
+│       ├── classPrivateGetter.js.map
+│       ├── classPrivateMethodGet.js
+│       ├── classPrivateMethodGet.js.map
+│       ├── classPrivateMethodInitSpec.js
+│       ├── classPrivateMethodInitSpec.js.map
+│       ├── classPrivateMethodSet.js
+│       ├── classPrivateMethodSet.js.map
+│       ├── classPrivateSetter.js
+│       ├── classPrivateSetter.js.map
+│       ├── classStaticPrivateFieldDestructureSet.js
+│       ├── classStaticPrivateFieldDestructureSet.js.map
+│       ├── classStaticPrivateFieldSpecGet.js
+│       ├── classStaticPrivateFieldSpecGet.js.map
+│       ├── classStaticPrivateFieldSpecSet.js
+│       ├── classStaticPrivateFieldSpecSet.js.map
+│       ├── classStaticPrivateMethodGet.js
+│       ├── classStaticPrivateMethodGet.js.map
+│       ├── classStaticPrivateMethodSet.js
+│       ├── classStaticPrivateMethodSet.js.map
+│       ├── classes.js
+│       ├── classes.js.map
+│       ├── clean.js
+│       ├── cleanJSXElementLiteralChild.js
+│       ├── cleanJSXElementLiteralChild.js.map
+│       ├── cleanupSemantic.js
+│       ├── clear-caches.d.ts
+│       ├── clear-caches.d.ts.map
+│       ├── clear-caches.js
+│       ├── clear-caches.js.map
+│       ├── clear.js
+│       ├── clearLine.js
+│       ├── cli-engine.js
+│       ├── cli.js
+│       ├── cli.ts
+│       ├── client.d.ts
+│       ├── client.js
+│       ├── client.mjs
+│       ├── clone-deep.js
+│       ├── clone-deep.js.map
+│       ├── clone.d.ts
+│       ├── clone.js
+│       ├── clone.js.map
+│       ├── clone.mjs
+│       ├── clone.ts
+│       ├── cloneDeep.js
+│       ├── cloneDeep.js.map
+│       ├── cloneDeepWithoutLoc.js
+│       ├── cloneDeepWithoutLoc.js.map
+│       ├── cloneNode.js
+│       ├── cloneNode.js.map
+│       ├── cloneWithoutLoc.js
+│       ├── cloneWithoutLoc.js.map
+│       ├── closureGrammar.d.ts
+│       ├── closureGrammar.ts
+│       ├── cluster.d.ts
+│       ├── cmp.js
+│       ├── code-path-analyzer.js
+│       ├── code-path-segment.js
+│       ├── code-path-state.js
+│       ├── code-path.js
+│       ├── code.js
+│       ├── coerce.def
+│       ├── coerce.js
+│       ├── collectHandles.js
+│       ├── collectUnusedVariables.js
+│       ├── collectUnusedVariables.js.map
+│       ├── collections.js
+│       ├── color.js
+│       ├── colorize.js
+│       ├── colors.js
+│       ├── comma-dangle.js
+│       ├── comma-spacing.js
+│       ├── comma-style.js
+│       ├── command.js
+│       ├── comment.d.ts
+│       ├── comment.js
+│       ├── comment.jst
+│       ├── comments.d.ts
+│       ├── comments.js
+│       ├── comments.js.map
+│       ├── commit-msg.sample
+│       ├── common-manager.js
+│       ├── common-override-preset.cjs
+│       ├── common-override-preset.js
+│       ├── common-preset.cjs
+│       ├── common-preset.js
+│       ├── common-types.js
+│       ├── common.d.ts
+│       ├── common.js
+│       ├── comparator.js
+│       ├── compare-build.js
+│       ├── compare-loose.js
+│       ├── compare.d.ts
+│       ├── compare.js
+│       ├── compare.mjs
+│       ├── compare.ts
+│       ├── compareNodes.js
+│       ├── compareNodes.js.map
+│       ├── compile-dots.js
+│       ├── compile.js
+│       ├── compiler-utils.d.ts
+│       ├── compiler-utils.js
+│       ├── compiler.d.ts
+│       ├── compiler.js
+│       ├── completion-templates.js
+│       ├── completion.js
+│       ├── complexity.js
+│       ├── compose.js
+│       ├── computed-property-spacing.js
+│       ├── concat.js
+│       ├── concatLimit.js
+│       ├── concatSeries.js
+│       ├── condition.js
+│       ├── conditional-except.d.ts
+│       ├── conditional-keys.d.ts
+│       ├── conditional-pick.d.ts
+│       ├── config
+│       ├── config-api.js
+│       ├── config-api.js.map
+│       ├── config-array-factory.js
+│       ├── config-array.js
+│       ├── config-chain.js
+│       ├── config-chain.js.map
+│       ├── config-dependency.js
+│       ├── config-descriptors.js
+│       ├── config-descriptors.js.map
+│       ├── config-error.js
+│       ├── config-error.js.map
+│       ├── config-file-missing.js
+│       ├── config-loader.js
+│       ├── config-ops.js
+│       ├── config-overrides.js
+│       ├── config-schema.js
+│       ├── config-set.d.ts
+│       ├── config-set.js
+│       ├── config-validator.js
+│       ├── configuration.js
+│       ├── configuration.js.map
+│       ├── confirm.js
+│       ├── connector.d.ts
+│       ├── consistent-generic-constructors.js
+│       ├── consistent-generic-constructors.js.map
+│       ├── consistent-generic-constructors.mdx
+│       ├── consistent-indexed-object-style.js
+│       ├── consistent-indexed-object-style.js.map
+│       ├── consistent-indexed-object-style.mdx
+│       ├── consistent-return.js
+│       ├── consistent-return.js.map
+│       ├── consistent-return.mdx
+│       ├── consistent-this.js
+│       ├── consistent-type-assertions.js
+│       ├── consistent-type-assertions.js.map
+│       ├── consistent-type-assertions.mdx
+│       ├── consistent-type-definitions.js
+│       ├── consistent-type-definitions.js.map
+│       ├── consistent-type-definitions.mdx
+│       ├── consistent-type-exports.js
+│       ├── consistent-type-exports.js.map
+│       ├── consistent-type-exports.mdx
+│       ├── consistent-type-imports.js
+│       ├── consistent-type-imports.js.map
+│       ├── consistent-type-imports.mdx
+│       ├── console.d.ts
+│       ├── consoleFunc.js
+│       ├── const.js
+│       ├── const.jst
+│       ├── constant.js
+│       ├── constants.d.ts
+│       ├── constants.js
+│       ├── construct.js
+│       ├── construct.js.map
+│       ├── constructor-super.js
+│       ├── consumers.d.ts
+│       ├── container.d.ts
+│       ├── container.js
+│       ├── contains.js
+│       ├── contains.jst
+│       ├── containsAllTypesByName.d.ts
+│       ├── containsAllTypesByName.d.ts.map
+│       ├── containsAllTypesByName.js
+│       ├── containsAllTypesByName.js.map
+│       ├── content-type.d.ts
+│       ├── context.d.ts
+│       ├── context.js
+│       ├── context.js.map
+│       ├── conversion.js
+│       ├── conversion.js.map
+│       ├── conversions.js
+│       ├── convert-comments.d.ts
+│       ├── convert-comments.d.ts.map
+│       ├── convert-comments.js
+│       ├── convert-comments.js.map
+│       ├── convert.d.ts
+│       ├── convert.d.ts.map
+│       ├── convert.js
+│       ├── convert.js.map
+│       ├── convertDescriptorToString.js
+│       ├── cookies.d.ts
+│       ├── copy-prototype-methods.d.ts
+│       ├── copy-prototype-methods.js
+│       ├── copy-prototype-methods.test.js
+│       ├── core-path.cjs
+│       ├── core-path.d.ts
+│       ├── core-path.js
+│       ├── core.cjs
+│       ├── core.d.ts
+│       ├── core.js
+│       ├── core.js.map
+│       ├── count.js
+│       ├── coverage-map.js
+│       ├── coverage-summary.js
+│       ├── create-files.sh
+│       ├── create-jest -> ../create-jest/bin/create-jest.js
+│       ├── create-jest-preset.d.ts
+│       ├── create-jest-preset.js
+│       ├── create-jest.js
+│       ├── create.cjs
+│       ├── create.d.ts
+│       ├── create.js
+│       ├── createClass.js
+│       ├── createClass.js.map
+│       ├── createContext.js
+│       ├── createDirectory.js
+│       ├── createFlowUnionType.js
+│       ├── createFlowUnionType.js.map
+│       ├── createForOfIteratorHelper.js
+│       ├── createForOfIteratorHelper.js.map
+│       ├── createForOfIteratorHelperLoose.js
+│       ├── createForOfIteratorHelperLoose.js.map
+│       ├── createIsolatedProgram.d.ts
+│       ├── createIsolatedProgram.d.ts.map
+│       ├── createIsolatedProgram.js
+│       ├── createIsolatedProgram.js.map
+│       ├── createNoCodeFunction.js
+│       ├── createParseSettings.d.ts
+│       ├── createParseSettings.d.ts.map
+│       ├── createParseSettings.js
+│       ├── createParseSettings.js.map
+│       ├── createParserServices.d.ts
+│       ├── createParserServices.d.ts.map
+│       ├── createParserServices.js
+│       ├── createParserServices.js.map
+│       ├── createProcessObject.js
+│       ├── createProjectProgram.d.ts
+│       ├── createProjectProgram.d.ts.map
+│       ├── createProjectProgram.js
+│       ├── createProjectProgram.js.map
+│       ├── createProjectProgramError.d.ts
+│       ├── createProjectProgramError.d.ts.map
+│       ├── createProjectProgramError.js
+│       ├── createProjectProgramError.js.map
+│       ├── createProjectService.d.ts
+│       ├── createProjectService.d.ts.map
+│       ├── createProjectService.js
+│       ├── createProjectService.js.map
+│       ├── createRequire.js
+│       ├── createRule.js
+│       ├── createRule.js.map
+│       ├── createSourceFile.d.ts
+│       ├── createSourceFile.d.ts.map
+│       ├── createSourceFile.js
+│       ├── createSourceFile.js.map
+│       ├── createSuper.js
+│       ├── createSuper.js.map
+│       ├── createTSUnionType.js
+│       ├── createTSUnionType.js.map
+│       ├── createTester.js
+│       ├── createTypeAnnotationBasedOnTypeof.js
+│       ├── createTypeAnnotationBasedOnTypeof.js.map
+│       ├── crypto.d.ts
+│       ├── css-syntax-error.d.ts
+│       ├── css-syntax-error.js
+│       ├── cssPreprocessorOptions.d.ts
+│       ├── curly.js
+│       ├── cursor.js
+│       ├── cursors.js
+│       ├── custom.js
+│       ├── custom.jst
+│       ├── customEvent.d.ts
+│       ├── d684791f7f686e628b0f3a28c459eb9c9125ee
+│       ├── d8498d52e104fd07155537ddfed17d806437a8
+│       ├── data-properties.js
+│       ├── data.js
+│       ├── date.js
+│       ├── datepart.js
+│       ├── day.js
+│       ├── db2203fcc2bd268e6b0a1f09d1de3e7de7bf8c
+│       ├── debug-helpers.js
+│       ├── debug.js
+│       ├── debug.js.map
+│       ├── declaration.d.ts
+│       ├── declaration.js
+│       ├── decorate.js
+│       ├── decorate.js.map
+│       ├── decorative-cursor.js
+│       ├── decorators.d.ts
+│       ├── decorators.d.ts.map
+│       ├── decorators.js
+│       ├── decorators.js.map
+│       ├── decorators.legacy.d.ts
+│       ├── decorators.legacy.d.ts.map
+│       ├── decorators.legacy.js
+│       ├── decorators.legacy.js.map
+│       ├── dedent.d.mts
+│       ├── dedent.d.ts
+│       ├── dedent.js
+│       ├── dedent.mjs
+│       ├── dedentLines.js
+│       ├── deep-array.js
+│       ├── deep-array.js.map
+│       ├── deep-merge-arrays.js
+│       ├── deep.d.ts
+│       ├── deep.js
+│       ├── deepCyclicCopy.js
+│       ├── deepCyclicCopyReplaceable.js
+│       ├── deepMerge.d.ts
+│       ├── deepMerge.d.ts.map
+│       ├── deepMerge.js
+│       ├── deepMerge.js.map
+│       ├── default-case-last.js
+│       ├── default-case.js
+│       ├── default-cli-options.js
+│       ├── default-config.js
+│       ├── default-exclude.js
+│       ├── default-extension.js
+│       ├── default-param-last.js
+│       ├── default-param-last.js.map
+│       ├── default-param-last.mdx
+│       ├── default.js
+│       ├── defaultConfig.js
+│       ├── defaultResolver.js
+│       ├── default_full.js
+│       ├── default_safe.js
+│       ├── defaults.def
+│       ├── defaults.js
+│       ├── defaults.js.map
+│       ├── defineAccessor.js
+│       ├── defineAccessor.js.map
+│       ├── defineEnumerableProperties.js
+│       ├── defineEnumerableProperties.js.map
+│       ├── defineProperty.js
+│       ├── defineProperty.js.map
+│       ├── definition.js
+│       ├── definition_schema.js
+│       ├── definitions.def
+│       ├── del.js
+│       ├── delimiter-case.d.ts
+│       ├── delimiter-cased-properties-deep.d.ts
+│       ├── delimiter-cased-properties.d.ts
+│       ├── delta.d.ts
+│       ├── delta.js
+│       ├── dep-3RmXg9uo.js
+│       ├── dep-BJP6rrE_.js
+│       ├── dep-Cpceb51t.js
+│       ├── dep-DB1BmmOk.js
+│       ├── dep-DnSxfB-q.js
+│       ├── dependabot.yml
+│       ├── dependencies.js
+│       ├── dependencies.jst
+│       ├── dependencyExtractor.js
+│       ├── deprecated-aliases.js
+│       ├── deprecated-aliases.js.map
+│       ├── deprecated.d.ts
+│       ├── deprecated.js
+│       ├── deprecated.js.map
+│       ├── deprecated.test.js
+│       ├── deprecation-warnings.js
+│       ├── deprecationWarning.js
+│       ├── deprecationWarning.js.map
+│       ├── describeFilePath.d.ts
+│       ├── describeFilePath.d.ts.map
+│       ├── describeFilePath.js
+│       ├── describeFilePath.js.map
+│       ├── description
+│       ├── detect.js
+│       ├── detectLimit.js
+│       ├── detectSeries.js
+│       ├── develop
+│       ├── df5f24f53a94cb516c71cd3c754f18f8877031
+│       ├── dgram.d.ts
+│       ├── diagnostics-channel.d.ts
+│       ├── diagnostics_channel.d.ts
+│       ├── diff.js
+│       ├── diffLines.js
+│       ├── diffStrings.js
+│       ├── dir.js
+│       ├── directives.js
+│       ├── directory_task.js
+│       ├── disable-type-checked.js
+│       ├── disable-type-checked.js.map
+│       ├── dispatcher.d.ts
+│       ├── disposable.d.ts
+│       ├── dispose.js
+│       ├── dispose.js.map
+│       ├── dns.d.ts
+│       ├── doDuring.js
+│       ├── doUntil.js
+│       ├── doWhilst.js
+│       ├── document.d.ts
+│       ├── document.js
+│       ├── dom-events.d.ts
+│       ├── dom.asynciterable.d.ts
+│       ├── dom.asynciterable.d.ts.map
+│       ├── dom.asynciterable.js
+│       ├── dom.asynciterable.js.map
+│       ├── dom.d.ts
+│       ├── dom.d.ts.map
+│       ├── dom.iterable.d.ts
+│       ├── dom.iterable.d.ts.map
+│       ├── dom.iterable.js
+│       ├── dom.iterable.js.map
+│       ├── dom.js
+│       ├── dom.js.map
+│       ├── domain.d.ts
+│       ├── dot-location.js
+│       ├── dot-notation.js
+│       ├── dot-notation.js.map
+│       ├── dot-notation.mdx
+│       ├── dumper.js
+│       ├── during.js
+│       ├── dynamic-import.js
+│       ├── dynamic-import.js.map
+│       ├── e51debf4d42e578744a4f3a6fb2fb4ee47d3f5
+│       ├── e5880b4a6c9c74385c38ac85e570cb2ffb16f1
+│       ├── e6390117416df18a78a2fdf1b1151c2d2866c1
+│       ├── e63cdcfdbbf409411136d7a08eca36ccf0c657
+│       ├── ea85d49943a76e204b8addc314db41bbc95cbf
+│       ├── each.js
+│       ├── eachLimit.js
+│       ├── eachOf.js
+│       ├── eachOfLimit.js
+│       ├── eachOfSeries.js
+│       ├── eachSeries.js
+│       ├── eastasianwidth.js
+│       ├── eb9138d93ebea4e6d20b9f32d4e83dc15639f8
+│       ├── ecma-version.js
+│       ├── ecmascript-6.d.ts
+│       ├── edb748976969933dc488f3a4cea0d941c8969e
+│       ├── ef2030d040a7a2d56f626e2f630122f1330f36
+│       ├── ejs -> ../ejs/bin/cli.js
+│       ├── ejs.js
+│       ├── ejs.min.js
+│       ├── enhanceUnexpectedTokenMessage.js
+│       ├── enoent.js
+│       ├── ensureAsync.js
+│       ├── ensureBlock.js
+│       ├── ensureBlock.js.map
+│       ├── entries.d.ts
+│       ├── entriesToDisplay.js
+│       ├── entry.d.ts
+│       ├── entry.js
+│       ├── enum.js
+│       ├── enum.jst
+│       ├── enums.js
+│       ├── enums.js.map
+│       ├── env-http-proxy-agent.d.ts
+│       ├── env.d.ts
+│       ├── env.js
+│       ├── env.mjs
+│       ├── environment.js
+│       ├── environment.js.map
+│       ├── environments.js
+│       ├── eol-last.js
+│       ├── eq.js
+│       ├── eqeqeq.js
+│       ├── equal.d.ts
+│       ├── equal.js
+│       ├── equiv.d.ts
+│       ├── equiv.js
+│       ├── equiv.js.map
+│       ├── errno.d.ts
+│       ├── errno.js
+│       ├── error.d.ts
+│       ├── error.js
+│       ├── errorHandling.ts
+│       ├── error_classes.js
+│       ├── errors.d.ts
+│       ├── errors.def
+│       ├── errors.js
+│       ├── errors.ts
+│       ├── es-proposals.d.ts
+│       ├── es-proposals.js
+│       ├── es-proposals.js.map
+│       ├── es.js
+│       ├── es2015.collection.d.ts
+│       ├── es2015.collection.d.ts.map
+│       ├── es2015.collection.js
+│       ├── es2015.collection.js.map
+│       ├── es2015.core.d.ts
+│       ├── es2015.core.d.ts.map
+│       ├── es2015.core.js
+│       ├── es2015.core.js.map
+│       ├── es2015.d.ts
+│       ├── es2015.d.ts.map
+│       ├── es2015.generator.d.ts
+│       ├── es2015.generator.d.ts.map
+│       ├── es2015.generator.js
+│       ├── es2015.generator.js.map
+│       ├── es2015.iterable.d.ts
+│       ├── es2015.iterable.d.ts.map
+│       ├── es2015.iterable.js
+│       ├── es2015.iterable.js.map
+│       ├── es2015.js
+│       ├── es2015.js.map
+│       ├── es2015.promise.d.ts
+│       ├── es2015.promise.d.ts.map
+│       ├── es2015.promise.js
+│       ├── es2015.promise.js.map
+│       ├── es2015.proxy.d.ts
+│       ├── es2015.proxy.d.ts.map
+│       ├── es2015.proxy.js
+│       ├── es2015.proxy.js.map
+│       ├── es2015.reflect.d.ts
+│       ├── es2015.reflect.d.ts.map
+│       ├── es2015.reflect.js
+│       ├── es2015.reflect.js.map
+│       ├── es2015.symbol.d.ts
+│       ├── es2015.symbol.d.ts.map
+│       ├── es2015.symbol.js
+│       ├── es2015.symbol.js.map
+│       ├── es2015.symbol.wellknown.d.ts
+│       ├── es2015.symbol.wellknown.d.ts.map
+│       ├── es2015.symbol.wellknown.js
+│       ├── es2015.symbol.wellknown.js.map
+│       ├── es2016.array.include.d.ts
+│       ├── es2016.array.include.d.ts.map
+│       ├── es2016.array.include.js
+│       ├── es2016.array.include.js.map
+│       ├── es2016.d.ts
+│       ├── es2016.d.ts.map
+│       ├── es2016.full.d.ts
+│       ├── es2016.full.d.ts.map
+│       ├── es2016.full.js
+│       ├── es2016.full.js.map
+│       ├── es2016.intl.d.ts
+│       ├── es2016.intl.d.ts.map
+│       ├── es2016.intl.js
+│       ├── es2016.intl.js.map
+│       ├── es2016.js
+│       ├── es2016.js.map
+│       ├── es2017.arraybuffer.d.ts
+│       ├── es2017.arraybuffer.d.ts.map
+│       ├── es2017.arraybuffer.js
+│       ├── es2017.arraybuffer.js.map
+│       ├── es2017.d.ts
+│       ├── es2017.d.ts.map
+│       ├── es2017.date.d.ts
+│       ├── es2017.date.d.ts.map
+│       ├── es2017.date.js
+│       ├── es2017.date.js.map
+│       ├── es2017.full.d.ts
+│       ├── es2017.full.d.ts.map
+│       ├── es2017.full.js
+│       ├── es2017.full.js.map
+│       ├── es2017.intl.d.ts
+│       ├── es2017.intl.d.ts.map
+│       ├── es2017.intl.js
+│       ├── es2017.intl.js.map
+│       ├── es2017.js
+│       ├── es2017.js.map
+│       ├── es2017.object.d.ts
+│       ├── es2017.object.d.ts.map
+│       ├── es2017.object.js
+│       ├── es2017.object.js.map
+│       ├── es2017.sharedmemory.d.ts
+│       ├── es2017.sharedmemory.d.ts.map
+│       ├── es2017.sharedmemory.js
+│       ├── es2017.sharedmemory.js.map
+│       ├── es2017.string.d.ts
+│       ├── es2017.string.d.ts.map
+│       ├── es2017.string.js
+│       ├── es2017.string.js.map
+│       ├── es2017.typedarrays.d.ts
+│       ├── es2017.typedarrays.d.ts.map
+│       ├── es2017.typedarrays.js
+│       ├── es2017.typedarrays.js.map
+│       ├── es2018.asyncgenerator.d.ts
+│       ├── es2018.asyncgenerator.d.ts.map
+│       ├── es2018.asyncgenerator.js
+│       ├── es2018.asyncgenerator.js.map
+│       ├── es2018.asynciterable.d.ts
+│       ├── es2018.asynciterable.d.ts.map
+│       ├── es2018.asynciterable.js
+│       ├── es2018.asynciterable.js.map
+│       ├── es2018.d.ts
+│       ├── es2018.d.ts.map
+│       ├── es2018.full.d.ts
+│       ├── es2018.full.d.ts.map
+│       ├── es2018.full.js
+│       ├── es2018.full.js.map
+│       ├── es2018.intl.d.ts
+│       ├── es2018.intl.d.ts.map
+│       ├── es2018.intl.js
+│       ├── es2018.intl.js.map
+│       ├── es2018.js
+│       ├── es2018.js.map
+│       ├── es2018.promise.d.ts
+│       ├── es2018.promise.d.ts.map
+│       ├── es2018.promise.js
+│       ├── es2018.promise.js.map
+│       ├── es2018.regexp.d.ts
+│       ├── es2018.regexp.d.ts.map
+│       ├── es2018.regexp.js
+│       ├── es2018.regexp.js.map
+│       ├── es2019.array.d.ts
+│       ├── es2019.array.d.ts.map
+│       ├── es2019.array.js
+│       ├── es2019.array.js.map
+│       ├── es2019.d.ts
+│       ├── es2019.d.ts.map
+│       ├── es2019.full.d.ts
+│       ├── es2019.full.d.ts.map
+│       ├── es2019.full.js
+│       ├── es2019.full.js.map
+│       ├── es2019.intl.d.ts
+│       ├── es2019.intl.d.ts.map
+│       ├── es2019.intl.js
+│       ├── es2019.intl.js.map
+│       ├── es2019.js
+│       ├── es2019.js.map
+│       ├── es2019.object.d.ts
+│       ├── es2019.object.d.ts.map
+│       ├── es2019.object.js
+│       ├── es2019.object.js.map
+│       ├── es2019.string.d.ts
+│       ├── es2019.string.d.ts.map
+│       ├── es2019.string.js
+│       ├── es2019.string.js.map
+│       ├── es2019.symbol.d.ts
+│       ├── es2019.symbol.d.ts.map
+│       ├── es2019.symbol.js
+│       ├── es2019.symbol.js.map
+│       ├── es2020.bigint.d.ts
+│       ├── es2020.bigint.d.ts.map
+│       ├── es2020.bigint.js
+│       ├── es2020.bigint.js.map
+│       ├── es2020.d.ts
+│       ├── es2020.d.ts.map
+│       ├── es2020.date.d.ts
+│       ├── es2020.date.d.ts.map
+│       ├── es2020.date.js
+│       ├── es2020.date.js.map
+│       ├── es2020.full.d.ts
+│       ├── es2020.full.d.ts.map
+│       ├── es2020.full.js
+│       ├── es2020.full.js.map
+│       ├── es2020.intl.d.ts
+│       ├── es2020.intl.d.ts.map
+│       ├── es2020.intl.js
+│       ├── es2020.intl.js.map
+│       ├── es2020.js
+│       ├── es2020.js.map
+│       ├── es2020.number.d.ts
+│       ├── es2020.number.d.ts.map
+│       ├── es2020.number.js
+│       ├── es2020.number.js.map
+│       ├── es2020.promise.d.ts
+│       ├── es2020.promise.d.ts.map
+│       ├── es2020.promise.js
+│       ├── es2020.promise.js.map
+│       ├── es2020.sharedmemory.d.ts
+│       ├── es2020.sharedmemory.d.ts.map
+│       ├── es2020.sharedmemory.js
+│       ├── es2020.sharedmemory.js.map
+│       ├── es2020.string.d.ts
+│       ├── es2020.string.d.ts.map
+│       ├── es2020.string.js
+│       ├── es2020.string.js.map
+│       ├── es2020.symbol.wellknown.d.ts
+│       ├── es2020.symbol.wellknown.d.ts.map
+│       ├── es2020.symbol.wellknown.js
+│       ├── es2020.symbol.wellknown.js.map
+│       ├── es2021.d.ts
+│       ├── es2021.d.ts.map
+│       ├── es2021.full.d.ts
+│       ├── es2021.full.d.ts.map
+│       ├── es2021.full.js
+│       ├── es2021.full.js.map
+│       ├── es2021.intl.d.ts
+│       ├── es2021.intl.d.ts.map
+│       ├── es2021.intl.js
+│       ├── es2021.intl.js.map
+│       ├── es2021.js
+│       ├── es2021.js.map
+│       ├── es2021.promise.d.ts
+│       ├── es2021.promise.d.ts.map
+│       ├── es2021.promise.js
+│       ├── es2021.promise.js.map
+│       ├── es2021.string.d.ts
+│       ├── es2021.string.d.ts.map
+│       ├── es2021.string.js
+│       ├── es2021.string.js.map
+│       ├── es2021.weakref.d.ts
+│       ├── es2021.weakref.d.ts.map
+│       ├── es2021.weakref.js
+│       ├── es2021.weakref.js.map
+│       ├── es2022.array.d.ts
+│       ├── es2022.array.d.ts.map
+│       ├── es2022.array.js
+│       ├── es2022.array.js.map
+│       ├── es2022.d.ts
+│       ├── es2022.d.ts.map
+│       ├── es2022.error.d.ts
+│       ├── es2022.error.d.ts.map
+│       ├── es2022.error.js
+│       ├── es2022.error.js.map
+│       ├── es2022.full.d.ts
+│       ├── es2022.full.d.ts.map
+│       ├── es2022.full.js
+│       ├── es2022.full.js.map
+│       ├── es2022.intl.d.ts
+│       ├── es2022.intl.d.ts.map
+│       ├── es2022.intl.js
+│       ├── es2022.intl.js.map
+│       ├── es2022.js
+│       ├── es2022.js.map
+│       ├── es2022.object.d.ts
+│       ├── es2022.object.d.ts.map
+│       ├── es2022.object.js
+│       ├── es2022.object.js.map
+│       ├── es2022.regexp.d.ts
+│       ├── es2022.regexp.d.ts.map
+│       ├── es2022.regexp.js
+│       ├── es2022.regexp.js.map
+│       ├── es2022.string.d.ts
+│       ├── es2022.string.d.ts.map
+│       ├── es2022.string.js
+│       ├── es2022.string.js.map
+│       ├── es2023.array.d.ts
+│       ├── es2023.array.d.ts.map
+│       ├── es2023.array.js
+│       ├── es2023.array.js.map
+│       ├── es2023.collection.d.ts
+│       ├── es2023.collection.d.ts.map
+│       ├── es2023.collection.js
+│       ├── es2023.collection.js.map
+│       ├── es2023.d.ts
+│       ├── es2023.d.ts.map
+│       ├── es2023.full.d.ts
+│       ├── es2023.full.d.ts.map
+│       ├── es2023.full.js
+│       ├── es2023.full.js.map
+│       ├── es2023.intl.d.ts
+│       ├── es2023.intl.d.ts.map
+│       ├── es2023.intl.js
+│       ├── es2023.intl.js.map
+│       ├── es2023.js
+│       ├── es2023.js.map
+│       ├── es2024.arraybuffer.d.ts
+│       ├── es2024.arraybuffer.d.ts.map
+│       ├── es2024.arraybuffer.js
+│       ├── es2024.arraybuffer.js.map
+│       ├── es2024.collection.d.ts
+│       ├── es2024.collection.d.ts.map
+│       ├── es2024.collection.js
+│       ├── es2024.collection.js.map
+│       ├── es2024.d.ts
+│       ├── es2024.d.ts.map
+│       ├── es2024.full.d.ts
+│       ├── es2024.full.d.ts.map
+│       ├── es2024.full.js
+│       ├── es2024.full.js.map
+│       ├── es2024.js
+│       ├── es2024.js.map
+│       ├── es2024.object.d.ts
+│       ├── es2024.object.d.ts.map
+│       ├── es2024.object.js
+│       ├── es2024.object.js.map
+│       ├── es2024.promise.d.ts
+│       ├── es2024.promise.d.ts.map
+│       ├── es2024.promise.js
+│       ├── es2024.promise.js.map
+│       ├── es2024.regexp.d.ts
+│       ├── es2024.regexp.d.ts.map
+│       ├── es2024.regexp.js
+│       ├── es2024.regexp.js.map
+│       ├── es2024.sharedmemory.d.ts
+│       ├── es2024.sharedmemory.d.ts.map
+│       ├── es2024.sharedmemory.js
+│       ├── es2024.sharedmemory.js.map
+│       ├── es2024.string.d.ts
+│       ├── es2024.string.d.ts.map
+│       ├── es2024.string.js
+│       ├── es2024.string.js.map
+│       ├── es5.d.ts
+│       ├── es5.d.ts.map
+│       ├── es5.js
+│       ├── es5.js.map
+│       ├── es6.d.ts
+│       ├── es6.d.ts.map
+│       ├── es6.js
+│       ├── es6.js.map
+│       ├── es7.d.ts
+│       ├── es7.d.ts.map
+│       ├── es7.js
+│       ├── es7.js.map
+│       ├── esbuild
+│       ├── escape.d.ts
+│       ├── escape.d.ts.map
+│       ├── escape.js
+│       ├── escape.js.map
+│       ├── escapeHTML.js
+│       ├── escapeRegExp.js
+│       ├── escapeRegExp.js.map
+│       ├── eslint -> ../eslint/bin/eslint.js
+│       ├── eslint-all.js
+│       ├── eslint-helpers.js
+│       ├── eslint-recommended-raw.d.ts
+│       ├── eslint-recommended-raw.js
+│       ├── eslint-recommended-raw.js.map
+│       ├── eslint-recommended.js
+│       ├── eslint-recommended.js.map
+│       ├── eslint-scope.cjs
+│       ├── eslint-visitor-keys.cjs
+│       ├── eslint-visitor-keys.d.cts
+│       ├── eslintrc-incompat.js
+│       ├── eslintrc-plugins.js
+│       ├── eslintrc-universal.cjs
+│       ├── eslintrc-universal.cjs.map
+│       ├── eslintrc.cjs
+│       ├── eslintrc.cjs.map
+│       ├── esm.js
+│       ├── esm.mjs
+│       ├── esnext.array.d.ts
+│       ├── esnext.array.d.ts.map
+│       ├── esnext.array.js
+│       ├── esnext.array.js.map
+│       ├── esnext.asynciterable.d.ts
+│       ├── esnext.asynciterable.d.ts.map
+│       ├── esnext.asynciterable.js
+│       ├── esnext.asynciterable.js.map
+│       ├── esnext.bigint.d.ts
+│       ├── esnext.bigint.d.ts.map
+│       ├── esnext.bigint.js
+│       ├── esnext.bigint.js.map
+│       ├── esnext.collection.d.ts
+│       ├── esnext.collection.d.ts.map
+│       ├── esnext.collection.js
+│       ├── esnext.collection.js.map
+│       ├── esnext.d.ts
+│       ├── esnext.d.ts.map
+│       ├── esnext.decorators.d.ts
+│       ├── esnext.decorators.d.ts.map
+│       ├── esnext.decorators.js
+│       ├── esnext.decorators.js.map
+│       ├── esnext.disposable.d.ts
+│       ├── esnext.disposable.d.ts.map
+│       ├── esnext.disposable.js
+│       ├── esnext.disposable.js.map
+│       ├── esnext.full.d.ts
+│       ├── esnext.full.d.ts.map
+│       ├── esnext.full.js
+│       ├── esnext.full.js.map
+│       ├── esnext.intl.d.ts
+│       ├── esnext.intl.d.ts.map
+│       ├── esnext.intl.js
+│       ├── esnext.intl.js.map
+│       ├── esnext.iterator.d.ts
+│       ├── esnext.iterator.d.ts.map
+│       ├── esnext.iterator.js
+│       ├── esnext.iterator.js.map
+│       ├── esnext.js
+│       ├── esnext.js.map
+│       ├── esnext.object.d.ts
+│       ├── esnext.object.d.ts.map
+│       ├── esnext.object.js
+│       ├── esnext.object.js.map
+│       ├── esnext.promise.d.ts
+│       ├── esnext.promise.d.ts.map
+│       ├── esnext.promise.js
+│       ├── esnext.promise.js.map
+│       ├── esnext.regexp.d.ts
+│       ├── esnext.regexp.d.ts.map
+│       ├── esnext.regexp.js
+│       ├── esnext.regexp.js.map
+│       ├── esnext.string.d.ts
+│       ├── esnext.string.d.ts.map
+│       ├── esnext.string.js
+│       ├── esnext.string.js.map
+│       ├── esnext.symbol.d.ts
+│       ├── esnext.symbol.d.ts.map
+│       ├── esnext.symbol.js
+│       ├── esnext.symbol.js.map
+│       ├── esnext.weakref.d.ts
+│       ├── esnext.weakref.d.ts.map
+│       ├── esnext.weakref.js
+│       ├── esnext.weakref.js.map
+│       ├── esparse -> ../esprima/bin/esparse.js
+│       ├── esparse.js
+│       ├── espree.cjs
+│       ├── espree.js
+│       ├── esprima.d.ts
+│       ├── esprima.js
+│       ├── esprima.js.map
+│       ├── esquery.esm.js
+│       ├── esquery.esm.min.js
+│       ├── esquery.esm.min.js.map
+│       ├── esquery.js
+│       ├── esquery.lite.js
+│       ├── esquery.lite.min.js
+│       ├── esquery.lite.min.js.map
+│       ├── esquery.min.js
+│       ├── esquery.min.js.map
+│       ├── esrecurse.js
+│       ├── estraverse.js
+│       ├── estree-to-ts-node-types.d.ts
+│       ├── estree-to-ts-node-types.d.ts.map
+│       ├── estree-to-ts-node-types.js
+│       ├── estree-to-ts-node-types.js.map
+│       ├── esvalidate -> ../esprima/bin/esvalidate.js
+│       ├── esvalidate.js
+│       ├── eval.d.ts
+│       ├── eval.js
+│       ├── evaluate-and-fix-structure.js
+│       ├── evaluate-and-improve-structure.js
+│       ├── evaluation.js
+│       ├── evaluation.js.map
+│       ├── event-target.js
+│       ├── eventHandler.js
+│       ├── events.d.ts
+│       ├── eventsource.d.ts
+│       ├── every.d.ts
+│       ├── every.js
+│       ├── every.test.js
+│       ├── everyLimit.js
+│       ├── everySeries.js
+│       ├── exact.d.ts
+│       ├── example.js
+│       ├── example.mjs
+│       ├── exampleConfig.js
+│       ├── except.d.ts
+│       ├── exception.js
+│       ├── exclude
+│       ├── exclusive.js
+│       ├── exit.js
+│       ├── expand.js
+│       ├── experimental.js
+│       ├── experimental.js.map
+│       ├── explicit-function-return-type.js
+│       ├── explicit-function-return-type.js.map
+│       ├── explicit-function-return-type.mdx
+│       ├── explicit-member-accessibility.js
+│       ├── explicit-member-accessibility.js.map
+│       ├── explicit-member-accessibility.mdx
+│       ├── explicit-module-boundary-types.js
+│       ├── explicit-module-boundary-types.js.map
+│       ├── explicit-module-boundary-types.mdx
+│       ├── explicitReturnTypeUtils.js
+│       ├── explicitReturnTypeUtils.js.map
+│       ├── expressions.js
+│       ├── expressions.js.map
+│       ├── extend-config-missing.js
+│       ├── extends.js
+│       ├── extends.js.map
+│       ├── extension.js
+│       ├── extractExpectedAssertionsErrors.js
+│       ├── extracted-config.js
+│       ├── f154697d9c9dbdb1693a03f2aef0ac3fd3e6d7
+│       ├── f79bdbd06a123a9547afc455f2d7c50c0c2e47
+│       ├── f89554869c4b58f074ede3f89274a06df1be7e
+│       ├── failed-to-read-json.js
+│       ├── failsafe.js
+│       ├── fake-timers-src.js
+│       ├── false.js
+│       ├── family.js
+│       ├── family.js.map
+│       ├── fast-path.d.ts
+│       ├── fast-path.js
+│       ├── fast_path.js
+│       ├── favicon.png
+│       ├── favicon.svg
+│       ├── feature.js
+│       ├── features.js
+│       ├── fetch.d.ts
+│       ├── ff4addfd99639dd45fe94ea45c3147b55c2537
+│       ├── ff604440371ea539698884f96f6c6822dcccc1
+│       ├── fib.js
+│       ├── figures.js
+│       ├── file-context.js
+│       ├── file-coverage.js
+│       ├── file-enumerator.js
+│       ├── file-not-found.js
+│       ├── file-writer.js
+│       ├── file.d.ts
+│       ├── file.js
+│       ├── file.js.map
+│       ├── fileBreadcrumbs.js
+│       ├── fileScanner.ts
+│       ├── fileWalkers.js
+│       ├── file_task.js
+│       ├── filereader.d.ts
+│       ├── filter-cursor.js
+│       ├── filter-items.js
+│       ├── filter-items.js.map
+│       ├── filter.js
+│       ├── filterLimit.js
+│       ├── filterSeries.js
+│       ├── filterToggle.js
+│       ├── find-suggestion.js
+│       ├── find-suggestion.js.map
+│       ├── find.js
+│       ├── findLimit.js
+│       ├── findSeries.js
+│       ├── fix-tracker.js
+│       ├── fixed-length-array.d.ts
+│       ├── flags.js
+│       ├── flat-compat.js
+│       ├── flat-config-array.js
+│       ├── flat-config-helpers.js
+│       ├── flat-config-schema.js
+│       ├── flatMap.js
+│       ├── flatMapLimit.js
+│       ├── flatMapSeries.js
+│       ├── flatted.php
+│       ├── flattenToggle.js
+│       ├── float.js
+│       ├── floor.d.ts
+│       ├── floor.js
+│       ├── flow.d.ts
+│       ├── flow.js
+│       ├── flow.js.map
+│       ├── foldl.js
+│       ├── foldr.js
+│       ├── for-direction.js
+│       ├── forEach.js
+│       ├── forEachLimit.js
+│       ├── forEachOf.js
+│       ├── forEachOfLimit.js
+│       ├── forEachOfSeries.js
+│       ├── forEachSeries.js
+│       ├── forever.js
+│       ├── fork-context.js
+│       ├── fork.d.ts
+│       ├── fork.js
+│       ├── fork.js.map
+│       ├── format.js
+│       ├── format.js.map
+│       ├── format.jst
+│       ├── formatNodeAssertErrors.js
+│       ├── formatTestNameByPattern.js
+│       ├── formatTestPath.js
+│       ├── formatTime.js
+│       ├── formats.js
+│       ├── formatter.js
+│       ├── formatters.js
+│       ├── formatters.js.map
+│       ├── formdata.d.ts
+│       ├── forward-token-comment-cursor.js
+│       ├── forward-token-cursor.js
+│       ├── fromJSON.d.ts
+│       ├── fromJSON.js
+│       ├── fs.d.ts
+│       ├── fs.js
+│       ├── fs.js.map
+│       ├── fsevents-importer.js
+│       ├── fsevents.d.ts
+│       ├── fsevents.js
+│       ├── fsevents.node
+│       ├── fsmonitor-watchman.sample
+│       ├── fsx.d.ts
+│       ├── full-chromium-versions.js
+│       ├── full-versions.js
+│       ├── full.js
+│       ├── full.js.map
+│       ├── func-call-spacing.js
+│       ├── func-name-matching.js
+│       ├── func-names.js
+│       ├── func-style.js
+│       ├── function-call-argument-newline.js
+│       ├── function-name.d.ts
+│       ├── function-name.js
+│       ├── function-name.test.js
+│       ├── function-paren-newline.js
+│       ├── function.d.ts
+│       ├── function.js
+│       ├── functionApply.d.ts
+│       ├── functionApply.js
+│       ├── functionCall.d.ts
+│       ├── functionCall.js
+│       ├── functional.js
+│       ├── functional.js.map
+│       ├── gOPD.d.ts
+│       ├── gOPD.js
+│       ├── gatherLogicalOperands.js
+│       ├── gatherLogicalOperands.js.map
+│       ├── gatherSequenceExpressions.js
+│       ├── gatherSequenceExpressions.js.map
+│       ├── gen-mapping.d.ts
+│       ├── gen-mapping.mjs
+│       ├── gen-mapping.mjs.map
+│       ├── gen-mapping.umd.js
+│       ├── gen-mapping.umd.js.map
+│       ├── generate.js
+│       ├── generate.js.map
+│       ├── generateConfigFile.js
+│       ├── generateEmptyCoverage.js
+│       ├── generator-star-spacing.js
+│       ├── generic-identity
+│       ├── get-keys.d.ts
+│       ├── get-keys.d.ts.map
+│       ├── get-keys.js
+│       ├── get-keys.js.map
+│       ├── get-mapping.js
+│       ├── get-module-name.js
+│       ├── get-module-name.js.map
+│       ├── get-package-version.d.ts
+│       ├── get-package-version.js
+│       ├── get.d.ts
+│       ├── get.js
+│       ├── get.js.map
+│       ├── getAlignedDiffs.js
+│       ├── getAssignmentIdentifiers.js
+│       ├── getAssignmentIdentifiers.js.map
+│       ├── getBindingIdentifiers.js
+│       ├── getBindingIdentifiers.js.map
+│       ├── getCacheDirectory.js
+│       ├── getCallsite.js
+│       ├── getChangedFilesPromise.js
+│       ├── getChildData.js
+│       ├── getConfigsOfProjectsToRun.js
+│       ├── getConsoleOutput.js
+│       ├── getConstrainedTypeAtLocation.d.ts
+│       ├── getConstrainedTypeAtLocation.d.ts.map
+│       ├── getConstrainedTypeAtLocation.js
+│       ├── getConstrainedTypeAtLocation.js.map
+│       ├── getConstraintInfo.js
+│       ├── getConstraintInfo.js.map
+│       ├── getContextualType.d.ts
+│       ├── getContextualType.d.ts.map
+│       ├── getContextualType.js
+│       ├── getContextualType.js.map
+│       ├── getDeclaration.d.ts
+│       ├── getDeclaration.d.ts.map
+│       ├── getDeclaration.js
+│       ├── getDeclaration.js.map
+│       ├── getDefaultResolver.js
+│       ├── getESLintCoreRule.js
+│       ├── getESLintCoreRule.js.map
+│       ├── getFixOrSuggest.js
+│       ├── getFixOrSuggest.js.map
+│       ├── getForStatementHeadLoc.js
+│       ├── getForStatementHeadLoc.js.map
+│       ├── getFunctionHeadLoc.js
+│       ├── getFunctionHeadLoc.js.map
+│       ├── getFunctionName.js
+│       ├── getFunctionName.js.map
+│       ├── getIterator.js
+│       ├── getLogFilter.d.ts
+│       ├── getLogFilter.js
+│       ├── getMaxWorkers.js
+│       ├── getMemberHeadLoc.js
+│       ├── getMemberHeadLoc.js.map
+│       ├── getMockName.js
+│       ├── getModifiers.d.ts
+│       ├── getModifiers.d.ts.map
+│       ├── getModifiers.js
+│       ├── getModifiers.js.map
+│       ├── getNoTestFound.js
+│       ├── getNoTestFoundFailed.js
+│       ├── getNoTestFoundPassWithNoTests.js
+│       ├── getNoTestFoundRelatedToChangedFiles.js
+│       ├── getNoTestFoundVerbose.js
+│       ├── getNoTestsFoundMessage.js
+│       ├── getOperatorPrecedence.js
+│       ├── getOperatorPrecedence.js.map
+│       ├── getOuterBindingIdentifiers.js
+│       ├── getOuterBindingIdentifiers.js.map
+│       ├── getParentFunctionNode.js
+│       ├── getParentFunctionNode.js.map
+│       ├── getParsedConfigFile.d.ts
+│       ├── getParsedConfigFile.d.ts.map
+│       ├── getParsedConfigFile.js
+│       ├── getParsedConfigFile.js.map
+│       ├── getParserServices.d.ts
+│       ├── getParserServices.d.ts.map
+│       ├── getParserServices.js
+│       ├── getParserServices.js.map
+│       ├── getPlatformExtension.js
+│       ├── getProjectConfigFiles.d.ts
+│       ├── getProjectConfigFiles.d.ts.map
+│       ├── getProjectConfigFiles.js
+│       ├── getProjectConfigFiles.js.map
+│       ├── getProjectDisplayName.js
+│       ├── getProjectNamesMissingWarning.js
+│       ├── getPrototypeOf.js
+│       ├── getPrototypeOf.js.map
+│       ├── getResultHeader.js
+│       ├── getScriptKind.d.ts
+│       ├── getScriptKind.d.ts.map
+│       ├── getScriptKind.js
+│       ├── getScriptKind.js.map
+│       ├── getSelectProjectsMessage.js
+│       ├── getSnapshotStatus.js
+│       ├── getSnapshotSummary.js
+│       ├── getSourceFileOfNode.d.ts
+│       ├── getSourceFileOfNode.d.ts.map
+│       ├── getSourceFileOfNode.js
+│       ├── getSourceFileOfNode.js.map
+│       ├── getStaticStringValue.js
+│       ├── getStaticStringValue.js.map
+│       ├── getStringLength.js
+│       ├── getStringLength.js.map
+│       ├── getSummary.js
+│       ├── getTextWithParentheses.js
+│       ├── getTextWithParentheses.js.map
+│       ├── getThisExpression.js
+│       ├── getThisExpression.js.map
+│       ├── getTypeName.d.ts
+│       ├── getTypeName.d.ts.map
+│       ├── getTypeName.js
+│       ├── getTypeName.js.map
+│       ├── getWatchProgramsForProjects.d.ts
+│       ├── getWatchProgramsForProjects.d.ts.map
+│       ├── getWatchProgramsForProjects.js
+│       ├── getWatchProgramsForProjects.js.map
+│       ├── getWatermarks.js
+│       ├── getWrappedCode.js
+│       ├── getWrappedCode.js.map
+│       ├── getWrappingFixer.js
+│       ├── getWrappingFixer.js.map
+│       ├── getstorybook -> ../storybook/bin/index.cjs
+│       ├── getter-return.js
+│       ├── git.js
+│       ├── glob -> ../glob/dist/esm/bin.mjs
+│       ├── glob.d.ts
+│       ├── glob.d.ts.map
+│       ├── glob.js
+│       ├── glob.js.map
+│       ├── global-dispatcher.d.ts
+│       ├── global-origin.d.ts
+│       ├── global-require.js
+│       ├── global.d.ts
+│       ├── global.test.js
+│       ├── globalErrorHandlers.js
+│       ├── globals-module-info.cjs
+│       ├── globals-module-info.d.ts
+│       ├── globals-module-info.js
+│       ├── globals-runtime.js
+│       ├── globals.cjs
+│       ├── globals.css
+│       ├── globals.d.ts
+│       ├── globals.js
+│       ├── globals.typedarray.d.ts
+│       ├── globsToMatcher.js
+│       ├── graceful-fs.js
+│       ├── group.js
+│       ├── groupBy.js
+│       ├── groupByLimit.js
+│       ├── groupBySeries.js
+│       ├── grouped-accessor-pairs.js
+│       ├── gruntfile.js
+│       ├── gt.js
+│       ├── gte.js
+│       ├── gtr.js
+│       ├── guard-for-in.js
+│       ├── gui.ts
+│       ├── gulpfile.babel.js
+│       ├── gulpfile.js
+│       ├── gulpfile.ts
+│       ├── handle-callback-err.js
+│       ├── handleDeprecationWarnings.js
+│       ├── handlers.d.ts
+│       ├── has-magic.d.ts
+│       ├── has-magic.d.ts.map
+│       ├── has-magic.js
+│       ├── has-magic.js.map
+│       ├── has-optional-keys.d.ts
+│       ├── has-required-keys.d.ts
+│       ├── hash.d.ts
+│       ├── hash.js
+│       ├── header.d.ts
+│       ├── help.d.ts
+│       ├── help.js
+│       ├── helpers-generated.js
+│       ├── helpers-generated.js.map
+│       ├── helpers.d.mts
+│       ├── helpers.d.ts
+│       ├── helpers.d.ts.map
+│       ├── helpers.js
+│       ├── helpers.js.map
+│       ├── helpers.mjs
+│       ├── hfs.d.ts
+│       ├── hfs.js
+│       ├── hg.js
+│       ├── hmrPayload.d.ts
+│       ├── hoist-jest.d.ts
+│       ├── hoist-jest.js
+│       ├── hoister.js
+│       ├── hoister.js.map
+│       ├── homedir.js
+│       ├── hot.d.ts
+│       ├── hours.js
+│       ├── html.js
+│       ├── http.d.ts
+│       ├── http.js
+│       ├── http.js.map
+│       ├── http2.d.ts
+│       ├── https.d.ts
+│       ├── https.js
+│       ├── https.js.map
+│       ├── hub.js
+│       ├── hub.js.map
+│       ├── id-blacklist.js
+│       ├── id-denylist.js
+│       ├── id-generator.js
+│       ├── id-length.js
+│       ├── id-match.js
+│       ├── identifier.js
+│       ├── identifier.js.map
+│       ├── identifiers.js
+│       ├── identity
+│       ├── identity.js
+│       ├── identity.js.map
+│       ├── identityTransformRules.d.ts
+│       ├── identityTransformRules.ts
+│       ├── if.js
+│       ├── if.jst
+│       ├── ignore-pattern.js
+│       ├── ignore.d.ts
+│       ├── ignore.d.ts.map
+│       ├── ignore.js
+│       ├── ignore.js.map
+│       ├── immutableUtils.js
+│       ├── implementation.js
+│       ├── implicit-arrow-linebreak.js
+│       ├── import-builder.js
+│       ├── import-builder.js.map
+│       ├── import-injector.js
+│       ├── import-injector.js.map
+│       ├── import-local-fixture -> ../import-local/fixtures/cli.js
+│       ├── import-meta-resolve.js
+│       ├── import-meta-resolve.js.map
+│       ├── import-meta.d.ts
+│       ├── import.cjs
+│       ├── import.cjs.map
+│       ├── importDeferProxy.js
+│       ├── importDeferProxy.js.map
+│       ├── importGlob.d.ts
+│       ├── importMeta.d.ts
+│       ├── importer.d.ts
+│       ├── importer.js
+│       ├── imurmurhash.js
+│       ├── imurmurhash.min.js
+│       ├── inc.js
+│       ├── includes.d.ts
+│       ├── indent-legacy.js
+│       ├── indent.js
+│       ├── index
+│       ├── index-BJ7CN0fr.js
+│       ├── index-browser.js
+│       ├── index-browser.js.map
+│       ├── index-browser.ts
+│       ├── index-legacy.d.ts
+│       ├── index-universal.js
+│       ├── index.browser.cjs
+│       ├── index.browser.js
+│       ├── index.cjs
+│       ├── index.d.cts
+│       ├── index.d.mts
+│       ├── index.d.ts
+│       ├── index.d.ts.map
+│       ├── index.html
+│       ├── index.js
+│       ├── index.js.flow
+│       ├── index.js.map
+│       ├── index.min.js
+│       ├── index.min.js.map
+│       ├── index.min.mjs
+│       ├── index.mjs
+│       ├── index.mjs.map
+│       ├── index.native.js
+│       ├── index.spec.js
+│       ├── index.test.js
+│       ├── index.ts
+│       ├── indexable.d.ts
+│       ├── inferSingleRun.d.ts
+│       ├── inferSingleRun.d.ts.map
+│       ├── inferSingleRun.js
+│       ├── inferSingleRun.js.map
+│       ├── inferer-reference.js
+│       ├── inferer-reference.js.map
+│       ├── inferers.js
+│       ├── inferers.js.map
+│       ├── inflight.js
+│       ├── info
+│       ├── inherit.js
+│       ├── inherit.js.map
+│       ├── inheritInnerComments.js
+│       ├── inheritInnerComments.js.map
+│       ├── inheritLeadingComments.js
+│       ├── inheritLeadingComments.js.map
+│       ├── inheritTrailingComments.js
+│       ├── inheritTrailingComments.js.map
+│       ├── inherits.js
+│       ├── inherits.js.map
+│       ├── inheritsComments.js
+│       ├── inheritsComments.js.map
+│       ├── inheritsLoose.js
+│       ├── inheritsLoose.js.map
+│       ├── inherits_browser.js
+│       ├── init-declarations.js
+│       ├── init-declarations.js.map
+│       ├── init-declarations.mdx
+│       ├── init.d.ts
+│       ├── init.js
+│       ├── initialParams.js
+│       ├── initializerDefineProperty.js
+│       ├── initializerDefineProperty.js.map
+│       ├── initializerWarningHelper.js
+│       ├── initializerWarningHelper.js.map
+│       ├── inject.js
+│       ├── input.d.ts
+│       ├── input.js
+│       ├── insertion-text.js
+│       ├── inspector.d.ts
+│       ├── install.js
+│       ├── installCommonGlobals.js
+│       ├── instanceof.js
+│       ├── instanceof.js.map
+│       ├── instrumenter.js
+│       ├── int.js
+│       ├── interceptors.d.ts
+│       ├── internal.d.ts
+│       ├── interopRequireDefault.js
+│       ├── interopRequireDefault.js.map
+│       ├── interopRequireWildcard.js
+│       ├── interopRequireWildcard.js.map
+│       ├── interpolate.js
+│       ├── interpolation.js
+│       ├── intersects.js
+│       ├── introspection.js
+│       ├── introspection.js.map
+│       ├── invalid-rule-options.js
+│       ├── invalid-rule-severity.js
+│       ├── invariant-of.d.ts
+│       ├── invariant.js
+│       ├── is-combining-character.js
+│       ├── is-core.js
+│       ├── is-docker -> ../is-docker/cli.js
+│       ├── is-emoji-modifier.js
+│       ├── is-module.js
+│       ├── is-module.js.map
+│       ├── is-node-modules.cjs
+│       ├── is-promise.js
+│       ├── is-regional-indicator-symbol.js
+│       ├── is-surrogate-pair.js
+│       ├── is.d.ts
+│       ├── is.js
+│       ├── is.js.map
+│       ├── isArray.d.ts
+│       ├── isArray.d.ts.map
+│       ├── isArray.js
+│       ├── isArray.js.map
+│       ├── isArrayLike.js
+│       ├── isArrayMethodCallWithPredicate.js
+│       ├── isArrayMethodCallWithPredicate.js.map
+│       ├── isAssignee.js
+│       ├── isAssignee.js.map
+│       ├── isBinding.js
+│       ├── isBinding.js.map
+│       ├── isBlockScoped.js
+│       ├── isBlockScoped.js.map
+│       ├── isBuffer.js
+│       ├── isBufferBrowser.js
+│       ├── isBuiltinModule.js
+│       ├── isCompatTag.js
+│       ├── isCompatTag.js.map
+│       ├── isFinite.d.ts
+│       ├── isFinite.js
+│       ├── isImmutable.js
+│       ├── isImmutable.js.map
+│       ├── isInteger.d.ts
+│       ├── isInteger.js
+│       ├── isInteractive.js
+│       ├── isLet.js
+│       ├── isLet.js.map
+│       ├── isNaN.d.ts
+│       ├── isNaN.js
+│       ├── isNativeFunction.js
+│       ├── isNativeFunction.js.map
+│       ├── isNativeReflectConstruct.js
+│       ├── isNativeReflectConstruct.js.map
+│       ├── isNegativeZero.d.ts
+│       ├── isNegativeZero.js
+│       ├── isNode.js
+│       ├── isNode.js.map
+│       ├── isNodeEqual.js
+│       ├── isNodeEqual.js.map
+│       ├── isNodesEquivalent.js
+│       ├── isNodesEquivalent.js.map
+│       ├── isNonNullable.js
+│       ├── isNullLiteral.js
+│       ├── isNullLiteral.js.map
+│       ├── isPlaceholderType.js
+│       ├── isPlaceholderType.js.map
+│       ├── isPromise.js
+│       ├── isQuestionMarkUnkownType.d.ts
+│       ├── isQuestionMarkUnkownType.ts
+│       ├── isReactComponent.js
+│       ├── isReactComponent.js.map
+│       ├── isReferenced.js
+│       ├── isReferenced.js.map
+│       ├── isScope.js
+│       ├── isScope.js.map
+│       ├── isSpecifierDefault.js
+│       ├── isSpecifierDefault.js.map
+│       ├── isStartOfExpressionStatement.js
+│       ├── isStartOfExpressionStatement.js.map
+│       ├── isSymbolFromDefaultLibrary.d.ts
+│       ├── isSymbolFromDefaultLibrary.d.ts.map
+│       ├── isSymbolFromDefaultLibrary.js
+│       ├── isSymbolFromDefaultLibrary.js.map
+│       ├── isType.js
+│       ├── isType.js.map
+│       ├── isTypeImport.js
+│       ├── isTypeImport.js.map
+│       ├── isTypeReadonly.d.ts
+│       ├── isTypeReadonly.d.ts.map
+│       ├── isTypeReadonly.js
+│       ├── isTypeReadonly.js.map
+│       ├── isUndefinedIdentifier.js
+│       ├── isUndefinedIdentifier.js.map
+│       ├── isUnsafeAssignment.d.ts
+│       ├── isUnsafeAssignment.d.ts.map
+│       ├── isUnsafeAssignment.js
+│       ├── isUnsafeAssignment.js.map
+│       ├── isValidES3Identifier.js
+│       ├── isValidES3Identifier.js.map
+│       ├── isValidIdentifier.js
+│       ├── isValidIdentifier.js.map
+│       ├── isValidPath.js
+│       ├── isVar.js
+│       ├── isVar.js.map
+│       ├── isWatchmanInstalled.js
+│       ├── item.js
+│       ├── item.js.map
+│       ├── items.js
+│       ├── items.jst
+│       ├── iterable-element.d.ts
+│       ├── iterableToArray.js
+│       ├── iterableToArray.js.map
+│       ├── iterableToArrayLimit.js
+│       ├── iterableToArrayLimit.js.map
+│       ├── iterator.js
+│       ├── iterators.d.ts
+│       ├── jake -> ../jake/bin/cli.js
+│       ├── jake.js
+│       ├── jakefile.js
+│       ├── jasmineUtils.js
+│       ├── jest -> ../jest/bin/jest.js
+│       ├── jest-preset.js
+│       ├── jest.config.js
+│       ├── jest.js
+│       ├── jestAdapter.js
+│       ├── jestAdapterInit.js
+│       ├── jestMatchersObject.js
+│       ├── jest_logo.png
+│       ├── join.d.ts
+│       ├── joinAlignedDiffs.js
+│       ├── js-yaml -> ../js-yaml/bin/js-yaml.js
+│       ├── js-yaml.js
+│       ├── js-yaml.min.js
+│       ├── js-yaml.mjs
+│       ├── jsdocGrammar.d.ts
+│       ├── jsdocGrammar.ts
+│       ├── jsesc -> ../jsesc/bin/jsesc
+│       ├── jsesc.1
+│       ├── jsesc.js
+│       ├── json-schema.d.ts
+│       ├── json-schema.d.ts.map
+│       ├── json-schema.js
+│       ├── json-schema.js.map
+│       ├── json-with-metadata.js
+│       ├── json.d.ts
+│       ├── json.js
+│       ├── json5 -> ../json5/lib/cli.js
+│       ├── jsonable-value.d.ts
+│       ├── jsonable-value.js
+│       ├── jsonify.d.ts
+│       ├── jsx-dev-runtime.js
+│       ├── jsx-quotes.js
+│       ├── jsx-runtime.js
+│       ├── jsx.d.ts
+│       ├── jsx.js
+│       ├── jsx.js.map
+│       ├── jtpTransform.d.ts
+│       ├── jtpTransform.ts
+│       ├── kebab-case.d.ts
+│       ├── kebab-cased-properties-deep.d.ts
+│       ├── kebab-cased-properties.d.ts
+│       ├── key-spacing.js
+│       ├── key_cmp.js
+│       ├── keyword-spacing.js
+│       ├── keyword.js
+│       ├── keyword.js.map
+│       ├── keywords.js
+│       ├── kill.js
+│       ├── kinds.d.ts
+│       ├── kinds.js
+│       ├── kinds.js.map
+│       ├── kleur.d.ts
+│       ├── largeFileProcessor.ts
+│       ├── last-array-element.d.ts
+│       ├── lazy-loading-rule-map.js
+│       ├── lazy-modules.js
+│       ├── lazy-modules.js.map
+│       ├── lazy-result.d.ts
+│       ├── lazy-result.js
+│       ├── legacy-eslint.js
+│       ├── legacy-streams.js
+│       ├── legacy.js
+│       ├── legacyFakeTimers.js
+│       ├── level.d.ts
+│       ├── level.js
+│       ├── levenshtein.js
+│       ├── lexer-external.js
+│       ├── lexer-external.mjs
+│       ├── lexer.d.ts
+│       ├── lexer.js
+│       ├── lexer.mjs
+│       ├── lib.d.ts
+│       ├── lib.d.ts.map
+│       ├── lib.decorators.d.ts
+│       ├── lib.decorators.legacy.d.ts
+│       ├── lib.dom.asynciterable.d.ts
+│       ├── lib.dom.d.ts
+│       ├── lib.dom.iterable.d.ts
+│       ├── lib.es2015.collection.d.ts
+│       ├── lib.es2015.core.d.ts
+│       ├── lib.es2015.d.ts
+│       ├── lib.es2015.generator.d.ts
+│       ├── lib.es2015.iterable.d.ts
+│       ├── lib.es2015.promise.d.ts
+│       ├── lib.es2015.proxy.d.ts
+│       ├── lib.es2015.reflect.d.ts
+│       ├── lib.es2015.symbol.d.ts
+│       ├── lib.es2015.symbol.wellknown.d.ts
+│       ├── lib.es2016.array.include.d.ts
+│       ├── lib.es2016.d.ts
+│       ├── lib.es2016.full.d.ts
+│       ├── lib.es2016.intl.d.ts
+│       ├── lib.es2017.arraybuffer.d.ts
+│       ├── lib.es2017.d.ts
+│       ├── lib.es2017.date.d.ts
+│       ├── lib.es2017.full.d.ts
+│       ├── lib.es2017.intl.d.ts
+│       ├── lib.es2017.object.d.ts
+│       ├── lib.es2017.sharedmemory.d.ts
+│       ├── lib.es2017.string.d.ts
+│       ├── lib.es2017.typedarrays.d.ts
+│       ├── lib.es2018.asyncgenerator.d.ts
+│       ├── lib.es2018.asynciterable.d.ts
+│       ├── lib.es2018.d.ts
+│       ├── lib.es2018.full.d.ts
+│       ├── lib.es2018.intl.d.ts
+│       ├── lib.es2018.promise.d.ts
+│       ├── lib.es2018.regexp.d.ts
+│       ├── lib.es2019.array.d.ts
+│       ├── lib.es2019.d.ts
+│       ├── lib.es2019.full.d.ts
+│       ├── lib.es2019.intl.d.ts
+│       ├── lib.es2019.object.d.ts
+│       ├── lib.es2019.string.d.ts
+│       ├── lib.es2019.symbol.d.ts
+│       ├── lib.es2020.bigint.d.ts
+│       ├── lib.es2020.d.ts
+│       ├── lib.es2020.date.d.ts
+│       ├── lib.es2020.full.d.ts
+│       ├── lib.es2020.intl.d.ts
+│       ├── lib.es2020.number.d.ts
+│       ├── lib.es2020.promise.d.ts
+│       ├── lib.es2020.sharedmemory.d.ts
+│       ├── lib.es2020.string.d.ts
+│       ├── lib.es2020.symbol.wellknown.d.ts
+│       ├── lib.es2021.d.ts
+│       ├── lib.es2021.full.d.ts
+│       ├── lib.es2021.intl.d.ts
+│       ├── lib.es2021.promise.d.ts
+│       ├── lib.es2021.string.d.ts
+│       ├── lib.es2021.weakref.d.ts
+│       ├── lib.es2022.array.d.ts
+│       ├── lib.es2022.d.ts
+│       ├── lib.es2022.error.d.ts
+│       ├── lib.es2022.full.d.ts
+│       ├── lib.es2022.intl.d.ts
+│       ├── lib.es2022.object.d.ts
+│       ├── lib.es2022.regexp.d.ts
+│       ├── lib.es2022.string.d.ts
+│       ├── lib.es2023.array.d.ts
+│       ├── lib.es2023.collection.d.ts
+│       ├── lib.es2023.d.ts
+│       ├── lib.es2023.full.d.ts
+│       ├── lib.es2023.intl.d.ts
+│       ├── lib.es2024.arraybuffer.d.ts
+│       ├── lib.es2024.collection.d.ts
+│       ├── lib.es2024.d.ts
+│       ├── lib.es2024.full.d.ts
+│       ├── lib.es2024.object.d.ts
+│       ├── lib.es2024.promise.d.ts
+│       ├── lib.es2024.regexp.d.ts
+│       ├── lib.es2024.sharedmemory.d.ts
+│       ├── lib.es2024.string.d.ts
+│       ├── lib.es5.d.ts
+│       ├── lib.es6.d.ts
+│       ├── lib.esnext.array.d.ts
+│       ├── lib.esnext.collection.d.ts
+│       ├── lib.esnext.d.ts
+│       ├── lib.esnext.decorators.d.ts
+│       ├── lib.esnext.disposable.d.ts
+│       ├── lib.esnext.full.d.ts
+│       ├── lib.esnext.intl.d.ts
+│       ├── lib.esnext.iterator.d.ts
+│       ├── lib.js
+│       ├── lib.js.map
+│       ├── lib.scripthost.d.ts
+│       ├── lib.webworker.asynciterable.d.ts
+│       ├── lib.webworker.d.ts
+│       ├── lib.webworker.importscripts.d.ts
+│       ├── lib.webworker.iterable.d.ts
+│       ├── lightningcssOptions.d.ts
+│       ├── limit-cursor.js
+│       ├── limiter.js
+│       ├── line-comment-position.js
+│       ├── line.js
+│       ├── linebreak-style.js
+│       ├── lines-around-comment.js
+│       ├── lines-around-directive.js
+│       ├── lines-between-class-members.js
+│       ├── lines.d.ts
+│       ├── lines.js
+│       ├── lint-result-cache.js
+│       ├── list.d.ts
+│       ├── literal-to-primitive.d.ts
+│       ├── literal-union.d.ts
+│       ├── literal.js
+│       ├── literal.js.map
+│       ├── load-esm.js
+│       ├── load-nyc-config-sync.js
+│       ├── load-rules.js
+│       ├── loadBabelConfig.js
+│       ├── loadConfigFile.d.ts
+│       ├── loadConfigFile.js
+│       ├── loader.d.ts
+│       ├── loader.js
+│       ├── log.js
+│       ├── logDebugMessages.js
+│       ├── logger.d.ts
+│       ├── logger.js
+│       ├── logging.js
+│       ├── loggingSystem.ts
+│       ├── logical-assignment-operators.js
+│       ├── loose-envify -> ../loose-envify/cli.js
+│       ├── loose-envify.js
+│       ├── lrucache.js
+│       ├── lt.js
+│       ├── lte.js
+│       ├── ltr.js
+│       ├── macro.js
+│       ├── mailto.d.ts
+│       ├── mailto.js
+│       ├── mailto.js.map
+│       ├── main
+│       ├── main.d.ts
+│       ├── main.js
+│       ├── main.js.map
+│       ├── main.tsx
+│       ├── main.yml
+│       ├── major.js
+│       ├── make-error.js
+│       ├── makeerror.js
+│       ├── manager-errors.d.ts
+│       ├── manager-errors.js
+│       ├── map-generator.js
+│       ├── map-store.js
+│       ├── map.d.ts
+│       ├── map.js
+│       ├── mapLimit.js
+│       ├── mapSeries.js
+│       ├── mapValues.js
+│       ├── mapValuesLimit.js
+│       ├── mapValuesSeries.js
+│       ├── mapped.js
+│       ├── mapping-list.js
+│       ├── mapping.d.ts
+│       ├── mapping.js
+│       ├── maps.js
+│       ├── mark.js
+│       ├── markup.js
+│       ├── matcher.d.ts
+│       ├── matcher.js
+│       ├── matchers.js
+│       ├── matchesPattern.js
+│       ├── matchesPattern.js.map
+│       ├── max-classes-per-file.js
+│       ├── max-depth.js
+│       ├── max-len.js
+│       ├── max-lines-per-function.js
+│       ├── max-lines.js
+│       ├── max-nested-callbacks.js
+│       ├── max-params.js
+│       ├── max-params.js.map
+│       ├── max-params.mdx
+│       ├── max-satisfying.js
+│       ├── max-statements-per-line.js
+│       ├── max-statements.js
+│       ├── max.d.ts
+│       ├── max.js
+│       ├── maxArrayLength.d.ts
+│       ├── maxArrayLength.js
+│       ├── maxSafeInteger.d.ts
+│       ├── maxSafeInteger.js
+│       ├── maxValue.d.ts
+│       ├── maxValue.js
+│       ├── maybe-async-result.js
+│       ├── maybeArrayLike.js
+│       ├── maybeArrayLike.js.map
+│       ├── member-ordering.js
+│       ├── member-ordering.js.map
+│       ├── member-ordering.mdx
+│       ├── memoize.d.ts
+│       ├── memoize.js
+│       ├── merge-exclusive.d.ts
+│       ├── merge-map.js
+│       ├── merge-map.js.map
+│       ├── merge.d.ts
+│       ├── merge.js
+│       ├── merge.mjs
+│       ├── merge.ts
+│       ├── meridiem.js
+│       ├── message-reference.png
+│       ├── message.d.ts
+│       ├── message.js
+│       ├── messageParent.js
+│       ├── messages.d.ts
+│       ├── messages.js
+│       ├── metadata.d.ts
+│       ├── metadataExtractor.ts
+│       ├── method-signature-style.js
+│       ├── method-signature-style.js.map
+│       ├── method-signature-style.mdx
+│       ├── methods.js
+│       ├── methods.js.map
+│       ├── middleware.js
+│       ├── migrate.d.ts
+│       ├── migrate.js
+│       ├── migrate_to_vite.sh
+│       ├── milliseconds.js
+│       ├── min-satisfying.js
+│       ├── min-version.js
+│       ├── min.d.ts
+│       ├── min.js
+│       ├── minimatch.js
+│       ├── minor.js
+│       ├── minutes.js
+│       ├── misc.d.ts
+│       ├── misc.d.ts.map
+│       ├── misc.js
+│       ├── misc.js.map
+│       ├── missing-plugin-helper.js
+│       ├── missing-plugin-helper.js.map
+│       ├── missing.def
+│       ├── mock-agent.d.ts
+│       ├── mock-client.d.ts
+│       ├── mock-errors.d.ts
+│       ├── mock-interceptor.d.ts
+│       ├── mock-pool.d.ts
+│       ├── mockSerializer.js
+│       ├── mod.d.ts
+│       ├── mod.js
+│       ├── mode.js
+│       ├── modernFakeTimers.js
+│       ├── modification.js
+│       ├── modification.js.map
+│       ├── modifyPackageJson.js
+│       ├── module-importer.cjs
+│       ├── module-importer.d.cts
+│       ├── module-importer.d.ts
+│       ├── module-importer.js
+│       ├── module-runner.d.ts
+│       ├── module-runner.js
+│       ├── module-types.js
+│       ├── module-types.js.map
+│       ├── module.d.ts
+│       ├── modules.js
+│       ├── modules.js.map
+│       ├── month.js
+│       ├── multidimensional-array.d.ts
+│       ├── multidimensional-readonly-array.d.ts
+│       ├── multiline-comment-style.js
+│       ├── multiline-ternary.js
+│       ├── multipleOf.js
+│       ├── multipleOf.jst
+│       ├── multiselect.js
+│       ├── mutable.d.ts
+│       ├── mutate.d.ts
+│       ├── mutate.js
+│       ├── namedTypes.d.ts
+│       ├── namedTypes.js
+│       ├── namedTypes.js.map
+│       ├── namespace.js
+│       ├── naming-convention.js
+│       ├── naming-convention.js.map
+│       ├── naming-convention.mdx
+│       ├── naming.js
+│       ├── nanoid -> ../nanoid/bin/nanoid.cjs
+│       ├── nanoid.cjs
+│       ├── nanoid.js
+│       ├── native.js
+│       ├── needsPrecedingSemiColon.js
+│       ├── needsPrecedingSemiColon.js.map
+│       ├── needsToBeAwaited.js
+│       ├── needsToBeAwaited.js.map
+│       ├── neq.js
+│       ├── nested.js
+│       ├── net.d.ts
+│       ├── new-cap.js
+│       ├── new-parens.js
+│       ├── newArrowCheck.js
+│       ├── newArrowCheck.js.map
+│       ├── newline-after-var.js
+│       ├── newline-before-return.js
+│       ├── newline-per-chained-call.js
+│       ├── nextTick.js
+│       ├── no-alert.js
+│       ├── no-array-constructor.js
+│       ├── no-array-constructor.js.map
+│       ├── no-array-constructor.mdx
+│       ├── no-array-delete.js
+│       ├── no-array-delete.js.map
+│       ├── no-array-delete.mdx
+│       ├── no-async-promise-executor.js
+│       ├── no-await-in-loop.js
+│       ├── no-base-to-string.js
+│       ├── no-base-to-string.js.map
+│       ├── no-base-to-string.mdx
+│       ├── no-bitwise.js
+│       ├── no-buffer-constructor.js
+│       ├── no-caller.js
+│       ├── no-case-declarations.js
+│       ├── no-catch-shadow.js
+│       ├── no-class-assign.js
+│       ├── no-compare-neg-zero.js
+│       ├── no-cond-assign.js
+│       ├── no-config-found.js
+│       ├── no-confusing-arrow.js
+│       ├── no-confusing-non-null-assertion.js
+│       ├── no-confusing-non-null-assertion.js.map
+│       ├── no-confusing-non-null-assertion.mdx
+│       ├── no-confusing-void-expression.js
+│       ├── no-confusing-void-expression.js.map
+│       ├── no-confusing-void-expression.mdx
+│       ├── no-console.js
+│       ├── no-const-assign.js
+│       ├── no-constant-binary-expression.js
+│       ├── no-constant-condition.js
+│       ├── no-constructor-return.js
+│       ├── no-continue.js
+│       ├── no-control-regex.js
+│       ├── no-debugger.js
+│       ├── no-delete-var.js
+│       ├── no-deprecated.js
+│       ├── no-deprecated.js.map
+│       ├── no-deprecated.mdx
+│       ├── no-div-regex.js
+│       ├── no-dupe-args.js
+│       ├── no-dupe-class-members.js
+│       ├── no-dupe-class-members.js.map
+│       ├── no-dupe-class-members.mdx
+│       ├── no-dupe-else-if.js
+│       ├── no-dupe-keys.js
+│       ├── no-duplicate-case.js
+│       ├── no-duplicate-enum-values.js
+│       ├── no-duplicate-enum-values.js.map
+│       ├── no-duplicate-enum-values.mdx
+│       ├── no-duplicate-imports.js
+│       ├── no-duplicate-imports.mdx
+│       ├── no-duplicate-type-constituents.js
+│       ├── no-duplicate-type-constituents.js.map
+│       ├── no-duplicate-type-constituents.mdx
+│       ├── no-dynamic-delete.js
+│       ├── no-dynamic-delete.js.map
+│       ├── no-dynamic-delete.mdx
+│       ├── no-else-return.js
+│       ├── no-empty-character-class.js
+│       ├── no-empty-function.js
+│       ├── no-empty-function.js.map
+│       ├── no-empty-function.mdx
+│       ├── no-empty-interface.js
+│       ├── no-empty-interface.js.map
+│       ├── no-empty-interface.mdx
+│       ├── no-empty-object-type.js
+│       ├── no-empty-object-type.js.map
+│       ├── no-empty-object-type.mdx
+│       ├── no-empty-pattern.js
+│       ├── no-empty-static-block.js
+│       ├── no-empty.js
+│       ├── no-eq-null.js
+│       ├── no-eval.js
+│       ├── no-ex-assign.js
+│       ├── no-explicit-any.js
+│       ├── no-explicit-any.js.map
+│       ├── no-explicit-any.mdx
+│       ├── no-extend-native.js
+│       ├── no-extra-bind.js
+│       ├── no-extra-boolean-cast.js
+│       ├── no-extra-label.js
+│       ├── no-extra-non-null-assertion.js
+│       ├── no-extra-non-null-assertion.js.map
+│       ├── no-extra-non-null-assertion.mdx
+│       ├── no-extra-parens.js
+│       ├── no-extra-semi.js
+│       ├── no-extraneous-class.js
+│       ├── no-extraneous-class.js.map
+│       ├── no-extraneous-class.mdx
+│       ├── no-fallthrough.js
+│       ├── no-floating-decimal.js
+│       ├── no-floating-promises.js
+│       ├── no-floating-promises.js.map
+│       ├── no-floating-promises.mdx
+│       ├── no-for-in-array.js
+│       ├── no-for-in-array.js.map
+│       ├── no-for-in-array.mdx
+│       ├── no-func-assign.js
+│       ├── no-global-assign.js
+│       ├── no-implicit-coercion.js
+│       ├── no-implicit-globals.js
+│       ├── no-implied-eval.js
+│       ├── no-implied-eval.js.map
+│       ├── no-implied-eval.mdx
+│       ├── no-import-assign.js
+│       ├── no-import-type-side-effects.js
+│       ├── no-import-type-side-effects.js.map
+│       ├── no-import-type-side-effects.mdx
+│       ├── no-inferrable-types.js
+│       ├── no-inferrable-types.js.map
+│       ├── no-inferrable-types.mdx
+│       ├── no-inline-comments.js
+│       ├── no-inner-declarations.js
+│       ├── no-invalid-regexp.js
+│       ├── no-invalid-this.js
+│       ├── no-invalid-this.js.map
+│       ├── no-invalid-this.mdx
+│       ├── no-invalid-void-type.js
+│       ├── no-invalid-void-type.js.map
+│       ├── no-invalid-void-type.mdx
+│       ├── no-irregular-whitespace.js
+│       ├── no-iterator.js
+│       ├── no-label-var.js
+│       ├── no-labels.js
+│       ├── no-lone-blocks.js
+│       ├── no-lonely-if.js
+│       ├── no-loop-func.js
+│       ├── no-loop-func.js.map
+│       ├── no-loop-func.mdx
+│       ├── no-loss-of-precision.js
+│       ├── no-loss-of-precision.js.map
+│       ├── no-loss-of-precision.mdx
+│       ├── no-magic-numbers.js
+│       ├── no-magic-numbers.js.map
+│       ├── no-magic-numbers.mdx
+│       ├── no-meaningless-void-operator.js
+│       ├── no-meaningless-void-operator.js.map
+│       ├── no-meaningless-void-operator.mdx
+│       ├── no-misleading-character-class.js
+│       ├── no-misused-new.js
+│       ├── no-misused-new.js.map
+│       ├── no-misused-new.mdx
+│       ├── no-misused-promises.js
+│       ├── no-misused-promises.js.map
+│       ├── no-misused-promises.mdx
+│       ├── no-misused-spread.js
+│       ├── no-misused-spread.js.map
+│       ├── no-misused-spread.mdx
+│       ├── no-mixed-enums.js
+│       ├── no-mixed-enums.js.map
+│       ├── no-mixed-enums.mdx
+│       ├── no-mixed-operators.js
+│       ├── no-mixed-requires.js
+│       ├── no-mixed-spaces-and-tabs.js
+│       ├── no-multi-assign.js
+│       ├── no-multi-spaces.js
+│       ├── no-multi-str.js
+│       ├── no-multiple-empty-lines.js
+│       ├── no-namespace.js
+│       ├── no-namespace.js.map
+│       ├── no-namespace.mdx
+│       ├── no-native-reassign.js
+│       ├── no-negated-condition.js
+│       ├── no-negated-in-lhs.js
+│       ├── no-nested-ternary.js
+│       ├── no-new-func.js
+│       ├── no-new-native-nonconstructor.js
+│       ├── no-new-object.js
+│       ├── no-new-require.js
+│       ├── no-new-symbol.js
+│       ├── no-new-wrappers.js
+│       ├── no-new.js
+│       ├── no-non-null-asserted-nullish-coalescing.js
+│       ├── no-non-null-asserted-nullish-coalescing.js.map
+│       ├── no-non-null-asserted-nullish-coalescing.mdx
+│       ├── no-non-null-asserted-optional-chain.js
+│       ├── no-non-null-asserted-optional-chain.js.map
+│       ├── no-non-null-asserted-optional-chain.mdx
+│       ├── no-non-null-assertion.js
+│       ├── no-non-null-assertion.js.map
+│       ├── no-non-null-assertion.mdx
+│       ├── no-nonoctal-decimal-escape.js
+│       ├── no-obj-calls.js
+│       ├── no-object-constructor.js
+│       ├── no-octal-escape.js
+│       ├── no-octal.js
+│       ├── no-param-reassign.js
+│       ├── no-parameter-properties.mdx
+│       ├── no-path-concat.js
+│       ├── no-plusplus.js
+│       ├── no-process-env.js
+│       ├── no-process-exit.js
+│       ├── no-promise-executor-return.js
+│       ├── no-proto.js
+│       ├── no-prototype-builtins.js
+│       ├── no-redeclare.js
+│       ├── no-redeclare.js.map
+│       ├── no-redeclare.mdx
+│       ├── no-redundant-type-constituents.js
+│       ├── no-redundant-type-constituents.js.map
+│       ├── no-redundant-type-constituents.mdx
+│       ├── no-regex-spaces.js
+│       ├── no-require-imports.js
+│       ├── no-require-imports.js.map
+│       ├── no-require-imports.mdx
+│       ├── no-restricted-exports.js
+│       ├── no-restricted-globals.js
+│       ├── no-restricted-imports.js
+│       ├── no-restricted-imports.js.map
+│       ├── no-restricted-imports.mdx
+│       ├── no-restricted-modules.js
+│       ├── no-restricted-properties.js
+│       ├── no-restricted-syntax.js
+│       ├── no-restricted-types.js
+│       ├── no-restricted-types.js.map
+│       ├── no-restricted-types.mdx
+│       ├── no-return-assign.js
+│       ├── no-return-await.js
+│       ├── no-script-url.js
+│       ├── no-self-assign.js
+│       ├── no-self-compare.js
+│       ├── no-sequences.js
+│       ├── no-setter-return.js
+│       ├── no-shadow-restricted-names.js
+│       ├── no-shadow.js
+│       ├── no-shadow.js.map
+│       ├── no-shadow.mdx
+│       ├── no-spaced-func.js
+│       ├── no-sparse-arrays.js
+│       ├── no-sync.js
+│       ├── no-tabs.js
+│       ├── no-template-curly-in-string.js
+│       ├── no-ternary.js
+│       ├── no-this-alias.js
+│       ├── no-this-alias.js.map
+│       ├── no-this-alias.mdx
+│       ├── no-this-before-super.js
+│       ├── no-throw-literal.js
+│       ├── no-trailing-spaces.js
+│       ├── no-type-alias.js
+│       ├── no-type-alias.js.map
+│       ├── no-type-alias.mdx
+│       ├── no-undef-init.js
+│       ├── no-undef.js
+│       ├── no-undefined.js
+│       ├── no-underscore-dangle.js
+│       ├── no-unexpected-multiline.js
+│       ├── no-unmodified-loop-condition.js
+│       ├── no-unnecessary-boolean-literal-compare.js
+│       ├── no-unnecessary-boolean-literal-compare.js.map
+│       ├── no-unnecessary-boolean-literal-compare.mdx
+│       ├── no-unnecessary-condition.js
+│       ├── no-unnecessary-condition.js.map
+│       ├── no-unnecessary-condition.mdx
+│       ├── no-unnecessary-parameter-property-assignment.js
+│       ├── no-unnecessary-parameter-property-assignment.js.map
+│       ├── no-unnecessary-parameter-property-assignment.mdx
+│       ├── no-unnecessary-qualifier.js
+│       ├── no-unnecessary-qualifier.js.map
+│       ├── no-unnecessary-qualifier.mdx
+│       ├── no-unnecessary-template-expression.js
+│       ├── no-unnecessary-template-expression.js.map
+│       ├── no-unnecessary-template-expression.mdx
+│       ├── no-unnecessary-type-arguments.js
+│       ├── no-unnecessary-type-arguments.js.map
+│       ├── no-unnecessary-type-arguments.mdx
+│       ├── no-unnecessary-type-assertion.js
+│       ├── no-unnecessary-type-assertion.js.map
+│       ├── no-unnecessary-type-assertion.mdx
+│       ├── no-unnecessary-type-constraint.js
+│       ├── no-unnecessary-type-constraint.js.map
+│       ├── no-unnecessary-type-constraint.mdx
+│       ├── no-unnecessary-type-parameters.js
+│       ├── no-unnecessary-type-parameters.js.map
+│       ├── no-unnecessary-type-parameters.mdx
+│       ├── no-unneeded-ternary.js
+│       ├── no-unreachable-loop.js
+│       ├── no-unreachable.js
+│       ├── no-unsafe-argument.js
+│       ├── no-unsafe-argument.js.map
+│       ├── no-unsafe-argument.mdx
+│       ├── no-unsafe-assignment.js
+│       ├── no-unsafe-assignment.js.map
+│       ├── no-unsafe-assignment.mdx
+│       ├── no-unsafe-call.js
+│       ├── no-unsafe-call.js.map
+│       ├── no-unsafe-call.mdx
+│       ├── no-unsafe-declaration-merging.js
+│       ├── no-unsafe-declaration-merging.js.map
+│       ├── no-unsafe-declaration-merging.mdx
+│       ├── no-unsafe-enum-comparison.js
+│       ├── no-unsafe-enum-comparison.js.map
+│       ├── no-unsafe-enum-comparison.mdx
+│       ├── no-unsafe-finally.js
+│       ├── no-unsafe-function-type.js
+│       ├── no-unsafe-function-type.js.map
+│       ├── no-unsafe-function-type.mdx
+│       ├── no-unsafe-member-access.js
+│       ├── no-unsafe-member-access.js.map
+│       ├── no-unsafe-member-access.mdx
+│       ├── no-unsafe-negation.js
+│       ├── no-unsafe-optional-chaining.js
+│       ├── no-unsafe-return.js
+│       ├── no-unsafe-return.js.map
+│       ├── no-unsafe-return.mdx
+│       ├── no-unsafe-type-assertion.js
+│       ├── no-unsafe-type-assertion.js.map
+│       ├── no-unsafe-type-assertion.mdx
+│       ├── no-unsafe-unary-minus.js
+│       ├── no-unsafe-unary-minus.js.map
+│       ├── no-unsafe-unary-minus.mdx
+│       ├── no-unused-expressions.js
+│       ├── no-unused-expressions.js.map
+│       ├── no-unused-expressions.mdx
+│       ├── no-unused-labels.js
+│       ├── no-unused-private-class-members.js
+│       ├── no-unused-vars.js
+│       ├── no-unused-vars.js.map
+│       ├── no-unused-vars.mdx
+│       ├── no-use-before-define.js
+│       ├── no-use-before-define.js.map
+│       ├── no-use-before-define.mdx
+│       ├── no-useless-assignment.js
+│       ├── no-useless-backreference.js
+│       ├── no-useless-call.js
+│       ├── no-useless-catch.js
+│       ├── no-useless-computed-key.js
+│       ├── no-useless-concat.js
+│       ├── no-useless-constructor.js
+│       ├── no-useless-constructor.js.map
+│       ├── no-useless-constructor.mdx
+│       ├── no-useless-empty-export.js
+│       ├── no-useless-empty-export.js.map
+│       ├── no-useless-empty-export.mdx
+│       ├── no-useless-escape.js
+│       ├── no-useless-rename.js
+│       ├── no-useless-return.js
+│       ├── no-useless-template-literals.mdx
+│       ├── no-var-requires.js
+│       ├── no-var-requires.js.map
+│       ├── no-var-requires.mdx
+│       ├── no-var.js
+│       ├── no-void.js
+│       ├── no-warning-comments.js
+│       ├── no-whitespace-before-property.js
+│       ├── no-with.js
+│       ├── no-work-result.d.ts
+│       ├── no-work-result.js
+│       ├── no-wrapper-object-types.js
+│       ├── no-wrapper-object-types.js.map
+│       ├── no-wrapper-object-types.mdx
+│       ├── node-commonjs.d.ts
+│       ├── node-entry.js
+│       ├── node-event-generator.js
+│       ├── node-fsx.d.ts
+│       ├── node-hfs.d.ts
+│       ├── node-hfs.js
+│       ├── node-modules-paths.js
+│       ├── node-path.d.ts
+│       ├── node-path.js
+│       ├── node-path.js.map
+│       ├── node-utils.d.ts
+│       ├── node-utils.d.ts.map
+│       ├── node-utils.js
+│       ├── node-utils.js.map
+│       ├── node-which
+│       ├── node.d.ts
+│       ├── node.js
+│       ├── nodeModulesPaths.js
+│       ├── nodejs.yml
+│       ├── non-nullable-type-assertion-style.js
+│       ├── non-nullable-type-assertion-style.js.map
+│       ├── non-nullable-type-assertion-style.mdx
+│       ├── nonIterableRest.js
+│       ├── nonIterableRest.js.map
+│       ├── nonIterableSpread.js
+│       ├── nonIterableSpread.js.map
+│       ├── nonblock-statement-body-position.js
+│       ├── normalize-and-load-metadata.js
+│       ├── normalize-and-load-metadata.js.map
+│       ├── normalize-file.js
+│       ├── normalize-file.js.map
+│       ├── normalize-options.js
+│       ├── normalize-opts.js
+│       ├── normalize-opts.js.map
+│       ├── normalize-slashes.d.ts
+│       ├── normalize-slashes.js
+│       ├── normalize.d.ts
+│       ├── normalize.js
+│       ├── normalize.mjs
+│       ├── normalize.ts
+│       ├── normalizeDiffOptions.js
+│       ├── normalizePathSep.js
+│       ├── not.js
+│       ├── not.jst
+│       ├── null.js
+│       ├── nullThrows.d.ts
+│       ├── nullThrows.d.ts.map
+│       ├── nullThrows.js
+│       ├── nullThrows.js.map
+│       ├── nullishReceiverError.js
+│       ├── nullishReceiverError.js.map
+│       ├── number.js
+│       ├── numeric.d.ts
+│       ├── nunito-sans-bold-italic.woff2
+│       ├── nunito-sans-bold.woff2
+│       ├── nunito-sans-italic.woff2
+│       ├── nunito-sans-regular.woff2
+│       ├── obj-filter.js
+│       ├── object-curly-newline.js
+│       ├── object-curly-spacing.js
+│       ├── object-property-newline.js
+│       ├── object-shorthand.js
+│       ├── object.d.ts
+│       ├── object.js
+│       ├── objectDestructuringEmpty.js
+│       ├── objectDestructuringEmpty.js.map
+│       ├── objectIterators.js
+│       ├── objectIterators.js.map
+│       ├── objectSpread.js
+│       ├── objectSpread.js.map
+│       ├── objectSpread2.js
+│       ├── objectSpread2.js.map
+│       ├── objectWithoutProperties.js
+│       ├── objectWithoutProperties.js.map
+│       ├── objectWithoutPropertiesLoose.js
+│       ├── objectWithoutPropertiesLoose.js.map
+│       ├── observable-like.d.ts
+│       ├── old.js
+│       ├── omap.js
+│       ├── once.js
+│       ├── one-var-declaration-per-line.js
+│       ├── one-var.js
+│       ├── oneOf.js
+│       ├── oneOf.jst
+│       ├── only-throw-error.js
+│       ├── only-throw-error.js.map
+│       ├── only-throw-error.mdx
+│       ├── onlyOnce.js
+│       ├── opaque.d.ts
+│       ├── openChrome.applescript
+│       ├── operator-assignment.js
+│       ├── operator-linebreak.js
+│       ├── option-assertions.js
+│       ├── option-assertions.js.map
+│       ├── optional-keys-of.d.ts
+│       ├── options.d.ts
+│       ├── options.js
+│       ├── options.js.map
+│       ├── order-by-first-call.d.ts
+│       ├── order-by-first-call.js
+│       ├── order-by-first-call.test.js
+│       ├── os.d.ts
+│       ├── outside.js
+│       ├── override-tester.js
+│       ├── package-json.d.ts
+│       ├── package.js
+│       ├── package.js.map
+│       ├── package_task.js
+│       ├── padded-blocks.js
+│       ├── padded-token-cursor.js
+│       ├── padding-line-between-statements.js
+│       ├── pairs.js
+│       ├── parallel.js
+│       ├── parallelLimit.js
+│       ├── parameter-properties.js
+│       ├── parameter-properties.js.map
+│       ├── parameter-properties.mdx
+│       ├── parentheses.js
+│       ├── parentheses.js.map
+│       ├── parse-command.js
+│       ├── parse-options.js
+│       ├── parse-options.js.map
+│       ├── parse-string.js
+│       ├── parse-type.js
+│       ├── parse.d.ts
+│       ├── parse.js
+│       ├── parse.js.map
+│       ├── parse.ts
+│       ├── parseAst.d.ts
+│       ├── parseAst.js
+│       ├── parseShardPair.js
+│       ├── parseargs.js
+│       ├── parser -> ../@babel/parser/bin/babel-parser.js
+│       ├── parser-options.d.ts
+│       ├── parser-options.d.ts.map
+│       ├── parser-options.js
+│       ├── parser-options.js.map
+│       ├── parser-service.js
+│       ├── parser.d.ts
+│       ├── parser.d.ts.map
+│       ├── parser.js
+│       ├── parser.js.map
+│       ├── parserSeemsToBeTSESLint.d.ts
+│       ├── parserSeemsToBeTSESLint.d.ts.map
+│       ├── parserSeemsToBeTSESLint.js
+│       ├── parserSeemsToBeTSESLint.js.map
+│       ├── partial-deep.d.ts
+│       ├── partial-on-undefined-deep.d.ts
+│       ├── partial.d.ts
+│       ├── partial.js
+│       ├── partial.js.map
+│       ├── pascal-case.d.ts
+│       ├── pascal-cased-properties-deep.d.ts
+│       ├── pascal-cased-properties.d.ts
+│       ├── patch.d.ts
+│       ├── patch.js
+│       ├── patcher.d.ts
+│       ├── patcher.js
+│       ├── path-visitor.d.ts
+│       ├── path-visitor.js
+│       ├── path-visitor.js.map
+│       ├── path.d.ts
+│       ├── path.js
+│       ├── path.js.map
+│       ├── pathGrammar.d.ts
+│       ├── pathGrammar.ts
+│       ├── paths-to-module-name-mapper.d.ts
+│       ├── paths-to-module-name-mapper.js
+│       ├── pathutils.js
+│       ├── pattern-to-regex.js
+│       ├── pattern-to-regex.js.map
+│       ├── pattern-visitor.js
+│       ├── pattern.d.ts
+│       ├── pattern.d.ts.map
+│       ├── pattern.js
+│       ├── pattern.js.map
+│       ├── pattern.jst
+│       ├── patternModeHelpers.js
+│       ├── percent.js
+│       ├── perf_hooks.d.ts
+│       ├── permessage-deflate.js
+│       ├── picocolors.browser.js
+│       ├── picocolors.d.ts
+│       ├── picocolors.js
+│       ├── picomatch.js
+│       ├── placeholders.js
+│       ├── placeholders.js.map
+│       ├── playground-2.mongodb.js
+│       ├── playground-mongodb.js
+│       ├── plugin-conflict.js
+│       ├── plugin-invalid.js
+│       ├── plugin-missing.js
+│       ├── plugin-pass.js
+│       ├── plugin-pass.js.map
+│       ├── plugin.js
+│       ├── plugin.js.map
+│       ├── plugins.js
+│       ├── plugins.js.map
+│       ├── pluralize.js
+│       ├── pointer.d.ts
+│       ├── pointer.js
+│       ├── polyfills.js
+│       ├── pool-stats.d.ts
+│       ├── pool.d.ts
+│       ├── populate.js
+│       ├── populate.js.map
+│       ├── posix.cjs
+│       ├── posix.js
+│       ├── possible-errors.d.ts
+│       ├── possibleConstructorReturn.js
+│       ├── possibleConstructorReturn.js.map
+│       ├── post-update.sample
+│       ├── postcss.d.mts
+│       ├── postcss.d.ts
+│       ├── postcss.js
+│       ├── postcss.mjs
+│       ├── pow.d.ts
+│       ├── pow.js
+│       ├── pre-applypatch.sample
+│       ├── pre-commit.sample
+│       ├── pre-merge-commit.sample
+│       ├── pre-push.sample
+│       ├── pre-rebase.sample
+│       ├── pre-receive.sample
+│       ├── preRunMessage.js
+│       ├── predicateParslet.d.ts
+│       ├── predicateParslet.ts
+│       ├── predicates.d.ts
+│       ├── predicates.d.ts.map
+│       ├── predicates.js
+│       ├── predicates.js.map
+│       ├── prefer-arrow-callback.js
+│       ├── prefer-as-const.js
+│       ├── prefer-as-const.js.map
+│       ├── prefer-as-const.mdx
+│       ├── prefer-const.js
+│       ├── prefer-destructuring.js
+│       ├── prefer-destructuring.js.map
+│       ├── prefer-destructuring.mdx
+│       ├── prefer-enum-initializers.js
+│       ├── prefer-enum-initializers.js.map
+│       ├── prefer-enum-initializers.mdx
+│       ├── prefer-exponentiation-operator.js
+│       ├── prefer-find.js
+│       ├── prefer-find.js.map
+│       ├── prefer-find.mdx
+│       ├── prefer-for-of.js
+│       ├── prefer-for-of.js.map
+│       ├── prefer-for-of.mdx
+│       ├── prefer-function-type.js
+│       ├── prefer-function-type.js.map
+│       ├── prefer-function-type.mdx
+│       ├── prefer-includes.js
+│       ├── prefer-includes.js.map
+│       ├── prefer-includes.mdx
+│       ├── prefer-literal-enum-member.js
+│       ├── prefer-literal-enum-member.js.map
+│       ├── prefer-literal-enum-member.mdx
+│       ├── prefer-named-capture-group.js
+│       ├── prefer-namespace-keyword.js
+│       ├── prefer-namespace-keyword.js.map
+│       ├── prefer-namespace-keyword.mdx
+│       ├── prefer-nullish-coalescing.js
+│       ├── prefer-nullish-coalescing.js.map
+│       ├── prefer-nullish-coalescing.mdx
+│       ├── prefer-numeric-literals.js
+│       ├── prefer-object-has-own.js
+│       ├── prefer-object-spread.js
+│       ├── prefer-optional-chain.js
+│       ├── prefer-optional-chain.js.map
+│       ├── prefer-optional-chain.mdx
+│       ├── prefer-promise-reject-errors.js
+│       ├── prefer-promise-reject-errors.js.map
+│       ├── prefer-promise-reject-errors.mdx
+│       ├── prefer-readonly-parameter-types.js
+│       ├── prefer-readonly-parameter-types.js.map
+│       ├── prefer-readonly-parameter-types.mdx
+│       ├── prefer-readonly.js
+│       ├── prefer-readonly.js.map
+│       ├── prefer-readonly.mdx
+│       ├── prefer-reduce-type-parameter.js
+│       ├── prefer-reduce-type-parameter.js.map
+│       ├── prefer-reduce-type-parameter.mdx
+│       ├── prefer-reflect.js
+│       ├── prefer-regex-literals.js
+│       ├── prefer-regexp-exec.js
+│       ├── prefer-regexp-exec.js.map
+│       ├── prefer-regexp-exec.mdx
+│       ├── prefer-rest-params.js
+│       ├── prefer-return-this-type.js
+│       ├── prefer-return-this-type.js.map
+│       ├── prefer-return-this-type.mdx
+│       ├── prefer-spread.js
+│       ├── prefer-string-starts-ends-with.js
+│       ├── prefer-string-starts-ends-with.js.map
+│       ├── prefer-string-starts-ends-with.mdx
+│       ├── prefer-template.js
+│       ├── prefer-ts-expect-error.js
+│       ├── prefer-ts-expect-error.js.map
+│       ├── prefer-ts-expect-error.mdx
+│       ├── preload.js
+│       ├── prepare-commit-msg.sample
+│       ├── prepare-tests
+│       ├── prependToMemberExpression.js
+│       ├── prependToMemberExpression.js.map
+│       ├── preprocessor.js
+│       ├── prerelease.js
+│       ├── presets.d.ts
+│       ├── presets.js
+│       ├── prettify.css
+│       ├── prettify.js
+│       ├── pretty.js
+│       ├── pretty.js.map
+│       ├── preview-errors.cjs
+│       ├── preview-errors.d.ts
+│       ├── preview-errors.js
+│       ├── previous-map.d.ts
+│       ├── previous-map.js
+│       ├── primitive.d.ts
+│       ├── print-config-with-directory-path.js
+│       ├── print.js
+│       ├── printDiffs.js
+│       ├── printDisplayName.js
+│       ├── printSnapshot.js
+│       ├── printer.d.ts
+│       ├── printer.js
+│       ├── printer.js.map
+│       ├── process-argv.js
+│       ├── process.d.ts
+│       ├── processChild.js
+│       ├── processor-service.js
+│       ├── processor.d.ts
+│       ├── processor.js
+│       ├── productions.js
+│       ├── productions.js.map
+│       ├── profiling.js
+│       ├── program.js
+│       ├── project_auto_fixer.js
+│       ├── promisable.d.ts
+│       ├── promise-function-async.js
+│       ├── promise-function-async.js.map
+│       ├── promise-function-async.mdx
+│       ├── promise-value.d.ts
+│       ├── promise.js
+│       ├── promiseCallback.js
+│       ├── promises.d.ts
+│       ├── prompts.js
+│       ├── properties.js
+│       ├── properties.jst
+│       ├── propertyNames.js
+│       ├── propertyNames.jst
+│       ├── propertyTypes.d.ts
+│       ├── propertyTypes.d.ts.map
+│       ├── propertyTypes.js
+│       ├── propertyTypes.js.map
+│       ├── provider.d.ts
+│       ├── provider.js
+│       ├── proxy-agent.d.ts
+│       ├── proxy-signals.d.ts
+│       ├── proxy-signals.d.ts.map
+│       ├── proxy-signals.js
+│       ├── proxy-signals.js.map
+│       ├── proxy.cjs
+│       ├── proxy.d.ts
+│       ├── proxy.js
+│       ├── publicUtils.cjs
+│       ├── publish-built-version
+│       ├── publish_task.js
+│       ├── punycode.d.ts
+│       ├── punycode.es6.js
+│       ├── punycode.js
+│       ├── pure-rand-default.d.ts
+│       ├── pure-rand-default.js
+│       ├── pure-rand.d.ts
+│       ├── pure-rand.js
+│       ├── push-to-checkout.sample
+│       ├── querystring.d.ts
+│       ├── questions.js
+│       ├── queue.js
+│       ├── quick-sort.js
+│       ├── quote-props.js
+│       ├── quotes.js
+│       ├── race.js
+│       ├── radix.js
+│       ├── range-tree.d.ts
+│       ├── range-tree.js
+│       ├── range-tree.mjs
+│       ├── range-tree.ts
+│       ├── range.bnf
+│       ├── range.d.ts
+│       ├── range.js
+│       ├── rangeToLoc.js
+│       ├── rangeToLoc.js.map
+│       ├── raw-compiler-options.d.ts
+│       ├── raw-compiler-options.js
+│       ├── rcompare.js
+│       ├── re.js
+│       ├── react-dom-server-legacy.browser.development.js
+│       ├── react-dom-server-legacy.browser.production.min.js
+│       ├── react-dom-server-legacy.node.development.js
+│       ├── react-dom-server-legacy.node.production.min.js
+│       ├── react-dom-server.browser.development.js
+│       ├── react-dom-server.browser.production.min.js
+│       ├── react-dom-server.node.development.js
+│       ├── react-dom-server.node.production.min.js
+│       ├── react-dom-test-utils.development.js
+│       ├── react-dom-test-utils.production.min.js
+│       ├── react-dom.development.js
+│       ├── react-dom.js
+│       ├── react-dom.js.map
+│       ├── react-dom.production.min.js
+│       ├── react-dom.profiling.min.js
+│       ├── react-dom_client.js
+│       ├── react-dom_client.js.map
+│       ├── react-is.development.js
+│       ├── react-is.production.min.js
+│       ├── react-jsx-dev-runtime.development.js
+│       ├── react-jsx-dev-runtime.production.min.js
+│       ├── react-jsx-dev-runtime.profiling.min.js
+│       ├── react-jsx-runtime.development.js
+│       ├── react-jsx-runtime.production.min.js
+│       ├── react-jsx-runtime.profiling.min.js
+│       ├── react-refresh-babel.development.js
+│       ├── react-refresh-babel.production.min.js
+│       ├── react-refresh-runtime.development.js
+│       ├── react-refresh-runtime.production.min.js
+│       ├── react.d.ts
+│       ├── react.development.js
+│       ├── react.js
+│       ├── react.js.map
+│       ├── react.production.min.js
+│       ├── react.profiling.min.js
+│       ├── react.shared-subset.development.js
+│       ├── react.shared-subset.js
+│       ├── react.shared-subset.production.min.js
+│       ├── react_jsx-dev-runtime.js
+│       ├── react_jsx-dev-runtime.js.map
+│       ├── react_jsx-runtime.js
+│       ├── react_jsx-runtime.js.map
+│       ├── read-coverage.js
+│       ├── readConfigFileAndSetRootDir.js
+│       ├── readOnlyError.js
+│       ├── readOnlyError.js.map
+│       ├── readShebang.js
+│       ├── readable.d.ts
+│       ├── reader.d.ts
+│       ├── reader.js
+│       ├── readline.d.ts
+│       ├── readonly-deep.d.ts
+│       ├── readonly-tuple.d.ts
+│       ├── realtime.js
+│       ├── realtime.js.map
+│       ├── receiver.js
+│       ├── recommended-type-checked-only.js
+│       ├── recommended-type-checked-only.js.map
+│       ├── recommended-type-checked.js
+│       ├── recommended-type-checked.js.map
+│       ├── recommended.js
+│       ├── recommended.js.map
+│       ├── reduce.js
+│       ├── reduceRight.js
+│       ├── ref.d.ts
+│       ├── ref.js
+│       ├── ref.jst
+│       ├── reference.js
+│       ├── referenceContainsTypeQuery.js
+│       ├── referenceContainsTypeQuery.js.map
+│       ├── referencer.js
+│       ├── reflect.js
+│       ├── reflectAll.js
+│       ├── reflectApply.d.ts
+│       ├── reflectApply.js
+│       ├── refreshUtils.js
+│       ├── regeneratorRuntime.js
+│       ├── regeneratorRuntime.js.map
+│       ├── regexp.js
+│       ├── regexps-iri.d.ts
+│       ├── regexps-iri.js
+│       ├── regexps-iri.js.map
+│       ├── regexps-uri.d.ts
+│       ├── regexps-uri.js
+│       ├── regexps-uri.js.map
+│       ├── region.js
+│       ├── register.js
+│       ├── regular-expressions.js
+│       ├── reject.js
+│       ├── rejectLimit.js
+│       ├── rejectSeries.js
+│       ├── related-getter-setter-pairs.js
+│       ├── related-getter-setter-pairs.js.map
+│       ├── related-getter-setter-pairs.mdx
+│       ├── relative-module-resolver.js
+│       ├── relativePath.js
+│       ├── remapping.d.ts
+│       ├── remapping.mjs
+│       ├── remapping.mjs.map
+│       ├── remapping.umd.js
+│       ├── remapping.umd.js.map
+│       ├── removal-hooks.js
+│       ├── removal-hooks.js.map
+│       ├── removal.js
+│       ├── removal.js.map
+│       ├── remove-index-signature.d.ts
+│       ├── removeComments.js
+│       ├── removeComments.js.map
+│       ├── removeProperties.js
+│       ├── removeProperties.js.map
+│       ├── removePropertiesDeep.js
+│       ├── removePropertiesDeep.js.map
+│       ├── removeTypeDuplicates.js
+│       ├── removeTypeDuplicates.js.map
+│       ├── removed.js
+│       ├── removed.js.map
+│       ├── renamer.js
+│       ├── renamer.js.map
+│       ├── repl.d.ts
+│       ├── replace.d.ts
+│       ├── replace.js
+│       ├── replacePathSepForGlob.js
+│       ├── replacement.js
+│       ├── replacement.js.map
+│       ├── report-base.js
+│       ├── report-translator.js
+│       ├── require-all-or-none.d.ts
+│       ├── require-array-sort-compare.js
+│       ├── require-array-sort-compare.js.map
+│       ├── require-array-sort-compare.mdx
+│       ├── require-at-least-one.d.ts
+│       ├── require-atomic-updates.js
+│       ├── require-await.js
+│       ├── require-await.js.map
+│       ├── require-await.mdx
+│       ├── require-exactly-one.d.ts
+│       ├── require-unicode-regexp.js
+│       ├── require-yield.js
+│       ├── require.js
+│       ├── requireOrImportModule.js
+│       ├── required-keys-of.d.ts
+│       ├── required.js
+│       ├── required.jst
+│       ├── requiresQuoting.d.ts
+│       ├── requiresQuoting.d.ts.map
+│       ├── requiresQuoting.js
+│       ├── requiresQuoting.js.map
+│       ├── resolve
+│       ├── resolve-targets-browser.js
+│       ├── resolve-targets-browser.js.map
+│       ├── resolve-targets-browser.ts
+│       ├── resolve-targets.js
+│       ├── resolve-targets.js.map
+│       ├── resolve-targets.ts
+│       ├── resolve-uri.d.ts
+│       ├── resolve-uri.mjs
+│       ├── resolve-uri.mjs.map
+│       ├── resolve-uri.umd.js
+│       ├── resolve-uri.umd.js.map
+│       ├── resolve.d.ts
+│       ├── resolve.js
+│       ├── resolveCommand.js
+│       ├── resolveConfigPath.js
+│       ├── resolveProjectList.d.ts
+│       ├── resolveProjectList.d.ts.map
+│       ├── resolveProjectList.js
+│       ├── resolveProjectList.js.map
+│       ├── resolver.js
+│       ├── rest-spread-spacing.js
+│       ├── restrict-plus-operands.js
+│       ├── restrict-plus-operands.js.map
+│       ├── restrict-plus-operands.mdx
+│       ├── restrict-template-expressions.js
+│       ├── restrict-template-expressions.js.map
+│       ├── restrict-template-expressions.mdx
+│       ├── result.d.ts
+│       ├── result.js
+│       ├── retrier.cjs
+│       ├── retrier.d.cts
+│       ├── retrier.d.ts
+│       ├── retrier.js
+│       ├── retrier.min.js
+│       ├── retrier.mjs
+│       ├── retry-agent.d.ts
+│       ├── retry-handler.d.ts
+│       ├── retry.js
+│       ├── retryable.js
+│       ├── return-await.js
+│       ├── return-await.js.map
+│       ├── return-await.mdx
+│       ├── reuseNoCodeFunction.js
+│       ├── reusify.js
+│       ├── rewrite-live-references.js
+│       ├── rewrite-live-references.js.map
+│       ├── rewrite-stack-trace.js
+│       ├── rewrite-stack-trace.js.map
+│       ├── rewrite-this.js
+│       ├── rewrite-this.js.map
+│       ├── rollup
+│       ├── rollup.config.js
+│       ├── rollup.d.ts
+│       ├── rollup.darwin-arm64.node
+│       ├── rollup.js
+│       ├── root.d.ts
+│       ├── root.js
+│       ├── round.d.ts
+│       ├── round.js
+│       ├── route.js
+│       ├── routing.js
+│       ├── rsort.js
+│       ├── rule-fixer.js
+│       ├── rule-validator.js
+│       ├── rule.d.ts
+│       ├── rule.js
+│       ├── rules.d.ts
+│       ├── rules.js
+│       ├── run.js
+│       ├── runCreate.js
+│       ├── runGlobalHook.js
+│       ├── runJest.js
+│       ├── runTest.js
+│       ├── runner.js
+│       ├── runtime-info.js
+│       ├── runtime.js
+│       ├── runtimeErrorsAndWarnings.js
+│       ├── safe-emitter.js
+│       ├── satisfies.js
+│       ├── sb -> ../storybook/bin/index.cjs
+│       ├── scan.js
+│       ├── scheduler-unstable_mock.development.js
+│       ├── scheduler-unstable_mock.production.min.js
+│       ├── scheduler-unstable_post_task.development.js
+│       ├── scheduler-unstable_post_task.production.min.js
+│       ├── scheduler.development.js
+│       ├── scheduler.production.min.js
+│       ├── scheduler.profiling.min.js
+│       ├── schema.d.ts
+│       ├── schema.js
+│       ├── schema.js.map
+│       ├── schema_obj.js
+│       ├── scope-manager.js
+│       ├── scope.d.ts
+│       ├── scope.js
+│       ├── scope.js.map
+│       ├── scopeAnalysis.d.ts
+│       ├── scopeAnalysis.d.ts.map
+│       ├── scopeAnalysis.js
+│       ├── scopeAnalysis.js.map
+│       ├── scopeUtils.js
+│       ├── scopeUtils.js.map
+│       ├── scopes.d.ts
+│       ├── screaming-snake-case.d.ts
+│       ├── scripthost.d.ts
+│       ├── scripthost.d.ts.map
+│       ├── scripthost.js
+│       ├── scripthost.js.map
+│       ├── scroll.js
+│       ├── sea.d.ts
+│       ├── seconds.js
+│       ├── select.js
+│       ├── selectLimit.js
+│       ├── selectSeries.js
+│       ├── semantic-or-syntactic-errors.d.ts
+│       ├── semantic-or-syntactic-errors.d.ts.map
+│       ├── semantic-or-syntactic-errors.js
+│       ├── semantic-or-syntactic-errors.js.map
+│       ├── semi-spacing.js
+│       ├── semi-style.js
+│       ├── semi.js
+│       ├── semver -> ../semver/bin/semver.js
+│       ├── semver.js
+│       ├── sender.js
+│       ├── seq.js
+│       ├── serialization.js
+│       ├── series.js
+│       ├── server-errors.cjs
+│       ├── server-errors.d.ts
+│       ├── server-errors.js
+│       ├── server.browser.js
+│       ├── server.js
+│       ├── server.node.js
+│       ├── set-array.d.ts
+│       ├── set-array.mjs
+│       ├── set-array.mjs.map
+│       ├── set-array.umd.js
+│       ├── set-array.umd.js.map
+│       ├── set-blocking.js
+│       ├── set-non-nullable.d.ts
+│       ├── set-optional.d.ts
+│       ├── set-required.d.ts
+│       ├── set-return-type.d.ts
+│       ├── set.d.ts
+│       ├── set.js
+│       ├── set.js.map
+│       ├── setFromArgv.js
+│       ├── setFunctionName.js
+│       ├── setFunctionName.js.map
+│       ├── setGlobal.js
+│       ├── setImmediate.js
+│       ├── setPrototypeOf.js
+│       ├── setPrototypeOf.js.map
+│       ├── settings.d.ts
+│       ├── settings.js
+│       ├── severity.js
+│       ├── sha1.d.ts
+│       ├── sha1.js
+│       ├── shallowEqual.js
+│       ├── shallowEqual.js.map
+│       ├── shams.d.ts
+│       ├── shams.js
+│       ├── shared.d.ts
+│       ├── shared.d.ts.map
+│       ├── shared.js
+│       ├── shared.js.map
+│       ├── shouldInstrument.js
+│       ├── shouldLoadAsEsm.js
+│       ├── shuffleArray.js
+│       ├── sign.d.ts
+│       ├── sign.js
+│       ├── signals.d.ts
+│       ├── signals.d.ts.map
+│       ├── signals.js
+│       ├── signals.js.map
+│       ├── simple-traverse.d.ts
+│       ├── simple-traverse.d.ts.map
+│       ├── simple-traverse.js
+│       ├── simple-traverse.js.map
+│       ├── simplify.d.ts
+│       ├── simplify.js
+│       ├── simplify.ts
+│       ├── sisteransi.d.ts
+│       ├── skip-cursor.js
+│       ├── skipFirstGeneratorNext.js
+│       ├── skipFirstGeneratorNext.js.map
+│       ├── sl.js
+│       ├── slicedToArray.js
+│       ├── slicedToArray.js.map
+│       ├── snake-case.d.ts
+│       ├── snake-cased-properties-deep.d.ts
+│       ├── snake-cased-properties.d.ts
+│       ├── snippet.js
+│       ├── some.js
+│       ├── someLimit.js
+│       ├── someSeries.js
+│       ├── sort-arrow-sprite.png
+│       ├── sort-imports.js
+│       ├── sort-keys.js
+│       ├── sort-type-constituents.js
+│       ├── sort-type-constituents.js.map
+│       ├── sort-type-constituents.mdx
+│       ├── sort-type-union-intersection-members.mdx
+│       ├── sort-vars.js
+│       ├── sort.d.ts
+│       ├── sort.js
+│       ├── sortBy.js
+│       ├── sorter.js
+│       ├── source-code-fixer.js
+│       ├── source-code.js
+│       ├── source-coverage.js
+│       ├── source-files.d.ts
+│       ├── source-files.d.ts.map
+│       ├── source-files.js
+│       ├── source-files.js.map
+│       ├── source-map-consumer.d.ts
+│       ├── source-map-consumer.js
+│       ├── source-map-generator.d.ts
+│       ├── source-map-generator.js
+│       ├── source-map-support.js
+│       ├── source-map-tree.d.ts
+│       ├── source-map.d.ts
+│       ├── source-map.debug.js
+│       ├── source-map.js
+│       ├── source-map.js.map
+│       ├── source-map.min.js
+│       ├── source-map.min.js.map
+│       ├── source-node.d.ts
+│       ├── source-node.js
+│       ├── source.js
+│       ├── sourcemap-codec.d.ts
+│       ├── sourcemap-codec.mjs
+│       ├── sourcemap-codec.mjs.map
+│       ├── sourcemap-codec.umd.js
+│       ├── sourcemap-codec.umd.js.map
+│       ├── sourcemap-segment.d.ts
+│       ├── spa.css
+│       ├── space-before-blocks.js
+│       ├── space-before-function-paren.js
+│       ├── space-in-parens.js
+│       ├── space-infix-ops.js
+│       ├── space-unary-ops.js
+│       ├── spaced-comment.js
+│       ├── specialChars.js
+│       ├── specifierNameMatches.d.ts
+│       ├── specifierNameMatches.d.ts.map
+│       ├── specifierNameMatches.js
+│       ├── specifierNameMatches.js.map
+│       ├── split.d.ts
+│       ├── spread.d.ts
+│       ├── sprintf.js
+│       ├── sprintf.min.js
+│       ├── sprintf.min.js.map
+│       ├── sprintf.min.map
+│       ├── spyMatchers.js
+│       ├── sqlite.d.ts
+│       ├── state.js
+│       ├── statements.js
+│       ├── statements.js.map
+│       ├── stats.js
+│       ├── statuses.js
+│       ├── stdio.js
+│       ├── store.js
+│       ├── storybook -> ../storybook/bin/index.cjs
+│       ├── stream.d.ts
+│       ├── stream.js
+│       ├── strict-boolean-expressions.js
+│       ├── strict-boolean-expressions.js.map
+│       ├── strict-boolean-expressions.mdx
+│       ├── strict-mode.d.ts
+│       ├── strict-type-checked-only.js
+│       ├── strict-type-checked-only.js.map
+│       ├── strict-type-checked.js
+│       ├── strict-type-checked.js.map
+│       ├── strict.d.ts
+│       ├── strict.js
+│       ├── strict.js.map
+│       ├── string-key-of.d.ts
+│       ├── string-utils.js
+│       ├── string.d.ts
+│       ├── string.js
+│       ├── string.js.map
+│       ├── stringToBytes.js
+│       ├── string_decoder.d.ts
+│       ├── stringified.d.ts
+│       ├── stringifier.d.ts
+│       ├── stringifier.js
+│       ├── stringify.d.ts
+│       ├── stringify.js
+│       ├── stringify.ts
+│       ├── strings.d.ts
+│       ├── strip-filename.d.ts
+│       ├── strip.js
+│       ├── style.js
+│       ├── stylish.js
+│       ├── stylistic-issues.d.ts
+│       ├── stylistic-type-checked-only.js
+│       ├── stylistic-type-checked-only.js.map
+│       ├── stylistic-type-checked.js
+│       ├── stylistic-type-checked.js.map
+│       ├── stylistic.js
+│       ├── stylistic.js.map
+│       ├── sub.js
+│       ├── subparsers.js
+│       ├── subprotocol.js
+│       ├── subset.js
+│       ├── summarizer-factory.js
+│       ├── summaryHeader.js
+│       ├── summaryTableHeader.js
+│       ├── summaryTableLine.js
+│       ├── superPropBase.js
+│       ├── superPropBase.js.map
+│       ├── superPropGet.js
+│       ├── superPropGet.js.map
+│       ├── superPropSet.js
+│       ├── superPropSet.js.map
+│       ├── supported.js
+│       ├── switch-colon-spacing.js
+│       ├── switch-exhaustiveness-check.js
+│       ├── switch-exhaustiveness-check.js.map
+│       ├── switch-exhaustiveness-check.mdx
+│       ├── symbol-description.js
+│       ├── symbols.js
+│       ├── sync.cjs
+│       ├── sync.d.ts
+│       ├── sync.js
+│       ├── syntax.d.ts
+│       ├── syntax.js
+│       ├── system.d.ts
+│       ├── system.js
+│       ├── taggedTemplateLiteral.js
+│       ├── taggedTemplateLiteral.js.map
+│       ├── taggedTemplateLiteralLoose.js
+│       ├── taggedTemplateLiteralLoose.js.map
+│       ├── target.d.ts
+│       ├── target.js
+│       ├── targets.js
+│       ├── targets.js.map
+│       ├── task.js
+│       ├── taskQueue.ts
+│       ├── tasks.d.ts
+│       ├── tasks.js
+│       ├── tdz.js
+│       ├── tdz.js.map
+│       ├── template-curly-spacing.js
+│       ├── template-literals.js
+│       ├── template-literals.js.map
+│       ├── template-tag-spacing.js
+│       ├── template.ejs
+│       ├── template.js
+│       ├── templates.js
+│       ├── temporalRef.js
+│       ├── temporalRef.js.map
+│       ├── temporalUndefined.js
+│       ├── temporalUndefined.js.map
+│       ├── terminal-highlight.js
+│       ├── text-table.js
+│       ├── text.d.ts
+│       ├── text.js
+│       ├── textwrap.js
+│       ├── threadChild.js
+│       ├── throws-on-proto.d.ts
+│       ├── throws-on-proto.js
+│       ├── timeout.js
+│       ├── timers.d.ts
+│       ├── times.js
+│       ├── timesLimit.js
+│       ├── timesSeries.js
+│       ├── timestamp.js
+│       ├── timing.js
+│       ├── tiny-invariant.cjs.js
+│       ├── tiny-invariant.d.ts
+│       ├── tiny-invariant.esm.js
+│       ├── tiny-invariant.flow.js
+│       ├── tiny-invariant.js
+│       ├── tiny-invariant.min.js
+│       ├── tiny-invariant.ts
+│       ├── tls.d.ts
+│       ├── tmpl.js
+│       ├── to-comparators.js
+│       ├── to-while
+│       ├── toArray.js
+│       ├── toArray.js.map
+│       ├── toBindingIdentifierName.js
+│       ├── toBindingIdentifierName.js.map
+│       ├── toBlock.js
+│       ├── toBlock.js.map
+│       ├── toComputedKey.js
+│       ├── toComputedKey.js.map
+│       ├── toConsumableArray.js
+│       ├── toConsumableArray.js.map
+│       ├── toExpression.js
+│       ├── toExpression.js.map
+│       ├── toIdentifier.js
+│       ├── toIdentifier.js.map
+│       ├── toKeyAlias.js
+│       ├── toKeyAlias.js.map
+│       ├── toPrimitive.js
+│       ├── toPrimitive.js.map
+│       ├── toPropertyKey.js
+│       ├── toPropertyKey.js.map
+│       ├── toSequenceExpression.js
+│       ├── toSequenceExpression.js.map
+│       ├── toSetter.js
+│       ├── toSetter.js.map
+│       ├── toStatement.js
+│       ├── toStatement.js.map
+│       ├── toThrowMatchers.js
+│       ├── toggle.js
+│       ├── token-map.js
+│       ├── token-map.js.map
+│       ├── token-translator.js
+│       ├── tokenize-arg-string.js
+│       ├── tokenize.js
+│       ├── trace-mapping.d.ts
+│       ├── trace-mapping.mjs
+│       ├── trace-mapping.mjs.map
+│       ├── trace-mapping.umd.js
+│       ├── trace-mapping.umd.js.map
+│       ├── trace_events.d.ts
+│       ├── transform-ast.js
+│       ├── transform-ast.js.map
+│       ├── transform-file-browser.js
+│       ├── transform-file-browser.js.map
+│       ├── transform-file-browser.ts
+│       ├── transform-file.js
+│       ├── transform-file.js.map
+│       ├── transform-file.ts
+│       ├── transform-utils.js
+│       ├── transform.d.ts
+│       ├── transform.js.map
+│       ├── transform.ts
+│       ├── transformer.js
+│       ├── traverse-node.js
+│       ├── traverse-node.js.map
+│       ├── traverse.d.ts
+│       ├── traverse.js
+│       ├── traverse.js.map
+│       ├── traverse.ts
+│       ├── traverseFast.js
+│       ├── traverseFast.js.map
+│       ├── traverser.js
+│       ├── travis-gh-pages
+│       ├── tree.js
+│       ├── trim.d.ts
+│       ├── trimAndFormatPath.js
+│       ├── triple-slash-reference.js
+│       ├── triple-slash-reference.js.map
+│       ├── triple-slash-reference.mdx
+│       ├── true.js
+│       ├── tryEach.js
+│       ├── tryRealpath.js
+│       ├── ts-compiler.d.ts
+│       ├── ts-compiler.js
+│       ├── ts-error.d.ts
+│       ├── ts-error.js
+│       ├── ts-estree.d.ts
+│       ├── ts-estree.d.ts.map
+│       ├── ts-estree.js
+│       ├── ts-estree.js.map
+│       ├── ts-jest -> ../ts-jest/cli.js
+│       ├── ts-jest-compiler.d.ts
+│       ├── ts-jest-compiler.js
+│       ├── ts-jest-transformer.d.ts
+│       ├── ts-jest-transformer.js
+│       ├── ts-nodes.d.ts
+│       ├── ts-nodes.d.ts.map
+│       ├── ts-nodes.js
+│       ├── ts-nodes.js.map
+│       ├── tsc
+│       ├── tsc.js
+│       ├── tsconfig-json.d.ts
+│       ├── tslib.d.ts
+│       ├── tslib.es6.html
+│       ├── tslib.es6.js
+│       ├── tslib.es6.mjs
+│       ├── tslib.html
+│       ├── tslib.js
+│       ├── tsserver
+│       ├── tsserver.js
+│       ├── tsserverlibrary.d.ts
+│       ├── tsserverlibrary.js
+│       ├── tty.d.ts
+│       ├── type-annotations.d.ts
+│       ├── type-annotations.js
+│       ├── type-annotations.js.map
+│       ├── type-detect.js
+│       ├── type-of.d.ts
+│       ├── type-of.js
+│       ├── type-of.test.js
+│       ├── type.d.ts
+│       ├── type.js
+│       ├── typeDeclaredInFile.d.ts
+│       ├── typeDeclaredInFile.d.ts.map
+│       ├── typeDeclaredInFile.js
+│       ├── typeDeclaredInFile.js.map
+│       ├── typeDeclaredInLib.d.ts
+│       ├── typeDeclaredInLib.d.ts.map
+│       ├── typeDeclaredInLib.js
+│       ├── typeDeclaredInLib.js.map
+│       ├── typeDeclaredInPackageDeclarationFile.d.ts
+│       ├── typeDeclaredInPackageDeclarationFile.d.ts.map
+│       ├── typeDeclaredInPackageDeclarationFile.js
+│       ├── typeDeclaredInPackageDeclarationFile.js.map
+│       ├── typeFlagUtils.d.ts
+│       ├── typeFlagUtils.d.ts.map
+│       ├── typeFlagUtils.js
+│       ├── typeFlagUtils.js.map
+│       ├── typebox.d.ts
+│       ├── typebox.js
+│       ├── typed-array.d.ts
+│       ├── typedef.js
+│       ├── typedef.js.map
+│       ├── typedef.mdx
+│       ├── typeof.js
+│       ├── typeof.js.map
+│       ├── types.cts
+│       ├── types.d.cts
+│       ├── types.d.ts
+│       ├── types.js
+│       ├── types.js.map
+│       ├── types.mjs
+│       ├── types.ts
+│       ├── typescript.d.ts
+│       ├── typescript.js
+│       ├── typescript.js.map
+│       ├── typescriptGrammar.d.ts
+│       ├── typescriptGrammar.ts
+│       ├── typingsInstaller.js
+│       ├── ucs2length.js
+│       ├── umd.js
+│       ├── unbound-method.js
+│       ├── unbound-method.js.map
+│       ├── unbound-method.mdx
+│       ├── undefined.js
+│       ├── unescape.d.ts
+│       ├── unescape.d.ts.map
+│       ├── unescape.js
+│       ├── unescape.js.map
+│       ├── unicode-bom.js
+│       ├── unicode.d.ts
+│       ├── unicode.js
+│       ├── unified-signatures.js
+│       ├── unified-signatures.js.map
+│       ├── unified-signatures.mdx
+│       ├── union-to-intersection.d.ts
+│       ├── uniqueItems.js
+│       ├── uniqueItems.jst
+│       ├── universal.d.ts
+│       ├── universal.js
+│       ├── unmemoize.js
+│       ├── unstable_mock.js
+│       ├── unstable_post_task.js
+│       ├── unsupported-api.js
+│       ├── unsupportedIterableToArray.js
+│       ├── unsupportedIterableToArray.js.map
+│       ├── until.js
+│       ├── update-browserslist-db -> ../update-browserslist-db/cli.js
+│       ├── update.sample
+│       ├── updateGlobalConfig.js
+│       ├── uppercase.js
+│       ├── uppercase.js.map
+│       ├── uri.all.d.ts
+│       ├── uri.all.js
+│       ├── uri.all.js.map
+│       ├── uri.all.min.d.ts
+│       ├── uri.all.min.js
+│       ├── uri.all.min.js.map
+│       ├── uri.d.ts
+│       ├── uri.js
+│       ├── uri.js.map
+│       ├── url.d.ts
+│       ├── urn-uuid.d.ts
+│       ├── urn-uuid.js
+│       ├── urn-uuid.js.map
+│       ├── urn.d.ts
+│       ├── urn.js
+│       ├── urn.js.map
+│       ├── usage.js
+│       ├── use-at-your-own-risk.d.ts
+│       ├── use-at-your-own-risk.d.ts.map
+│       ├── use-at-your-own-risk.js
+│       ├── use-at-your-own-risk.js.map
+│       ├── use-isnan.js
+│       ├── use-unknown-in-catch-callback-variable.js
+│       ├── use-unknown-in-catch-callback-variable.js.map
+│       ├── use-unknown-in-catch-callback-variable.mdx
+│       ├── useProgramFromProjectService.d.ts
+│       ├── useProgramFromProjectService.d.ts.map
+│       ├── useProgramFromProjectService.js
+│       ├── useProgramFromProjectService.js.map
+│       ├── useProvidedPrograms.d.ts
+│       ├── useProvidedPrograms.d.ts.map
+│       ├── useProvidedPrograms.js
+│       ├── useProvidedPrograms.js.map
+│       ├── using.js
+│       ├── using.js.map
+│       ├── usingCtx.js
+│       ├── usingCtx.js.map
+│       ├── util.d.ts
+│       ├── util.js
+│       ├── util.js.map
+│       ├── utilities.d.ts
+│       ├── utils.js
+│       ├── utils.js.map
+│       ├── v8-to-istanbul.js
+│       ├── v8.d.ts
+│       ├── valid-typeof.js
+│       ├── valid.js
+│       ├── validate-language-options.js
+│       ├── validate.js
+│       ├── validate.js.map
+│       ├── validate.jst
+│       ├── validateCLIOptions.js
+│       ├── validateDefaultProjectForFilesGlob.d.ts
+│       ├── validateDefaultProjectForFilesGlob.d.ts.map
+│       ├── validateDefaultProjectForFilesGlob.js
+│       ├── validateDefaultProjectForFilesGlob.js.map
+│       ├── validateNode.js
+│       ├── validateNode.js.map
+│       ├── validatePattern.js
+│       ├── validate_and_fix_logging.js
+│       ├── validate_and_fix_nexxus_project.js
+│       ├── validate_and_fix_project.js
+│       ├── validation.js
+│       ├── validator.js
+│       ├── validator.js.map
+│       ├── value-of.d.ts
+│       ├── value-to-string.d.ts
+│       ├── value-to-string.js
+│       ├── value-to-string.test.js
+│       ├── value.d.ts
+│       ├── value.js
+│       ├── valueToNode.js
+│       ├── valueToNode.js.map
+│       ├── value_cmp.js
+│       ├── variable.js
+│       ├── variables.d.ts
+│       ├── vars-on-top.js
+│       ├── version-check.d.ts
+│       ├── version-check.d.ts.map
+│       ├── version-check.js
+│       ├── version-check.js.map
+│       ├── version-checkers.d.ts
+│       ├── version-checkers.js
+│       ├── version.d.ts
+│       ├── version.d.ts.map
+│       ├── version.js
+│       ├── version.js.map
+│       ├── versions.js
+│       ├── vfile.js
+│       ├── virtual-types-validator.js
+│       ├── virtual-types-validator.js.map
+│       ├── virtual-types.js
+│       ├── virtual-types.js.map
+│       ├── visitor-keys.d.ts
+│       ├── visitor-keys.d.ts.map
+│       ├── visitor-keys.js
+│       ├── visitor-keys.js.map
+│       ├── visitor.d.ts
+│       ├── visitor.js
+│       ├── visitor.js.map
+│       ├── visitorKeys.d.ts
+│       ├── visitorKeys.ts
+│       ├── visitors.js
+│       ├── visitors.js.map
+│       ├── vite -> ../vite/bin/vite.js
+│       ├── vite.config.js
+│       ├── vite.config.ts
+│       ├── vite.js
+│       ├── vlq.d.ts
+│       ├── vm.d.ts
+│       ├── walker.d.ts
+│       ├── walker.d.ts.map
+│       ├── walker.js
+│       ├── walker.js.map
+│       ├── warn-once.js
+│       ├── warnAboutTSVersion.d.ts
+│       ├── warnAboutTSVersion.d.ts.map
+│       ├── warnAboutTSVersion.js
+│       ├── warnAboutTSVersion.js.map
+│       ├── warning.d.ts
+│       ├── warning.js
+│       ├── warnings.js
+│       ├── wasi.d.ts
+│       ├── watch-cli.js
+│       ├── watch.js
+│       ├── watchGuard.js
+│       ├── watchPluginsHelpers.js
+│       ├── watchdog.d.ts
+│       ├── watchdog.d.ts.map
+│       ├── watchdog.js
+│       ├── watchdog.js.map
+│       ├── watchman.js
+│       ├── waterfall.js
+│       ├── watermarks.js
+│       ├── web.d.ts
+│       ├── webidl.d.ts
+│       ├── webpack.config.js
+│       ├── websocket-server.js
+│       ├── websocket.d.ts
+│       ├── websocket.js
+│       ├── webworker.asynciterable.d.ts
+│       ├── webworker.asynciterable.d.ts.map
+│       ├── webworker.asynciterable.js
+│       ├── webworker.asynciterable.js.map
+│       ├── webworker.d.ts
+│       ├── webworker.d.ts.map
+│       ├── webworker.importscripts.d.ts
+│       ├── webworker.importscripts.d.ts.map
+│       ├── webworker.importscripts.js
+│       ├── webworker.importscripts.js.map
+│       ├── webworker.iterable.d.ts
+│       ├── webworker.iterable.d.ts.map
+│       ├── webworker.iterable.js
+│       ├── webworker.iterable.js.map
+│       ├── webworker.js
+│       ├── webworker.js.map
+│       ├── which-module.js
+│       ├── which.js
+│       ├── whilst.js
+│       ├── whitespace-found.js
+│       ├── whitespace.js
+│       ├── whitespace.js.map
+│       ├── windows.cjs
+│       ├── windows.js
+│       ├── withoutIndex.js
+│       ├── withoutProjectParserOptions.d.ts
+│       ├── withoutProjectParserOptions.d.ts.map
+│       ├── withoutProjectParserOptions.js
+│       ├── withoutProjectParserOptions.js.map
+│       ├── worker.js
+│       ├── worker_threads.d.ts
+│       ├── workflowManager.ts
+│       ├── wrap-iife.js
+│       ├── wrap-regex.js
+│       ├── wrap.js
+│       ├── wrapAnsiString.js
+│       ├── wrapAsync.js
+│       ├── wrapAsyncGenerator.js
+│       ├── wrapAsyncGenerator.js.map
+│       ├── wrapNativeSuper.js
+│       ├── wrapNativeSuper.js.map
+│       ├── wrapRegExp.js
+│       ├── wrapRegExp.js.map
+│       ├── wrapSync.js
+│       ├── wrapper.mjs
+│       ├── wrappy.js
+│       ├── writable.d.ts
+│       ├── writeOnlyError.js
+│       ├── writeOnlyError.js.map
+│       ├── ws.d.ts
+│       ├── ws.js
+│       ├── ws.js.map
+│       ├── wss.d.ts
+│       ├── wss.js
+│       ├── wss.js.map
+│       ├── x-default-browser.js
+│       ├── xdg-open
+│       ├── xhtml-entities.d.ts
+│       ├── xhtml-entities.d.ts.map
+│       ├── xhtml-entities.js
+│       ├── xhtml-entities.js.map
+│       ├── xhtml.js
+│       ├── xml-writer.js
+│       ├── yallist.js
+│       ├── yargs
+│       ├── yargs-factory.js
+│       ├── yargs-parser-types.js
+│       ├── yargs-parser.js
+│       ├── yargs.d.ts
+│       ├── yargs.mjs
+│       ├── yarn.lock
+│       ├── year.js
+│       ├── yerror.js
+│       ├── yield-star-spacing.js
+│       ├── yoda.js
+│       └── zlib.d.ts
+├── tests
+│   ├── 10-stderr.txt
+│   ├── 10-stdout-stderr.txt
+│   ├── 10-stdout.txt
+│   ├── 100-stderr.txt
+│   ├── 100-stdout-stderr.txt
+│   ├── 100-stdout.txt
+│   ├── 1000-stderr.txt
+│   ├── 1000-stdout-stderr.txt
+│   ├── 1000-stdout.txt
+│   ├── FUNDING.yml
+│   ├── Fixture.d.ts
+│   ├── GetIntrinsic.js
+│   ├── LICENSE
+│   ├── LICENSE.txt
+│   ├── NaN.js
+│   ├── TestNamePattern.js
+│   ├── TestNamePatternPrompt.js
+│   ├── TestPathPattern.js
+│   ├── TestPathPatternPrompt.js
+│   ├── TestResult.js
+│   ├── TestScheduler.js
+│   ├── TestWatcher.js
+│   ├── a.js
+│   ├── aaa.js
+│   ├── async.js
+│   ├── b.js
+│   ├── back-end
+│   │   ├── fileScanner.test.ts
+│   │   ├── largeFileProcessor.test.ts
+│   │   └── metadataExtractor.test.ts
+│   ├── bar.js
+│   ├── basic.js
+│   ├── bbb.js
+│   ├── callBound.js
+│   ├── cmp.js
+│   ├── common.js
+│   ├── concurrent.jake.js
+│   ├── concurrent.js
+│   ├── core-js.js
+│   ├── core.js
+│   ├── corejs.js
+│   ├── cup.coffee
+│   ├── doom.js
+│   ├── dotdot.js
+│   ├── example.ts
+│   ├── exit_test.js
+│   ├── faulty_basedir.js
+│   ├── file.js
+│   ├── file_task.js
+│   ├── filter.js
+│   ├── filter_sync.js
+│   ├── foo.js
+│   ├── formatTestResults.js
+│   ├── front-end
+│   │   ├── cli.test.ts
+│   │   └── gui.test.ts
+│   ├── fuzzer.d.ts
+│   ├── get-own-property-symbols.js
+│   ├── get.js
+│   ├── glob.js
+│   ├── helloWorld.test.ts
+│   ├── helpers.js
+│   ├── home_paths.js
+│   ├── home_paths_sync.js
+│   ├── index.d.ts
+│   ├── index.js
+│   ├── index.test.js
+│   ├── is-outside-dir-posix.js
+│   ├── is-outside-dir-win32.js
+│   ├── is-outside-dir.js
+│   ├── jakefile.js
+│   ├── lerna.json
+│   ├── list_tasks.js
+│   ├── log-broken.js
+│   ├── log.js
+│   ├── main.js
+│   ├── map.js
+│   ├── merge.spec.ts
+│   ├── middle-end
+│   │   ├── taskQueue.test.ts
+│   │   └── workflowManager.test.ts
+│   ├── minimatch.js
+│   ├── mock.js
+│   ├── mock_sync.js
+│   ├── module_dir.js
+│   ├── mug.coffee
+│   ├── mug.js
+│   ├── namePath.d.ts
+│   ├── namespace.js
+│   ├── neg-vs-pos-0.js
+│   ├── nested.js
+│   ├── node-modules-paths.js
+│   ├── node_path.js
+│   ├── nonstring.js
+│   ├── other-lib.js
+│   ├── package.json
+│   ├── parseargs.js
+│   ├── pathfilter.js
+│   ├── precedence.js
+│   ├── promise.js
+│   ├── publish.jake.js
+│   ├── publish_task.js
+│   ├── quux.js
+│   ├── replacer.js
+│   ├── required_module.jake.js
+│   ├── resolver.js
+│   ├── resolver_sync.js
+│   ├── root.js
+│   ├── rule-tester.js
+│   ├── rule.jake.js
+│   ├── rule.js
+│   ├── selfdep.js
+│   ├── set.js
+│   ├── shadowed_core.js
+│   ├── space.js
+│   ├── str.js
+│   ├── subdirs.js
+│   ├── symlinks.js
+│   ├── sync.js
+│   ├── target-mock.d.ts
+│   ├── target-mock.js
+│   ├── task_base.js
+│   ├── test-path-basename.js
+│   ├── test-path-dirname.js
+│   ├── test-path-extname.js
+│   ├── test-path-isabsolute.js
+│   ├── test-path-join.js
+│   ├── test-path-parse-format.js
+│   ├── test-path-relative.js
+│   ├── test-path-resolve.js
+│   ├── test-path-zero-length-strings.js
+│   ├── test-path.js
+│   ├── test-utils.js
+│   ├── test.d.ts
+│   ├── test.js
+│   ├── test.json
+│   ├── testCaseReportHandler.js
+│   ├── testPathPatternToRegExp.js
+│   ├── testSchedulerHelper.js
+│   ├── testWorker.js
+│   ├── test_task.js
+│   ├── testfeat.js
+│   ├── tests.js
+│   ├── to-json.js
+│   ├── tsconfig.json
+│   ├── types.js
+│   ├── uglified.js
+│   └── utilities
+│       ├── authAPI.test.ts
+│       ├── errorHandling.test.ts
+│       └── loggingSystem.test.ts
+└── tree4.txt
+
+481 directories, 5612 files

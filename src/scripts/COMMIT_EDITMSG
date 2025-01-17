@@ -1,0 +1,22 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch develop
+# Your branch is up to date with 'origin/develop'.
+#
+# Changes to be committed:
+#	new file:   dist/back-end/fileScanner.js
+#	new file:   dist/back-end/largeFileProcessor.js
+#	new file:   dist/back-end/metadataExtractor.js
+#	new file:   dist/front-end/cli.js
+#	new file:   dist/front-end/gui.js
+#	new file:   dist/index.js
+#	new file:   dist/middle-end/taskQueue.js
+#	new file:   dist/middle-end/workflowManager.js
+#	new file:   dist/utilities/authAPI.js
+#	new file:   dist/utilities/errorHandling.js
+#	new file:   dist/utilities/loggingSystem.js
+#	new file:   playground-mongodb.js
+#	modified:   tests/middle-end/workflowManager.test.ts
+#

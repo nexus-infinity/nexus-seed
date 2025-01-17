@@ -1,0 +1,18 @@
+
+--- Changes Logged at 2025-01-17 11:30:12.197869 ---
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/core
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/configs
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/data/raw
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/data/downloaded
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/data/user_uploaded
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/src/notebooks
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/logs
+Created directory: /Users/jbear/dev/base_project/nexxus_seed/env
+Created placeholder package.json at /Users/jbear/dev/base_project/nexxus_seed/package.json
+Created placeholder requirements.txt at /Users/jbear/dev/base_project/nexxus_seed/requirements.txt
+2025-01-17 12:02:39.905379: Validating project structure...
+2025-01-17 12:02:39.905723: Structure created: []
+2025-01-17 12:02:39.906014: Structure skipped: ['/users/jbear/dev/base_project/nexxus_seed/src/core', '/users/jbear/dev/base_project/nexxus_seed/src/scripts', '/users/jbear/dev/base_project/nexxus_seed/src/configs', '/users/jbear/dev/base_project/nexxus_seed/src/data/raw', '/users/jbear/dev/base_project/nexxus_seed/src/data/processed', '/users/jbear/dev/base_project/nexxus_seed/src/notebooks', '/users/jbear/dev/base_project/nexxus_seed/src/utils', '/users/jbear/dev/base_project/nexxus_seed/logs/app.log', '/users/jbear/dev/base_project/nexxus_seed/logs/errors.log', '/users/jbear/dev/base_project/nexxus_seed/./requirements.txt', '/users/jbear/dev/base_project/nexxus_seed/./package.json', '/users/jbear/dev/base_project/nexxus_seed/./README.md', '/users/jbear/dev/base_project/nexxus_seed/./.env.example', '/users/jbear/dev/base_project/nexxus_seed/./Dockerfile']
+2025-01-17 12:02:39.906278: Validating file content...
+2025-01-17 12:02:39.907152: Missing keys in /users/jbear/dev/base_project/nexxus_seed/requirements.txt: ['flask', 'fastapi', 'elasticsearch']
+2025-01-17 12:02:39.907383: Missing keys in /users/jbear/dev/base_project/nexxus_seed/.env.example: ['DATABASE_URL']
