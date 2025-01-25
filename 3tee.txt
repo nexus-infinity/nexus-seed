@@ -1,4 +1,5 @@
 .
+├── 3tee.txt
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
@@ -4747,4 +4748,4 @@
 ├── tree3.txt
 └── tree4.txt
 
-25 directories, 4723 files
+25 directories, 4724 files

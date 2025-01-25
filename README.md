@@ -1,4 +1,4 @@
-Nexxus_Seed
+# Nexxus_Seed
 
 Overview
 
@@ -46,9 +46,8 @@ Prerequisites
 Installation
     1.    Clone the repository:
 
-git clone https://github.com/your-username/nexxus_seed.git
+git clone [https://github.com/nexus-infinity/nexxus_seed.git](https://github.com/nexus-infinity/nexxus_seed.git)
 cd nexxus_seed
-
 
     2.    Set up the Python environment:
 
@@ -56,11 +55,9 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 pip install -r requirements.txt
 
-
     3.    Set up the Node.js environment:
 
 npm install
-
 
     4.    Configure environment variables:
     •    Copy .env.example to .env and fill in the necessary details.
@@ -68,15 +65,11 @@ npm install
 
 python src/main.py  # Replace with the actual entry point if different
 
-
-
 Docker Deployment
     1.    Build and run the Docker container:
 
 docker build -t nexxus_seed .
 docker run -p 8000:8000 nexxus_seed
-
-
 
 Testing
 
@@ -92,3 +85,11 @@ Contribution Guidelines
 License
 
 This project is licensed under the MIT License.
+
+## Setup
+
+Instructions go here.
+
+## Usage
+
+Details go here.
