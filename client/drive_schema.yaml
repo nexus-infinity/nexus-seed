@@ -1,0 +1,163 @@
+# Google Drive Sentinel Stack — Susan Rich deployment
+# Layer 2 structural reference. No personal data. Folder IDs live in .env only.
+#
+# Doctrine: Google holds originals. nexus-seed holds the skeleton.
+# Source: docs/FREE_FIELD_MINIMUM_STACK.md
+#
+# To populate env keys: open each folder in Google Drive, copy the ID from the URL
+# (the long alphanumeric string after /folders/).
+
+client: susan
+version: "1.0"
+updated: "2026-06-10"
+
+# ── Folder schema ─────────────────────────────────────────────────────────────
+
+folders:
+
+  root:
+    name: "nexus-seed"
+    env_key: GOOGLE_DRIVE_ROOT_FOLDER_ID
+    description: >
+      Susan's sovereign FIELD root in Google Drive.
+      All folders below are children of this one.
+    nexus_seed_mirror: "/"
+
+  inbox:
+    name: "00_inbox"
+    parent: root
+    env_key: GOOGLE_DRIVE_INBOX_FOLDER_ID
+    description: >
+      Unprocessed incoming items — correspondence scans, fax PDFs,
+      attachments forwarded from Gmail, new documents yet to be classified.
+    nexus_seed_mirror: "00_inbox/"
+    governance:
+      intake_rule: >
+        Items land here first. Classify and route before any action.
+        HOLD if source or classification is uncertain.
+      retention: active until classified and routed
+
+  people:
+    name: "10_people"
+    parent: root
+    env_key: GOOGLE_DRIVE_PEOPLE_FOLDER_ID
+    description: >
+      Care team and contact documents — provider letters, referral records,
+      agency correspondence tied to a specific person.
+    nexus_seed_mirror: "10_people/"
+    subfolders:
+      - name: "Bolton_Clarke"
+        description: "Provider correspondence and RDNS records"
+      - name: "Dr_Greig"
+        description: "GP correspondence and health summaries"
+      - name: "Peninsula_Health"
+        description: "Hospital correspondence and discharge docs"
+      - name: "ACAT_MyAgedCare"
+        description: "Federal funder correspondence and assessments"
+      - name: "Dr_Craig_Mills"
+        description: "Independent impairment assessor reports"
+
+  matters:
+    name: "20_matters"
+    parent: root
+    env_key: GOOGLE_DRIVE_MATTERS_FOLDER_ID
+    description: >
+      Active matter working folders. One subfolder per matter.
+      Contains working copies, drafts, and matter-scoped evidence packets.
+    nexus_seed_mirror: "20_matters/"
+    subfolders:
+      - name: "ACAT_Level4_Escalation"
+        description: "Level 4 Home Care Package escalation — primary active matter"
+      - name: "Bolton_Clarke_Restitution"
+        description: "Financial restitution claim — The Float (2020–2026)"
+      - name: "Peninsula_Health_Discharge"
+        description: "July 2020 discharge failure — Original Sin timeline anchor"
+      - name: "Dr_Greig_Health_Summary"
+        description: "GP health summary correction matter"
+
+  documents:
+    name: "30_documents"
+    parent: root
+    env_key: GOOGLE_DRIVE_DOCUMENTS_FOLDER_ID
+    description: >
+      Official originals and governed records — medical reports, legal documents,
+      financial records. Source of truth. Never the sole copy.
+    nexus_seed_mirror: "30_documents/"
+    subfolders:
+      - name: "Medical"
+        description: "Clinical reports, discharge summaries, specialist letters"
+      - name: "Legal"
+        description: "Legal correspondence, powers of attorney, formal notices"
+      - name: "Financial"
+        description: "Care package financial statements, invoices, payment records"
+      - name: "Identity"
+        description: "Identity documents — stored here, not in matters"
+    governance:
+      rule: >
+        Sensitive originals stay here. nexus-seed repo holds pointers only.
+        GitHub must never be the sole copy of any document in this folder.
+
+  timeline:
+    name: "40_timeline"
+    parent: root
+    env_key: GOOGLE_DRIVE_TIMELINE_FOLDER_ID
+    description: >
+      Dated evidence anchoring the chronological record —
+      discharge summaries, dated correspondence, assessment records.
+      Used to verify timeline fit during TATA verification.
+    nexus_seed_mirror: "40_timeline/"
+    key_anchors:
+      - date: "2020-07-10"
+        description: "Peninsula Health discharge — Original Sin event"
+        evidence: "Peninsula_Health_Discharge_Summary_2020-07-10.pdf"
+      - date: "2020-07-26"
+        description: "RDNS wound care notes — documented extreme pain and caregiver strain"
+        evidence: "Bolton_Clarke_RDNS_Notes_2020-07-26.pdf"
+      - date: "2023-12-13"
+        description: "Dr. Craig Mills 26% WPI Report — primary escalation lever"
+        evidence: "Mills_Independent_Impairment_Report_2023-12-13.pdf"
+
+  journal:
+    name: "50_atlas_journal"
+    parent: root
+    env_key: GOOGLE_DRIVE_JOURNAL_FOLDER_ID
+    description: >
+      Synthesis and AI-assisted working documents — drafts, summaries,
+      decision frames, checklists. NOT canonical source material.
+      Originals and receipts live in 30_documents and 90_audit.
+    nexus_seed_mirror: "50_atlas_journal/"
+    governance:
+      rule: >
+        AI output (Claude, ChatGPT, NotebookLM summaries) goes here.
+        Always pin source (Gmail thread URL, Drive path) when synthesising.
+        Do not treat journal entries as proof without verification receipt.
+
+  audit:
+    name: "90_audit"
+    parent: root
+    env_key: GOOGLE_DRIVE_AUDIT_FOLDER_ID
+    description: >
+      Audit records, evidence packets, and receipts.
+      Append-only. Mirrors 90_audit/ in nexus-seed repo.
+    nexus_seed_mirror: "90_audit/"
+    naming_convention: "E{seq:03d}_{source}_{descriptor}"
+    governance:
+      rule: >
+        Items here are final receipts. Never delete or overwrite.
+        Each entry must include source, date, and what it proves or records.
+
+# ── Sentinel escalation routing ───────────────────────────────────────────────
+
+sentinel:
+  description: >
+    Escalation and notification routing for the Sentinel stack.
+    Triggers are set in .env. Routing follows GOVERNANCE.md escalation principles.
+  escalation_triggers:
+    - condition: "Document in 00_inbox unclassified > 7 days"
+      action: "HOLD — notify care coordinator"
+    - condition: "Key timeline anchor document missing from 40_timeline"
+      action: "HOLD — flag to Coordinator/POA"
+    - condition: "Matter in 20_matters has no next-action pointer > 14 days"
+      action: "HOLD — surface in weekly review"
+    - condition: "Legal or financial action pending without explicit approval"
+      action: "BLOCK — require human confirmation per GOVERNANCE.md rule 5"
