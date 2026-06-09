@@ -1,95 +1,87 @@
-# Nexxus_Seed
+# Nexus Seed
 
-Overview
+Universal personal sovereign stack platform.
 
-Nexxus_Seed is an innovative project designed to automate the creation of personalized knowledge bases by organizing and categorizing user data. It offers an extensible architecture to ingest, process, and enrich data, enabling insights, searchability, and integration with external tools.
+Nexus Seed provides the engine, schemas, and integration framework for deploying a fully integrated personal operating system — combining care coordination, document management, legal file handling, and AI-assisted workflow automation — for any individual or household.
 
-Features
-    •    Data Ingestion and Processing: Handles raw, processed, downloaded, and user-uploaded data.
-    •    Knowledge Graph: Organizes relationships between data points for deep insights.
-    •    Search Engine: Provides fast and accurate information retrieval.
-    •    Analytics: Delivers actionable insights through trend analysis and data visualization.
-    •    Scalability: Modular design ensures adaptability to various use cases.
+**This repository contains framework-level code only.** No client data, personal records, access tokens, or operational secrets live here.
 
-Project Structure
+---
 
-├── src
-│   ├── core            # Core functionalities
-│   ├── scripts         # Automation scripts
-│   ├── configs         # Configuration files
-│   ├── data
-│   │   ├── raw         # Raw data
-│   │   ├── processed   # Processed data
-│   │   ├── downloaded  # Data from external sources
-│   │   └── user_uploaded # User-uploaded files
-│   ├── notebooks       # Jupyter Notebooks for experiments
-│   └── utils           # Utility functions
-├── tests               # Unit tests
-├── docs                # Documentation files
-│   └── README.md       # Detailed project documentation
-├── logs                # Log files
-│   ├── app.log         # Application logs
-│   └── errors.log      # Error logs
-├── requirements.txt    # Python dependencies
-├── package.json        # Node.js dependencies
-├── Dockerfile          # Docker setup
-├── .env.example        # Environment variable configuration
-└── README.md           # This file
+## Three-Layer Architecture
 
-Setup Instructions
+| Layer | Repo | Branch | Purpose |
+|-------|------|--------|---------|
+| Platform | `nexus-infinity/nexus-seed` | `main` | Universal engine. Generic, clean, auditable. |
+| Reference Deployment | `nexus-infinity/nexus-seed` | `client/<name>` | Structural integration config for a specific deployment. No personal data. |
+| Sovereign Instance | `<client>/nexus-seed` | `client/<name>` | Live runtime. `.env`, tokens, active records. Private. Never merged upstream. |
 
-Prerequisites
-    •    Python 3.11
-    •    Node.js (Latest LTS)
-    •    Docker (Optional for containerization)
+---
 
-Installation
-    1.    Clone the repository:
+## Repository Structure
 
-git clone [https://github.com/nexus-infinity/nexxus_seed.git](https://github.com/nexus-infinity/nexxus_seed.git)
-cd nexxus_seed
+```
+nexus-seed/
+├── schemas/        Core data models (care team, documents, contacts)
+├── connectors/     Integration connectors (Google Drive, Notion, etc.)
+├── workflows/      Workflow templates (clinical handover, care coordination)
+├── validator_core/ FIELD validation engine (prime sequence, gate transitions)
+├── cli/            nexus CLI — deploy, sync, validate
+├── docs/           Architecture and deployment documentation
+└── tests/          Test suite
+```
 
-    2.    Set up the Python environment:
-
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-pip install -r requirements.txt
-
-    3.    Set up the Node.js environment:
-
-npm install
-
-    4.    Configure environment variables:
-    •    Copy .env.example to .env and fill in the necessary details.
-    5.    Start the application:
-
-python src/main.py  # Replace with the actual entry point if different
-
-Docker Deployment
-    1.    Build and run the Docker container:
-
-docker build -t nexxus_seed .
-docker run -p 8000:8000 nexxus_seed
-
-Testing
-
-Run unit tests using the following command:
-
-pytest
-
-Contribution Guidelines
-    •    Fork the repository and create a feature branch.
-    •    Ensure code adheres to PEP8 standards and passes all tests.
-    •    Submit a detailed pull request for review.
-
-License
-
-This project is licensed under the MIT License.
+---
 
 ## Setup
 
-Instructions go here.
+**Prerequisites:** Python 3.11+, [uv](https://docs.astral.sh/uv/)
 
-## Usage
+```bash
+git clone git@github.com:nexus-infinity/nexus-seed.git
+cd nexus-seed
+uv sync
+cp .env.example .env
+# Fill in .env with your credentials
+```
 
-Details go here.
+---
+
+## CLI
+
+```bash
+uv run nexus --help
+uv run nexus validate          # Check schema and connector health
+uv run nexus sync drive        # Sync Google Drive connector
+uv run nexus workflows list    # List available workflow templates
+```
+
+---
+
+## Client Deployments
+
+To create a new client deployment branch:
+
+```bash
+git checkout -b client/<name>
+# Add client-specific structural config (no personal data)
+# Point the sovereign instance repo at this branch as upstream
+```
+
+The sovereign instance (Layer 3) tracks `client/<name>` and is the only place
+where `.env`, access tokens, and active personal records live.
+
+---
+
+## Invariants
+
+- `main` and `client/*` branches contain **no personal data, no secrets, no access tokens**
+- All integration keys live in `.env` in the sovereign instance only
+- `.env.example` on `main` documents every required key with a description
+- Analysis artifacts, snapshots, and refactor reports are gitignored — never commit them
+
+---
+
+## License
+
+MIT

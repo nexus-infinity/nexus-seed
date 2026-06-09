@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Node (if any tooling added)
+node_modules/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Analysis / tooling artifacts — never commit these
+*_snapshot.json
+*refactor_report*.json
+*refinement_report*.json
+*_analysis_*.txt
+*_log.txt
+logs/
+
+# Client data — must never appear in main or client/* branches
+*.csv
+*.sqlite
+*.db
+data/raw/
+data/user_uploaded/

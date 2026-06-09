@@ -1,9 +1,0 @@
-{
-  "extends": ["config:base"],
-  "packageRules": [
-    {
-      "packageNames": ["react-scripts"],
-      "enabled": false
-    }
-  ]
-}

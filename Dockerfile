@@ -1,22 +1,21 @@
-# Use a lightweight Python base image
 FROM python:3.11-slim
 
-# Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Set the working directory
 WORKDIR /app
 
-# Copy dependencies and install them
-COPY requirements.txt /app/
-RUN pip install --no-cache-dir -r requirements.txt
+# Install uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
-# Copy project files
-COPY . /app/
+# Install dependencies first (layer cache)
+COPY pyproject.toml .
+RUN uv sync --no-dev --no-install-project
 
-# Expose the application port
+# Copy source
+COPY . .
+RUN uv sync --no-dev
+
 EXPOSE 8000
 
-# Set default command
-CMD ["python", "src/main.py"]
+CMD ["uv", "run", "nexus", "serve"]
